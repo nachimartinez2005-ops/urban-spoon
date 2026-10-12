@@ -1,0 +1,119 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<style>
+@page { size: 140mm 210mm; margin: 0; }
+* { box-sizing: border-box; margin:0; padding:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+:root{ --cream:#FDF3E3; --cream2:#FBE9D2; --terra:#B5533C; --terra-d:#9A4330; --mint:#9FD5BA; --mint-l:#CDEADC; --brown:#3B2B20; --muted:#7A6354; }
+html,body{ height:100%; } body{ font-family:'Inter',sans-serif; color:var(--brown); }
+.page{ width:140mm; height:209.8mm; display:flex; flex-direction:column; background:var(--cream); position:relative; overflow:hidden; page-break-after:always; }
+.page:last-child{ page-break-after:auto; }
+.serif{ font-family:'Bitstream Charter','DejaVu Serif',serif; }
+
+/* ---- PORTADA ---- */
+.cv{ padding:14mm 12mm; text-align:center; height:100%; display:flex; flex-direction:column; }
+.cv .kicker{ font-size:8pt; font-weight:800; letter-spacing:.22em; color:var(--terra); }
+.cv h1{ font-size:34pt; line-height:.95; font-weight:800; margin-top:5mm; letter-spacing:-.01em; }
+.cv h1 .q{ color:var(--terra); display:block; font-size:25pt; margin-top:1.5mm; }
+.cv .sub{ font-size:9.5pt; color:var(--muted); margin-top:4mm; line-height:1.45; }
+.cv .badge{ position:absolute; right:11mm; top:30mm; width:19mm; height:19mm; border-radius:50%; background:var(--mint); display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:6pt; font-weight:800; color:var(--brown); }
+.cv .badge b{ font-size:11pt; }
+.cv .hero{ flex:1; margin:6mm 0 5mm; border-radius:4mm; background:linear-gradient(160deg,#F3DFC4,#E8CBA6); display:flex; align-items:center; justify-content:center; font-size:46pt; }
+.cv .chips{ display:flex; gap:3mm; justify-content:center; }
+.cv .chip{ flex:1; background:var(--cream2); border:1.2pt solid var(--terra); border-radius:3mm; padding:3mm 1mm; }
+.cv .chip b{ display:block; font-size:16pt; font-weight:800; line-height:1; }
+.cv .chip span{ font-size:6.5pt; color:var(--muted); }
+.cv .foot{ margin-top:5mm; font-size:8pt; font-weight:700; color:var(--muted); letter-spacing:.05em; }
+
+/* ---- FICHA ---- */
+.hd{ background:var(--terra); color:#fff; padding:6mm 10mm 5mm; }
+.hd .num{ display:inline-block; background:var(--mint); color:var(--brown); font-size:7pt; font-weight:800; padding:1mm 3mm; border-radius:99px; letter-spacing:.1em; }
+.hd h2{ font-size:19pt; font-weight:800; line-height:1.08; margin-top:3mm; }
+.bd{ padding:7mm 10mm; flex:1; display:flex; flex-direction:column; }
+.lede{ font-size:9.5pt; color:var(--muted); line-height:1.5; margin-bottom:5mm; }
+.specs{ border:1.2pt solid #E3D2BC; border-radius:3mm; overflow:hidden; }
+.specs div{ display:flex; justify-content:space-between; padding:3mm 4mm; font-size:9pt; border-bottom:1pt solid #E3D2BC; }
+.specs div:last-child{ border-bottom:0; }
+.specs b{ font-weight:700; }
+.price{ margin-top:5mm; background:var(--terra); color:#fff; border-radius:3mm; padding:4mm; text-align:center; font-size:11pt; font-weight:800; }
+.price span{ display:block; font-size:7.5pt; font-weight:600; opacity:.85; margin-top:1mm; }
+
+/* ---- PASO A PASO ---- */
+.sh{ background:var(--terra); color:#fff; padding:5mm 10mm; font-size:7.5pt; font-weight:800; letter-spacing:.14em; }
+.sh b{ display:block; font-size:14pt; letter-spacing:0; margin-top:1.5mm; }
+.cols{ display:flex; gap:5mm; padding:6mm 10mm; flex:1; }
+.col-i{ width:42%; }
+.col-s{ flex:1; }
+.lbl{ font-size:8pt; font-weight:800; color:var(--terra); letter-spacing:.12em; margin-bottom:3mm; }
+.ing{ display:flex; gap:2.5mm; align-items:flex-start; margin-bottom:2.8mm; font-size:8.5pt; line-height:1.3; }
+.ing i{ width:5mm; height:5mm; flex:0 0 5mm; border-radius:50%; background:var(--terra); color:#fff; font-style:normal; font-size:6.5pt; font-weight:800; display:flex; align-items:center; justify-content:center; }
+.ing:nth-child(even) i{ background:var(--mint); color:var(--brown); }
+.stp{ display:flex; gap:2.5mm; align-items:center; border-radius:2.5mm; padding:2.4mm 3mm; margin-bottom:2.2mm; font-size:8.5pt; line-height:1.25; background:var(--terra); color:#fff; }
+.stp:nth-child(even){ background:var(--mint-l); color:var(--brown); }
+.stp i{ font-style:normal; font-weight:800; font-size:10pt; min-width:4mm; }
+.warn{ margin:0 10mm; background:#C8372A; color:#fff; border-radius:2.5mm; padding:3mm 4mm; font-size:8pt; font-weight:700; }
+.tip{ margin:4mm 10mm 0; background:var(--brown); color:#fff; border-radius:2.5mm; padding:3mm 4mm; font-size:8pt; }
+.tip b{ color:var(--mint); }
+</style></head><body>
+
+<!-- 1. PORTADA -->
+<div class="page cv">
+  <div class="kicker">LOMITO BAKERY PRESENTA</div>
+  <h1 class="serif">PASTELERÍA<br>CANINA<span class="q">QUE VENDE</span></h1>
+  <div class="badge"><span>EDICIÓN</span><b>2026</b></div>
+  <div class="sub">Recetas para lomitos y cómo convertirlas<br>en tu negocio desde casa</div>
+  <div class="hero">🦴 🧁 🎂</div>
+  <div class="chips">
+    <div class="chip"><b>30</b><span>recetas</span></div>
+    <div class="chip"><b>5</b><span>categorías</span></div>
+    <div class="chip"><b style="font-size:9pt;line-height:1.2;margin-top:2mm">Plan de<br>negocio</b><span></span></div>
+  </div>
+  <div class="foot">Lomito Bakery · 2026</div>
+</div>
+
+<!-- 2. FICHA -->
+<div class="page">
+  <div class="hd">
+    <span class="num">RECETA 16</span>
+    <h2 class="serif">GALLETAS DE<br>CAMOTE Y AVENA</h2>
+  </div>
+  <div class="bd">
+    <div class="lede">Crujientes, naturalmente dulces y con solo cuatro ingredientes. El camote aporta fibra y les encanta.</div>
+    <div class="specs">
+      <div><span>Nivel</span><b>Fácil</b></div>
+      <div><span>Rinde</span><b>28 galletas</b></div>
+      <div><span>Tiempo</span><b>50 min</b></div>
+      <div><span>Duración</span><b>7 días</b></div>
+      <div><span>Costo</span><b>~$22 MXN</b></div>
+    </div>
+    <div style="flex:1"></div><div class="price">Bolsita x10 · $70 MXN<span>Margen aproximado 78%</span></div>
+  </div>
+</div>
+
+<!-- 3. PASO A PASO -->
+<div class="page">
+  <div class="sh">PASO A PASO · RECETA 16<b class="serif">GALLETAS DE CAMOTE Y AVENA</b></div>
+  <div class="cols">
+    <div class="col-i">
+      <div class="lbl">INGREDIENTES</div>
+      <div class="ing"><i>1</i><div>Camote cocido y molido<br>200 g</div></div>
+      <div class="ing"><i>2</i><div>Harina de avena<br>180 g</div></div>
+      <div class="ing"><i>3</i><div>Huevo<br>1 pieza</div></div>
+      <div class="ing"><i>4</i><div>Aceite de coco<br>1 cda</div></div>
+      <div class="ing"><i>5</i><div>Agua<br>2-3 cdas</div></div>
+    </div>
+    <div class="col-s">
+      <div class="lbl">PREPARACIÓN</div>
+      <div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div>
+      <div class="stp"><i>2</i><div>Cuece y machaca el camote</div></div>
+      <div class="stp"><i>3</i><div>Mezcla con el huevo y el aceite</div></div>
+      <div class="stp"><i>4</i><div>Agrega la avena hasta formar masa</div></div>
+      <div class="stp"><i>5</i><div>Estira a 0.5 cm de grosor</div></div>
+      <div class="stp"><i>6</i><div>Corta con el molde de hueso</div></div>
+      <div class="stp"><i>7</i><div>Hornea 22-25 min</div></div>
+      <div class="stp"><i>8</i><div>Seca 1 h en el horno apagado</div></div>
+    </div>
+  </div>
+  <div class="warn">⚠ SIN AZÚCAR NI SAL · El camote va solo, sin condimentar</div>
+  <div class="tip"><b>CONSEJO:</b> cuanto más secas queden, más días duran en frasco hermético.</div>
+</div>
+
+</body></html>
