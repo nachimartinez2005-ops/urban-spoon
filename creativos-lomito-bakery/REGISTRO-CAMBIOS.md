@@ -222,3 +222,67 @@ no exponen el `link_url` por API, y sin esa URL no puedo crear los anuncios
 nuevos con el copy que precalifica (precio en el titular, "50 recetas",
 "desde cero"). No la invento: un link mal puesto quema presupuesto mandando
 gente a la nada.
+
+---
+
+## 2026-10-12 (tercera tanda) — 3 anuncios nuevos con copy que precalifica
+
+URL de destino recibida: `https://lomitobakery.impultienda.ar/checkout`
+
+> ⚠️ **No se pudo verificar la página.** La política de red de este entorno
+> devuelve 403 al intentar abrirla (mismo bloqueo que el CDN de Higgsfield).
+> No se sabe si `/checkout` es página de venta o formulario de pago directo.
+> **Por eso los 3 anuncios se dejaron PAUSADOS**: si los creativos actuales
+> apuntan a una página de venta y estos van directo al pago, la conversión
+> se hunde. Verificar el destino en la vista previa antes de activar.
+
+### Creativos creados
+
+Todos sobre los **videos ya probados** (no se gastó un crédito en material nuevo),
+con `BUY_NOW` y el **precio en el titular** — que es el arreglo directo al
+problema del clic basura.
+
+| Creativo | ID | Video | Titular |
+|---|---|---|---|
+| NEW-A Precio + desde cero | `1064418276589580` | `2513584822498079` (ganador) | `Pastelería canina desde cero · $8.90` |
+| NEW-B Negación curiosidad | `1867866977717409` | `2149988429061612` (CJ2) | `Ninguna receta lleva estos 5 · $8.90` |
+| NEW-C Fin de semana | `2136004643971775` | `2513584822498079` (ganador) | `Empieza a vender este fin de semana` |
+
+Ángulos modelados de la competencia:
+- **NEW-A** → Gaston Aguirre ("desde cero", 29 ads) + CloudPets (precio en titular)
+- **NEW-B** → CloudPets ("Ninguna receta lleva estos 5 · US$17") + el ángulo
+  $21→$85 que ya ganó en CJ2 (ROAS 1.39)
+- **NEW-C** → Barkery en casa (25 días activo) y Mariana Rojas ("fin de semana")
+
+Copy en español de México (manteniendo "pícale", "lomitos", "colonia" del
+original). Todos declaran **"ebook digital de $8.90 USD"** en el cuerpo:
+quien hace clic ya sabe que se paga y cuánto.
+
+### Anuncios creados (PAUSADOS) — todos en CJ1, el mejor conjunto
+
+| Anuncio | ID | Estado |
+|---|---|---|
+| 8 NEW-A \| precio en titular + desde cero | `52533177900326` | ⏸️ PAUSED |
+| 9 NEW-B \| negación curiosidad + precio | `52533177911326` | ⏸️ PAUSED |
+| 10 NEW-C \| inmediatez fin de semana | `52533177917726` | ⏸️ PAUSED |
+
+Se pusieron en **CJ1** (`52532697234526`, $10/día) a propósito: compiten contra
+el ganador `1 v prob.` bajo el mismo público, mismos placements y mismo
+aprendizaje. Es la única comparación limpia posible.
+
+`conversion_domain` configurado en `lomitobakery.impultienda.ar` en los tres.
+
+### Antes de activarlos — 1 verificación obligatoria
+
+1. Abrir la vista previa de `8 NEW-A` y **tocar el botón «Comprar»**.
+2. ¿Llega al mismo lugar que tus anuncios actuales?
+   - **Sí** → activar los 3.
+   - **No** (los actuales van a una página de venta) → avisar y se cambia
+     el `link_url` de los 3 creativos.
+
+### Nota sobre el precio en el copy
+
+Los 3 anuncios dicen **$8.90 USD** porque es el precio real de hoy.
+**Si se sube el precio a $14.90 (recomendado), hay que rehacer estos 3
+creativos** — los creativos de Meta son inmutables, no se pueden editar.
+Conviene decidir el precio primero y después activarlos.
