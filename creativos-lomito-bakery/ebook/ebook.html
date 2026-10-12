@@ -1,0 +1,960 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Pastelería Canina que Vende</title><style>
+@page { size: 140mm 210mm; margin: 0; }
+*{box-sizing:border-box;margin:0;padding:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+html,body{height:100%}
+:root{--cream:#FDF3E3;--cream2:#FBE9D2;--terra:#B5533C;--terra2:#9A4330;--mint:#9FD5BA;
+      --mintl:#CDEADC;--brown:#3B2B20;--muted:#7A6354;--line:#E3D2BC;--red:#C8372A}
+body{font-family:'Inter',sans-serif;color:var(--brown);font-size:9pt;line-height:1.5}
+.serif{font-family:'Bitstream Charter','DejaVu Serif',serif}
+.p{width:140mm;height:209.8mm;background:var(--cream);position:relative;overflow:hidden;
+   page-break-after:always;display:flex;flex-direction:column}
+.p:last-child{page-break-after:auto}
+.pad{padding:10mm 11mm}
+.grow{flex:1}
+.hdbar{background:var(--terra);color:#fff;padding:4.5mm 11mm;font-size:7pt;font-weight:800;letter-spacing:.14em}
+.ttl{font-size:21pt;font-weight:800;line-height:1.1}
+.ttl2{font-size:16pt;font-weight:800;line-height:1.12}
+.kick{font-size:7.5pt;font-weight:800;letter-spacing:.16em;color:var(--terra);text-transform:uppercase}
+.lede{font-size:9.5pt;color:var(--muted);line-height:1.5}
+.pill{display:inline-block;background:var(--mint);color:var(--brown);font-size:6.5pt;
+      font-weight:800;padding:1.2mm 3.2mm;border-radius:99px;letter-spacing:.12em}
+.pill.new{background:var(--terra);color:#fff}
+.note{background:var(--brown);color:#fff;border-radius:2.5mm;padding:3mm 4mm;font-size:8pt}
+.note b{color:var(--mint)}
+.warn{background:var(--red);color:#fff;border-radius:2.5mm;padding:3mm 4mm;font-size:8pt;font-weight:700}
+.card{border:1.1pt solid var(--line);border-radius:3mm;overflow:hidden;background:#fffdf8}
+.row{display:flex;justify-content:space-between;padding:2.6mm 4mm;font-size:8.8pt;border-bottom:1pt solid var(--line)}
+.row:last-child{border-bottom:0}
+.row b{font-weight:700}
+.price{background:var(--terra);color:#fff;border-radius:3mm;padding:4mm;text-align:center}
+.price .big{font-size:12pt;font-weight:800}
+.price .sm{font-size:7.5pt;opacity:.9;margin-top:.8mm}
+.cols{display:flex;gap:5mm}
+.lbl{font-size:7.5pt;font-weight:800;color:var(--terra);letter-spacing:.12em;margin-bottom:2.5mm}
+.ing{display:flex;gap:2.2mm;align-items:flex-start;margin-bottom:2.4mm;font-size:8.2pt;line-height:1.28}
+.ing i{width:4.6mm;height:4.6mm;flex:0 0 4.6mm;border-radius:50%;background:var(--terra);color:#fff;
+       font-style:normal;font-size:6pt;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:.3mm}
+.ing:nth-child(even) i{background:var(--mint);color:var(--brown)}
+.stp{display:flex;gap:2.2mm;align-items:center;border-radius:2.2mm;padding:2mm 2.6mm;margin-bottom:1.8mm;
+     font-size:8.2pt;line-height:1.25;background:var(--terra);color:#fff}
+.stp:nth-child(even){background:var(--mintl);color:var(--brown)}
+.stp i{font-style:normal;font-weight:800;font-size:9pt;min-width:3.6mm}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.box{background:var(--cream2);border-radius:2.6mm;padding:3mm;font-size:8pt}
+.box b{display:block;font-size:8.5pt;margin-bottom:.8mm}
+.tbl{width:100%;border-collapse:collapse;font-size:8pt}
+.tbl td{border:1pt solid var(--line);padding:2.2mm 3mm}
+.tbl td:first-child{font-weight:700;width:34%}
+.divider{align-items:center;justify-content:center;text-align:center;background:var(--mint);padding:0 14mm}
+.divider .let{font-size:60pt;font-weight:800;color:var(--terra);line-height:.9}
+.divider .nm{font-size:22pt;font-weight:800;margin-top:3mm;letter-spacing:-.01em}
+.divider .sb{font-size:10pt;color:var(--brown);opacity:.75;margin-top:1.5mm}
+.divider ol{list-style:none;margin-top:7mm;text-align:left;width:100%}
+.divider ol li{display:flex;gap:3mm;font-size:9pt;margin-bottom:2.2mm;align-items:center}
+.divider ol li span{background:var(--terra);color:#fff;font-size:6.5pt;font-weight:800;
+                    border-radius:99px;padding:.9mm 2.4mm;min-width:7mm;text-align:center}
+.toc li{display:flex;align-items:baseline;gap:2mm;font-size:10pt;margin-bottom:3.4mm}
+.toc li b{min-width:7mm;color:var(--terra);font-weight:800}
+.toc li i{flex:1;border-bottom:1.2pt dotted var(--line);font-style:normal}
+.fnote{font-size:7pt;color:var(--muted);text-align:center}
+.cvr{text-align:center;padding:14mm 12mm}
+.cvr h1{font-size:33pt;line-height:.97;font-weight:800;margin-top:5mm}
+.cvr h1 .q{color:var(--terra);display:block;font-size:24pt;margin-top:1.5mm}
+.cvr .badge{position:absolute;right:11mm;top:31mm;width:19mm;height:19mm;border-radius:50%;
+            background:var(--mint);display:flex;flex-direction:column;align-items:center;
+            justify-content:center;font-size:5.5pt;font-weight:800}
+.cvr .badge b{font-size:11pt}
+.cvr .hero{flex:1;margin:6mm 0 5mm;border-radius:4mm;
+           background:linear-gradient(160deg,#F3DFC4,#E8CBA6);display:flex;
+           align-items:center;justify-content:center;font-size:42pt}
+.chips{display:flex;gap:3mm}
+.chips .c{flex:1;background:var(--cream2);border:1.2pt solid var(--terra);border-radius:3mm;padding:3mm 1mm;text-align:center}
+.chips .c b{display:block;font-size:15pt;font-weight:800;line-height:1}
+.chips .c span{font-size:6.5pt;color:var(--muted)}
+</style></head><body><div class="p cvr">
+  <div class="kick">LOMITO BAKERY PRESENTA</div>
+  <h1 class="serif">PASTELERÍA<br>CANINA<span class="q">QUE VENDE</span></h1>
+  <div class="badge"><span>EDICIÓN</span><b>2026</b></div>
+  <div class="lede" style="margin-top:4mm">Recetas para lomitos y cómo convertirlas<br>en tu negocio desde casa</div>
+  <div class="hero">🦴 🧁 🎂</div>
+  <div class="chips">
+    <div class="c"><b>30</b><span>recetas</span></div>
+    <div class="c"><b>5</b><span>categorías</span></div>
+    <div class="c"><b style="font-size:8.5pt;line-height:1.25;margin-top:2mm">Plan de<br>negocio</b><span></span></div>
+  </div>
+  <div class="fnote" style="margin-top:5mm;font-weight:700">Lomito Bakery · 2026</div></div><div class="p ">
+  <div class="hdbar">BIENVENIDA</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">¡Te damos la bienvenida!</div>
+    <div class="lede" style="margin-top:4mm">En esta guía aprenderás a preparar galletas, pupcakes,
+      pasteles, snacks y premios saludables para perros y gatos, y a venderlos desde tu cocina.</div>
+    <div class="lede" style="margin-top:3mm">Cada receta incluye <b style="color:#3B2B20">cuánto te cuesta
+      producirla, a cuánto venderla y qué margen deja</b>. No es solo un recetario: es un negocio
+      con los números hechos.</div>
+    <div class="grid2" style="margin-top:6mm">
+      <div class="box"><b>📘 Recetas fáciles</b>Paso a paso, desde cero, aunque nunca hayas horneado.</div>
+      <div class="box"><b>🥕 Ingredientes seguros</b>Todo de súper y económico.</div>
+      <div class="box"><b>💰 Precios calculados</b>Costo, precio de venta y margen en cada receta.</div>
+      <div class="box"><b>📦 Plan para vender</b>Empaque, formatos y primeros pedidos.</div>
+    </div>
+    <div class="grow"></div>
+    <div class="warn">Importante: estas recetas son premios y no sustituyen el alimento diario de tu mascota.
+      Consulta al veterinario ante alergias o condiciones de salud.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">ÍNDICE</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif" style="margin-bottom:7mm">ÍNDICE</div>
+    <ul class="toc" style="list-style:none"><li><b>1</b><i></i><span>Fundamentos</span></li><li><b>A</b><i></i><span>Galletas</span></li><li><b>B</b><i></i><span>Pupcakes Y Pasteles</span></li><li><b>C</b><i></i><span>Snacks Y Premios</span></li><li><b>D</b><i></i><span>Para Gatos</span></li><li><b>E</b><i></i><span>Sin Horno</span></li><li><b>6</b><i></i><span>Tu negocio</span></li></ul>
+    <div class="grow"></div>
+    <div class="price"><div class="big">30 recetas probadas</div>
+      <div class="sm">+ plan para vender desde casa</div></div>
+  </div></div><div class="p divider">
+  <div class="kick" style="color:#3B2B20">PARTE 1</div>
+  <div class="let serif">1</div>
+  <div class="nm serif">FUNDAMENTOS</div>
+  <ol><li><span>1</span>Equipo básico</li><li><span>2</span>Ingredientes seguros</li>
+      <li><span>3</span>Ingredientes prohibidos</li><li><span>4</span>Higiene y conservación</li></ol></div><div class="p ">
+  <div class="hdbar">FUNDAMENTOS · EQUIPO BÁSICO</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">Todo lo que necesitas ya está en tu cocina</div>
+    <div class="grid2" style="margin-top:6mm"><div class="box"><b>Horno</b></div><div class="box"><b>Charola para hornear</b></div><div class="box"><b>Papel para hornear</b></div><div class="box"><b>Tazón grande</b></div><div class="box"><b>Rodillo</b></div><div class="box"><b>Cortadores de galletas</b></div><div class="box"><b>Molde para muffins</b></div><div class="box"><b>Frascos herméticos</b></div></div>
+    <div class="grow"></div>
+    <div class="note"><b>EXTRA RECOMENDADO:</b> cortadores en forma de hueso y de huellita.
+      Son los que más venden.</div>
+  </div></div><div class="p ">
+  <div class="hdbar" style="background:#4E8D6E">FUNDAMENTOS · INGREDIENTES SEGUROS</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">Tu despensa canina</div>
+    <div class="grid2" style="margin-top:6mm">
+      <div class="box" style="background:#DFF0E6"><b>✓ Avena</b></div><div class="box" style="background:#DFF0E6"><b>✓ Harina de arroz</b></div><div class="box" style="background:#DFF0E6"><b>✓ Plátano</b></div><div class="box" style="background:#DFF0E6"><b>✓ Calabaza</b></div><div class="box" style="background:#DFF0E6"><b>✓ Camote</b></div><div class="box" style="background:#DFF0E6"><b>✓ Zanahoria</b></div><div class="box" style="background:#DFF0E6"><b>✓ Manzana sin semillas</b></div><div class="box" style="background:#DFF0E6"><b>✓ Huevo</b></div><div class="box" style="background:#DFF0E6"><b>✓ Pollo cocido</b></div><div class="box" style="background:#DFF0E6"><b>✓ Yogur natural sin azúcar</b></div><div class="box" style="background:#DFF0E6"><b>✓ Crema de cacahuate sin xilitol</b></div><div class="box" style="background:#DFF0E6"><b>✓ Aceite de coco</b></div></div>
+    <div class="grow"></div>
+    <div class="price" style="background:#4E8D6E"><div class="big">Siempre sin sal, sin azúcar y sin condimentos</div></div>
+  </div></div><div class="p ">
+  <div class="hdbar" style="background:#C8372A">FUNDAMENTOS · INGREDIENTES PROHIBIDOS</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif" style="color:#C8372A">Nunca los uses</div>
+    <div class="grid2" style="margin-top:6mm">
+      <div class="box" style="background:#FBE0DC"><b>✕ Chocolate y cacao</b></div><div class="box" style="background:#FBE0DC"><b>✕ Xilitol</b></div><div class="box" style="background:#FBE0DC"><b>✕ Uvas y pasas</b></div><div class="box" style="background:#FBE0DC"><b>✕ Cebolla</b></div><div class="box" style="background:#FBE0DC"><b>✕ Ajo</b></div><div class="box" style="background:#FBE0DC"><b>✕ Nueces de macadamia</b></div><div class="box" style="background:#FBE0DC"><b>✕ Aguacate</b></div><div class="box" style="background:#FBE0DC"><b>✕ Café y alcohol</b></div><div class="box" style="background:#FBE0DC"><b>✕ Exceso de sal</b></div></div>
+    <div class="grow"></div>
+    <div class="warn">Si tu mascota come alguno, llama de inmediato al veterinario.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">FUNDAMENTOS · HIGIENE Y CONSERVACIÓN</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl2 serif">HIGIENE</div>
+    <div style="margin-top:3mm">
+      <div class="ing"><i>✓</i><div>Lávate las manos y los utensilios</div></div>
+      <div class="ing"><i>✓</i><div>Trabaja en superficies limpias</div></div>
+      <div class="ing"><i>✓</i><div>Etiqueta cada producto con la fecha</div></div>
+    </div>
+    <div class="ttl2 serif" style="margin-top:6mm">¿CUÁNTO DURAN?</div>
+    <table class="tbl" style="margin-top:3mm"><tr><td>Galletas secas</td><td>Frasco hermético: 7 días</td><td>Congelador: 3 meses</td></tr><tr><td>Con pollo o hígado</td><td>Refrigerador: 5 días</td><td>Congelador: 2 meses</td></tr><tr><td>Pasteles con betún</td><td>Refrigerador: 3 días</td><td>No congelar</td></tr><tr><td>Paletas heladas</td><td>Congelador: 1 mes</td><td>No recongelar</td></tr><tr><td>Deshidratados</td><td>Frasco hermético: 2 semanas</td><td>Congelador: 3 meses</td></tr></table>
+    <div class="grow"></div>
+    <div class="note">Los premios no deben superar el <b>10 % de la alimentación diaria</b>.
+      Ante alergias, consulta al veterinario.</div>
+  </div></div><div class="p divider">
+      <div class="kick" style="color:#3B2B20">CATEGORÍA A</div>
+      <div class="let serif">A</div>
+      <div class="nm serif">GALLETAS</div>
+      <div class="sb">8 recetas · Nivel fácil</div>
+      <ol><li><span>01</span>Galletas de plátano y avena</li><li><span>02</span>Galletas de calabaza y canela</li><li><span>03</span>Galletas de pollo y zanahoria</li><li><span>04</span>Galletas de manzana y avena</li><li><span>05</span>Galletas de cacahuate y coco</li><li><span>16</span>Galletas de camote y avena</li><li><span>17</span>Galletas de yogur y manzana</li><li><span>18</span>Galletas de zanahoria y arroz</li></ol></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 01</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE PLÁTANO Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Huesitos crujientes con 5 ingredientes. La receta base que más se vende.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>30 galletas</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$25 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 60 piezas</td></tr><tr><td>Mediana</td><td>6 cm · 30 piezas</td></tr><tr><td>Grande</td><td>10 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $70 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$25 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 01
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE PLÁTANO Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>2</i><div>Plátano maduro · 1 pieza</div></div><div class="ing"><i>3</i><div>Crema de cacahuate natural · 2 cdas</div></div><div class="ing"><i>4</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>5</i><div>Agua · 3-4 cdas</div></div><div class="ing"><i>6</i><div>Cortador de hueso</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Machaca el plátano</div></div><div class="stp"><i>3</i><div>Mezcla con el huevo y la crema de cacahuate</div></div><div class="stp"><i>4</i><div>Agrega la avena hasta formar masa</div></div><div class="stp"><i>5</i><div>Estira a 0.5 cm</div></div><div class="stp"><i>6</i><div>Corta los huesitos</div></div><div class="stp"><i>7</i><div>Hornea 20-25 min</div></div><div class="stp"><i>8</i><div>Deja secar 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría antes de empacar</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta de la crema de cacahuate</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Frasco regalo</div><div class="box">Caja de cumpleaños</div><div class="box">Mayoreo a veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Más secas = más duración</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 02</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE CALABAZA Y CANELA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Crujientes y con aroma a otoño. Ideales para temporada.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>35 galletas</b></div><div class="row"><span>Tiempo</span><b>50 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$30 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 70 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 35 piezas</td></tr><tr><td>Grande</td><td>8 cm · 15 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $75 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$30 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 02
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE CALABAZA Y CANELA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Puré de calabaza · 120 g</div></div><div class="ing"><i>2</i><div>Harina de avena · 220 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Aceite de coco · 1 cda</div></div><div class="ing"><i>5</i><div>Canela · 1 pizca</div></div><div class="ing"><i>6</i><div>Cortador de huellita</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Mezcla el puré con el huevo hasta integrar</div></div><div class="stp"><i>3</i><div>Agrega el aceite y la canela, mezclando suavemente</div></div><div class="stp"><i>4</i><div>Incorpora la avena poco a poco hasta formar una masa manejable</div></div><div class="stp"><i>5</i><div>Estira a 0.5 cm sobre superficie enharinada</div></div><div class="stp"><i>6</i><div>Corta las huellitas y colócalas en la bandeja</div></div><div class="stp"><i>7</i><div>Hornea 25 min o hasta que estén ligeramente doradas</div></div><div class="stp"><i>8</i><div>Deja secar 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría antes de empacar en recipiente hermético</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Usa calabaza natural, nunca relleno para pay</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Edición otoño</div><div class="box">Caja de regalo</div><div class="box">Mayoreo a estéticas caninas</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Pínchalas con un tenedor para un acabado profesional y una cocción más uniforme</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 03</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE POLLO Y ZANAHORIA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Saladitas y llenas de sabor. Las favoritas de los perros exigentes.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>30 galletas</b></div><div class="row"><span>Tiempo</span><b>50 min</b></div><div class="row"><span>Duración</span><b>5 días refrigeradas</b></div><div class="row"><span>Costo aprox.</span><b>~$40 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 60 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 30 piezas</td></tr><tr><td>Grande</td><td>8 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $85 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$40 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 03
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE POLLO Y ZANAHORIA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pollo cocido deshebrado · 100 g</div></div><div class="ing"><i>2</i><div>Zanahoria rallada · 50 g</div></div><div class="ing"><i>3</i><div>Harina integral · 200 g</div></div><div class="ing"><i>4</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>5</i><div>Caldo de pollo sin sal · 4 cdas</div></div><div class="ing"><i>6</i><div>Cortador redondo</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Pica el pollo muy fino</div></div><div class="stp"><i>3</i><div>Mezcla el pollo, la zanahoria y el huevo</div></div><div class="stp"><i>4</i><div>Agrega la harina</div></div><div class="stp"><i>5</i><div>Añade caldo hasta formar masa</div></div><div class="stp"><i>6</i><div>Estira a 0.5 cm y corta</div></div><div class="stp"><i>7</i><div>Hornea 25 min</div></div><div class="stp"><i>8</i><div>Enfría sobre una rejilla</div></div><div class="stp"><i>9</i><div>Guarda en el refrigerador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Cocina el pollo sin sal, ajo ni cebolla</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Premios de entrenamiento</div><div class="box">Caja mixta</div><div class="box">Venta en veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Llevan carne: mantenlas siempre refrigeradas</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 04</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE MANZANA Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Dulces de forma natural, sin azúcar añadida.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>30 galletas</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$25 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 60 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 30 piezas</td></tr><tr><td>Grande</td><td>8 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $70 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$25 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 04
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE MANZANA Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Manzana rallada · 1 pieza</div></div><div class="ing"><i>2</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Aceite de coco · 1 cda</div></div><div class="ing"><i>5</i><div>Agua · 2 cdas</div></div><div class="ing"><i>6</i><div>Cortador de corazón</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Ralla la manzana sin semillas</div></div><div class="stp"><i>3</i><div>Mezcla con el huevo y el aceite</div></div><div class="stp"><i>4</i><div>Agrega la avena</div></div><div class="stp"><i>5</i><div>Añade agua si la masa está seca</div></div><div class="stp"><i>6</i><div>Estira a 0.5 cm y corta</div></div><div class="stp"><i>7</i><div>Hornea 20 min</div></div><div class="stp"><i>8</i><div>Deja secar 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría antes de empacar</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Retira siempre las semillas y el corazón de la manzana</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">San Valentín</div><div class="box">Frasco regalo</div><div class="box">Mesa de dulces para fiestas</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Los corazones se venden muy bien en San Valentín</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 05</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE CACAHUATE Y COCO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Sin gluten y con un toque tropical. Para perros sensibles.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>30 galletas</b></div><div class="row"><span>Tiempo</span><b>40 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$30 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 60 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 30 piezas</td></tr><tr><td>Grande</td><td>8 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $75 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$30 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 05
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE CACAHUATE Y COCO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Harina de arroz · 200 g</div></div><div class="ing"><i>2</i><div>Crema de cacahuate natural · 3 cdas</div></div><div class="ing"><i>3</i><div>Coco rallado sin azúcar · 2 cdas</div></div><div class="ing"><i>4</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>5</i><div>Agua · 4-5 cdas</div></div><div class="ing"><i>6</i><div>Cortador de estrella</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Bate el huevo con la crema de cacahuate</div></div><div class="stp"><i>3</i><div>Agrega el coco</div></div><div class="stp"><i>4</i><div>Incorpora la harina de arroz</div></div><div class="stp"><i>5</i><div>Añade agua hasta formar masa</div></div><div class="stp"><i>6</i><div>Estira a 0.5 cm y corta estrellas</div></div><div class="stp"><i>7</i><div>Hornea 20 min</div></div><div class="stp"><i>8</i><div>Deja secar 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría antes de empacar</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Opción sin gluten</div><div class="box">Frasco regalo</div><div class="box">Mayoreo a veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Ideal para clientes que piden opciones sin gluten</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 16</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE CAMOTE Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Crujientes y naturalmente dulces, con solo cuatro ingredientes.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>28 galletas</b></div><div class="row"><span>Tiempo</span><b>50 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$22 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 56 piezas</td></tr><tr><td>Mediana</td><td>6 cm · 28 piezas</td></tr><tr><td>Grande</td><td>10 cm · 11 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $70 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$22 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 16
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE CAMOTE Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Camote cocido y molido · 200 g</div></div><div class="ing"><i>2</i><div>Harina de avena · 180 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Aceite de coco · 1 cda</div></div><div class="ing"><i>5</i><div>Agua · 2-3 cdas</div></div><div class="ing"><i>6</i><div>Cortador de hueso</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Cuece el camote y machácalo sin cáscara</div></div><div class="stp"><i>3</i><div>Mezcla con el huevo y el aceite de coco</div></div><div class="stp"><i>4</i><div>Agrega la avena hasta formar una masa manejable</div></div><div class="stp"><i>5</i><div>Estira a 0.5 cm de grosor</div></div><div class="stp"><i>6</i><div>Corta con el molde de hueso</div></div><div class="stp"><i>7</i><div>Hornea 22-25 min</div></div><div class="stp"><i>8</i><div>Deja secar 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría por completo antes de empacar</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Camote solo, sin sal ni azúcar ni especias</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Frasco regalo</div><div class="box">Combo con chips de camote</div><div class="box">Mayoreo a veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Cuanto más secas queden, más días duran en frasco</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 17</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE YOGUR Y MANZANA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Suaves por dentro y crujientes por fuera. Muy digestivas.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>30 galletas</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>5 días refrigeradas</b></div><div class="row"><span>Costo aprox.</span><b>~$28 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 60 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 30 piezas</td></tr><tr><td>Grande</td><td>8 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $75 MXN</div>
+          <div class="sm">Margen aproximado 78% · costo ~$28 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 17
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE YOGUR Y MANZANA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Yogur natural sin azúcar · 120 g</div></div><div class="ing"><i>2</i><div>Manzana rallada sin semillas · 1 pieza</div></div><div class="ing"><i>3</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>4</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>5</i><div>Canela · 1 pizca</div></div><div class="ing"><i>6</i><div>Cortador redondo</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Ralla la manzana y retira semillas y corazón</div></div><div class="stp"><i>3</i><div>Mezcla el yogur con el huevo</div></div><div class="stp"><i>4</i><div>Agrega la manzana y la canela</div></div><div class="stp"><i>5</i><div>Incorpora la avena hasta formar masa</div></div><div class="stp"><i>6</i><div>Estira a 0.5 cm y corta</div></div><div class="stp"><i>7</i><div>Hornea 22 min</div></div><div class="stp"><i>8</i><div>Deja secar 45 min en el horno apagado</div></div><div class="stp"><i>9</i><div>Enfría y guarda en el refrigerador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Solo yogur natural sin azúcar ni xilitol</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Combo con paletas</div><div class="box">Caja mixta</div><div class="box">Venta en veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Llevan lácteo: van siempre al refrigerador</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 18</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">GALLETAS DE ZANAHORIA Y ARROZ</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Sin gluten, ligeras y muy económicas. Para perros delicados.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>32 galletas</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>7 días</b></div><div class="row"><span>Costo aprox.</span><b>~$24 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 64 piezas</td></tr><tr><td>Mediana</td><td>5 cm · 32 piezas</td></tr><tr><td>Grande</td><td>8 cm · 13 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>7 días</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x10 · $70 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$24 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 18
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">GALLETAS DE ZANAHORIA Y ARROZ</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Zanahoria rallada · 120 g</div></div><div class="ing"><i>2</i><div>Harina de arroz · 200 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Aceite de coco · 1 cda</div></div><div class="ing"><i>5</i><div>Agua · 3-4 cdas</div></div><div class="ing"><i>6</i><div>Cortador de huellita</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Ralla la zanahoria muy fina</div></div><div class="stp"><i>3</i><div>Bate el huevo con el aceite de coco</div></div><div class="stp"><i>4</i><div>Agrega la zanahoria</div></div><div class="stp"><i>5</i><div>Incorpora la harina de arroz poco a poco</div></div><div class="stp"><i>6</i><div>Añade agua hasta formar masa</div></div><div class="stp"><i>7</i><div>Estira a 0.5 cm y corta huellitas</div></div><div class="stp"><i>8</i><div>Hornea 22-25 min</div></div><div class="stp"><i>9</i><div>Deja secar 1 h en el horno apagado</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Sin sal ni condimentos</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x10</div><div class="box">Opción sin gluten</div><div class="box">Frasco regalo</div><div class="box">Mayoreo a estéticas caninas</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> La harina de arroz necesita un poco más de agua que la avena</div>
+      </div></div><div class="p divider">
+      <div class="kick" style="color:#3B2B20">CATEGORÍA B</div>
+      <div class="let serif">B</div>
+      <div class="nm serif">PUPCAKES Y PASTELES</div>
+      <div class="sb">7 recetas · Nivel fácil e intermedio</div>
+      <ol><li><span>06</span>Pupcakes de plátano y cacahuate</li><li><span>07</span>Pastel de zanahoria y manzana</li><li><span>08</span>Pupcakes de pollo y papa</li><li><span>09</span>Pastel huellita de calabaza y plátano</li><li><span>19</span>Pupcakes de calabaza y yogur</li><li><span>20</span>Pastel de plátano y cacahuate</li><li><span>21</span>Mini pastel de pollo y camote</li></ol></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 06</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PUPCAKES DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Esponjosos, con betún de yogur. El antojo de cumpleaños.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>12 pupcakes</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$60 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 24 piezas</td></tr><tr><td>Estándar</td><td>6 cm · 12 piezas</td></tr><tr><td>Jumbo</td><td>8 cm · 6 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>Congelador sin betún</td><td>1 mes</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Caja x4 · $120 MXN</div>
+          <div class="sm">Margen aproximado 70% · costo ~$60 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 06
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PUPCAKES DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>2</i><div>Plátano maduro · 2 piezas</div></div><div class="ing"><i>3</i><div>Crema de cacahuate natural · 3 cdas</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Polvo para hornear · 1/2 cdita</div></div><div class="ing"><i>6</i><div>Yogur griego natural · 200 g</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Machaca los plátanos</div></div><div class="stp"><i>3</i><div>Mezcla con los huevos y la crema de cacahuate</div></div><div class="stp"><i>4</i><div>Agrega la avena y el polvo para hornear</div></div><div class="stp"><i>5</i><div>Llena los capacillos a 3/4</div></div><div class="stp"><i>6</i><div>Hornea 20-22 min</div></div><div class="stp"><i>7</i><div>Enfría por completo</div></div><div class="stp"><i>8</i><div>Bate el yogur griego</div></div><div class="stp"><i>9</i><div>Decora con manga pastelera</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Caja x4</div><div class="box">Cumpleaños</div><div class="box">Mesa de dulces</div><div class="box">Pedidos por WhatsApp</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Decora justo antes de entregar</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 07</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PASTEL DE ZANAHORIA Y MANZANA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">El protagonista de la fiesta. Sin azúcar y con mucho amor.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Intermedio</b></div><div class="row"><span>Rinde</span><b>1 pastel de 12 cm</b></div><div class="row"><span>Tiempo</span><b>60 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerado</b></div><div class="row"><span>Costo aprox.</span><b>~$70 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>8 cm · 4 porciones</td></tr><tr><td>Mediano</td><td>12 cm · 8 porciones</td></tr><tr><td>Grande</td><td>18 cm · 16 porciones</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>No congelar decorado</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pastel 12 cm · $350 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$70 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 07
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PASTEL DE ZANAHORIA Y MANZANA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>2</i><div>Zanahoria rallada · 1 taza</div></div><div class="ing"><i>3</i><div>Manzana rallada · 1 pieza</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Aceite de coco · 3 cdas</div></div><div class="ing"><i>6</i><div>Yogur griego natural · 250 g</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Engrasa dos moldes de 12 cm</div></div><div class="stp"><i>3</i><div>Bate los huevos con el aceite de coco</div></div><div class="stp"><i>4</i><div>Agrega la zanahoria y la manzana</div></div><div class="stp"><i>5</i><div>Incorpora la harina de avena</div></div><div class="stp"><i>6</i><div>Hornea 30-35 min</div></div><div class="stp"><i>7</i><div>Enfría por completo</div></div><div class="stp"><i>8</i><div>Rellena y cubre con yogur</div></div><div class="stp"><i>9</i><div>Decora con zanahoria rallada</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Manzana siempre sin semillas ni corazón</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pastel de cumpleaños</div><div class="box">Smash cake</div><div class="box">Kit fiesta</div><div class="box">Pastel con nombre</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Hornea un día antes y decora el día de la fiesta</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 08</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PUPCAKES DE POLLO Y PAPA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Para perros que aman la carne. Con betún de papa.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>12 pupcakes</b></div><div class="row"><span>Tiempo</span><b>50 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$75 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 24 piezas</td></tr><tr><td>Estándar</td><td>6 cm · 12 piezas</td></tr><tr><td>Jumbo</td><td>8 cm · 6 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>Congelador sin betún</td><td>1 mes</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Caja x4 · $140 MXN</div>
+          <div class="sm">Margen aproximado 70% · costo ~$75 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 08
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PUPCAKES DE POLLO Y PAPA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pollo cocido deshebrado · 200 g</div></div><div class="ing"><i>2</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>3</i><div>Zanahoria rallada · 1/2 taza</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Caldo de pollo casero · 1/2 taza</div></div><div class="ing"><i>6</i><div>Papa cocida · 3 piezas</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Pica finamente el pollo</div></div><div class="stp"><i>3</i><div>Bate los huevos con el caldo</div></div><div class="stp"><i>4</i><div>Agrega el pollo y la zanahoria</div></div><div class="stp"><i>5</i><div>Incorpora la harina de avena</div></div><div class="stp"><i>6</i><div>Llena los capacillos a 3/4</div></div><div class="stp"><i>7</i><div>Hornea 25 min</div></div><div class="stp"><i>8</i><div>Machaca la papa sin mantequilla</div></div><div class="stp"><i>9</i><div>Decora con manga pastelera</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Caldo sin sal, cebolla ni ajo</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Caja x4</div><div class="box">Box de cumpleaños</div><div class="box">Suscripción mensual</div><div class="box">Ferias de mascotas</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Un trocito de pollo encima vende más</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 09</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PASTEL HUELLITA DE CALABAZA Y PLÁTANO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Con forma de huellita y betún rosa natural de betabel.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Intermedio</b></div><div class="row"><span>Rinde</span><b>1 pastel huellita</b></div><div class="row"><span>Tiempo</span><b>70 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerado</b></div><div class="row"><span>Costo aprox.</span><b>~$80 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>10 cm · 4 porciones</td></tr><tr><td>Mediano</td><td>15 cm · 8 porciones</td></tr><tr><td>Grande</td><td>20 cm · 14 porciones</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>No congelar decorado</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pastel huellita · $380 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$80 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 09
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PASTEL HUELLITA DE CALABAZA Y PLÁTANO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Puré de calabaza natural · 1 taza</div></div><div class="ing"><i>2</i><div>Plátano maduro · 1 pieza</div></div><div class="ing"><i>3</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Yogur griego natural · 250 g</div></div><div class="ing"><i>6</i><div>Jugo de betabel · 1 cdita</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Mezcla la calabaza y el plátano</div></div><div class="stp"><i>3</i><div>Agrega los huevos</div></div><div class="stp"><i>4</i><div>Incorpora la harina de avena</div></div><div class="stp"><i>5</i><div>Vierte en el molde de huellita</div></div><div class="stp"><i>6</i><div>Hornea 35-40 min</div></div><div class="stp"><i>7</i><div>Enfría por completo</div></div><div class="stp"><i>8</i><div>Pinta el yogur con betabel</div></div><div class="stp"><i>9</i><div>Cubre y decora la huellita</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Usa calabaza natural, nunca relleno para pay</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Cumpleaños</div><div class="box">Adopciones</div><div class="box">Sesión de fotos</div><div class="box">Kit fiesta</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Sin molde, usa uno redondo y 4 pupcakes</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 19</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PUPCAKES DE CALABAZA Y YOGUR</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Color naranja natural y betún blanco. Los más vistosos de la caja.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>12 pupcakes</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$55 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>3 cm · 24 piezas</td></tr><tr><td>Estándar</td><td>6 cm · 12 piezas</td></tr><tr><td>Jumbo</td><td>8 cm · 6 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>Congelador sin betún</td><td>1 mes</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Caja x4 · $120 MXN</div>
+          <div class="sm">Margen aproximado 72% · costo ~$55 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 19
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PUPCAKES DE CALABAZA Y YOGUR</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Puré de calabaza natural · 1 taza</div></div><div class="ing"><i>2</i><div>Harina de avena · 160 g</div></div><div class="ing"><i>3</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>4</i><div>Aceite de coco · 2 cdas</div></div><div class="ing"><i>5</i><div>Polvo para hornear · 1/2 cdita</div></div><div class="ing"><i>6</i><div>Yogur griego natural · 200 g</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Mezcla el puré de calabaza con los huevos</div></div><div class="stp"><i>3</i><div>Agrega el aceite de coco</div></div><div class="stp"><i>4</i><div>Incorpora la avena y el polvo para hornear</div></div><div class="stp"><i>5</i><div>Llena los capacillos a 3/4</div></div><div class="stp"><i>6</i><div>Hornea 20-22 min</div></div><div class="stp"><i>7</i><div>Enfría por completo</div></div><div class="stp"><i>8</i><div>Bate el yogur griego hasta que espese</div></div><div class="stp"><i>9</i><div>Decora con manga pastelera</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Usa calabaza natural, nunca relleno para pay</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Caja x4</div><div class="box">Edición otoño</div><div class="box">Mesa de dulces</div><div class="box">Pedidos por WhatsApp</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Una pizca de canela encima los hace ver de pastelería</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 20</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PASTEL DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">El sabor que más gusta, en formato de cumpleaños.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Intermedio</b></div><div class="row"><span>Rinde</span><b>1 pastel de 12 cm</b></div><div class="row"><span>Tiempo</span><b>60 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerado</b></div><div class="row"><span>Costo aprox.</span><b>~$65 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>8 cm · 4 porciones</td></tr><tr><td>Mediano</td><td>12 cm · 8 porciones</td></tr><tr><td>Grande</td><td>18 cm · 16 porciones</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>No congelar decorado</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pastel 12 cm · $350 MXN</div>
+          <div class="sm">Margen aproximado 78% · costo ~$65 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 20
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PASTEL DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Plátano maduro · 3 piezas</div></div><div class="ing"><i>2</i><div>Harina de avena · 200 g</div></div><div class="ing"><i>3</i><div>Crema de cacahuate natural · 3 cdas</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Aceite de coco · 2 cdas</div></div><div class="ing"><i>6</i><div>Yogur griego natural · 250 g</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Engrasa dos moldes de 12 cm</div></div><div class="stp"><i>3</i><div>Machaca los plátanos</div></div><div class="stp"><i>4</i><div>Bate los huevos con la crema de cacahuate</div></div><div class="stp"><i>5</i><div>Une las dos mezclas y agrega el aceite</div></div><div class="stp"><i>6</i><div>Incorpora la harina de avena</div></div><div class="stp"><i>7</i><div>Hornea 30-35 min</div></div><div class="stp"><i>8</i><div>Enfría por completo</div></div><div class="stp"><i>9</i><div>Rellena y cubre con yogur batido</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta de la crema de cacahuate</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pastel de cumpleaños</div><div class="box">Smash cake</div><div class="box">Kit fiesta</div><div class="box">Pastel con nombre</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Decora con rodajas de plátano justo antes de entregar</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 21</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">MINI PASTEL DE POLLO Y CAMOTE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Versión salada para perros que no toleran lo dulce.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Intermedio</b></div><div class="row"><span>Rinde</span><b>1 pastel de 10 cm</b></div><div class="row"><span>Tiempo</span><b>65 min</b></div><div class="row"><span>Duración</span><b>3 días refrigerado</b></div><div class="row"><span>Costo aprox.</span><b>~$70 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>8 cm · 4 porciones</td></tr><tr><td>Mediano</td><td>10 cm · 6 porciones</td></tr><tr><td>Grande</td><td>15 cm · 12 porciones</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>3 días</td></tr><tr><td>No congelar decorado</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pastel 10 cm · $300 MXN</div>
+          <div class="sm">Margen aproximado 76% · costo ~$70 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 21
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">MINI PASTEL DE POLLO Y CAMOTE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pollo cocido deshebrado · 200 g</div></div><div class="ing"><i>2</i><div>Camote cocido · 2 piezas</div></div><div class="ing"><i>3</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>4</i><div>Huevo · 2 piezas</div></div><div class="ing"><i>5</i><div>Caldo de pollo sin sal · 1/3 taza</div></div><div class="ing"><i>6</i><div>Perejil fresco · 1 cda</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Engrasa un molde de 10 cm</div></div><div class="stp"><i>3</i><div>Pica el pollo muy fino</div></div><div class="stp"><i>4</i><div>Bate los huevos con el caldo</div></div><div class="stp"><i>5</i><div>Agrega el pollo y el perejil</div></div><div class="stp"><i>6</i><div>Incorpora la harina de avena</div></div><div class="stp"><i>7</i><div>Hornea 30-35 min</div></div><div class="stp"><i>8</i><div>Machaca el camote sin sal como cobertura</div></div><div class="stp"><i>9</i><div>Enfría, cubre con el camote y decora</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Caldo sin sal, cebolla ni ajo</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pastel de cumpleaños</div><div class="box">Opción salada</div><div class="box">Perros con dieta especial</div><div class="box">Venta en veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Ideal para perros diabéticos o con dietas bajas en azúcar. Consulta siempre al veterinario.</div>
+      </div></div><div class="p divider">
+      <div class="kick" style="color:#3B2B20">CATEGORÍA C</div>
+      <div class="let serif">C</div>
+      <div class="nm serif">SNACKS Y PREMIOS</div>
+      <div class="sb">8 recetas · Nivel fácil</div>
+      <ol><li><span>10</span>Premios de camote deshidratado</li><li><span>11</span>Paletas heladas de yogur y fresa</li><li><span>12</span>Bocaditos de hígado de pollo</li><li><span>13</span>Chips de pollo deshidratado</li><li><span>22</span>Chips de manzana deshidratada</li><li><span>23</span>Paletas de plátano y cacahuate</li><li><span>24</span>Bocaditos de pollo y avena</li><li><span>25</span>Premios de zanahoria deshidratada</li></ol></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 10</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PREMIOS DE CAMOTE DESHIDRATADO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Masticables y naturales. Un solo ingrediente.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>40 premios</b></div><div class="row"><span>Tiempo</span><b>3 h</b></div><div class="row"><span>Duración</span><b>2 semanas en frasco</b></div><div class="row"><span>Costo aprox.</span><b>~$30 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Chico</td><td>50 g · 20 premios</td></tr><tr><td>Mediano</td><td>100 g · 40 premios</td></tr><tr><td>Grande</td><td>250 g · 100 premios</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>2 semanas</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita 100 g · $90 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$30 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 10
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PREMIOS DE CAMOTE DESHIDRATADO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Camote · 2 piezas grandes</div></div><div class="ing"><i>2</i><div>Aceite de coco · 1 cdita (opcional)</div></div><div class="ing"><i>3</i><div>Papel para hornear</div></div><div class="ing"><i>4</i><div>Cuchillo o mandolina</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 100 °C</div></div><div class="stp"><i>2</i><div>Lava bien los camotes</div></div><div class="stp"><i>3</i><div>Corta rebanadas de 0.5 cm</div></div><div class="stp"><i>4</i><div>Acomoda en la charola sin encimar</div></div><div class="stp"><i>5</i><div>Hornea 1.5 horas</div></div><div class="stp"><i>6</i><div>Voltea las rebanadas</div></div><div class="stp"><i>7</i><div>Hornea 1.5 horas más</div></div><div class="stp"><i>8</i><div>Deja enfriar en el horno</div></div><div class="stp"><i>9</i><div>Guarda en frasco hermético</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Sin sal, azúcar ni especias</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita 100 g</div><div class="box">Premios de entrenamiento</div><div class="box">Venta en veterinarias</div><div class="box">Combo con galletas</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Más delgadas = más crujientes</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 11</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PALETAS HELADAS DE YOGUR Y FRESA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">El refresco perfecto para los días de calor.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>10 paletas</b></div><div class="row"><span>Tiempo</span><b>15 min + 4 h</b></div><div class="row"><span>Duración</span><b>1 mes congeladas</b></div><div class="row"><span>Costo aprox.</span><b>~$50 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>5 cm · 20 paletas</td></tr><tr><td>Estándar</td><td>8 cm · 10 paletas</td></tr><tr><td>Grande</td><td>11 cm · 6 paletas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Congelador</td><td>1 mes</td></tr><tr><td>No recongelar</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pack x5 · $100 MXN</div>
+          <div class="sm">Margen aproximado 70% · costo ~$50 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 11
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PALETAS HELADAS DE YOGUR Y FRESA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Yogur natural sin azúcar · 400 g</div></div><div class="ing"><i>2</i><div>Fresas · 1 taza</div></div><div class="ing"><i>3</i><div>Plátano maduro · 1 pieza</div></div><div class="ing"><i>4</i><div>Moldes para paletas</div></div><div class="ing"><i>5</i><div>Palitos o huesitos de galleta</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Lava las fresas y quita el tallo</div></div><div class="stp"><i>2</i><div>Licúa yogur, fresas y plátano</div></div><div class="stp"><i>3</i><div>La mezcla debe quedar espesa</div></div><div class="stp"><i>4</i><div>Vierte en los moldes</div></div><div class="stp"><i>5</i><div>Coloca un palito o huesito</div></div><div class="stp"><i>6</i><div>Congela 4 horas</div></div><div class="stp"><i>7</i><div>Desmolda con agua tibia</div></div><div class="stp"><i>8</i><div>Envuelve cada paleta</div></div><div class="stp"><i>9</i><div>Guarda en el congelador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Solo yogur sin azúcar ni xilitol</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pack x5</div><div class="box">Fiestas de verano</div><div class="box">Cafés pet friendly</div><div class="box">Parques y paseos</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Usa un huesito de galleta como palito</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 12</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">BOCADITOS DE HÍGADO DE POLLO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Irresistibles para entrenar. Premio ocasional.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>60 bocaditos</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>5 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$45 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>1 cm · 120 piezas</td></tr><tr><td>Estándar</td><td>2 cm · 60 piezas</td></tr><tr><td>Grande</td><td>3 cm · 30 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x30 · $95 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$45 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 12
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">BOCADITOS DE HÍGADO DE POLLO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Hígado de pollo · 250 g</div></div><div class="ing"><i>2</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Agua · 1/4 taza</div></div><div class="ing"><i>5</i><div>Perejil fresco · 1 cda</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Cuece el hígado sin sal</div></div><div class="stp"><i>3</i><div>Licúa con el huevo y el agua</div></div><div class="stp"><i>4</i><div>Agrega la avena y el perejil</div></div><div class="stp"><i>5</i><div>Extiende en charola a 1 cm</div></div><div class="stp"><i>6</i><div>Hornea 20-25 min</div></div><div class="stp"><i>7</i><div>Enfría y corta en cuadritos</div></div><div class="stp"><i>8</i><div>Seca 1 h en el horno apagado</div></div><div class="stp"><i>9</i><div>Refrigera en frasco</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Premio ocasional: el hígado en exceso no es sano</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x30</div><div class="box">Entrenadores caninos</div><div class="box">Veterinarias</div><div class="box">Combo de premios</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Cuadritos de 1 cm son ideales para entrenar</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 13</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">CHIPS DE POLLO DESHIDRATADO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Proteína pura y crujiente. Un solo ingrediente.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>150 g de chips</b></div><div class="row"><span>Tiempo</span><b>3 h</b></div><div class="row"><span>Duración</span><b>1 semana refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$70 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Chico</td><td>50 g · 15 chips</td></tr><tr><td>Mediano</td><td>100 g · 30 chips</td></tr><tr><td>Grande</td><td>250 g · 75 chips</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>1 semana</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita 100 g · $120 MXN</div>
+          <div class="sm">Margen aproximado 60% · costo ~$70 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 13
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">CHIPS DE POLLO DESHIDRATADO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pechuga de pollo sin piel · 500 g</div></div><div class="ing"><i>2</i><div>Papel para hornear</div></div><div class="ing"><i>3</i><div>Charola con rejilla</div></div><div class="ing"><i>4</i><div>Cuchillo afilado</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Congela la pechuga 30 min</div></div><div class="stp"><i>2</i><div>Retira toda la grasa</div></div><div class="stp"><i>3</i><div>Corta tiras de 0.5 cm</div></div><div class="stp"><i>4</i><div>Precalienta el horno a 100 °C</div></div><div class="stp"><i>5</i><div>Acomoda las tiras en la rejilla</div></div><div class="stp"><i>6</i><div>Hornea 2.5-3 horas</div></div><div class="stp"><i>7</i><div>Revisa que estén secas y firmes</div></div><div class="stp"><i>8</i><div>Enfría por completo</div></div><div class="stp"><i>9</i><div>Guarda en frasco hermético</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Sin sal, ajo ni condimentos</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita 100 g</div><div class="box">Premio premium</div><div class="box">Tiendas de mascotas</div><div class="box">Box de suscripción</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Congelar antes facilita cortes parejos</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 22</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">CHIPS DE MANZANA DESHIDRATADA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Dulces, ligeros y de un solo ingrediente. El snack más barato de producir.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>35 chips</b></div><div class="row"><span>Tiempo</span><b>3 h</b></div><div class="row"><span>Duración</span><b>2 semanas en frasco</b></div><div class="row"><span>Costo aprox.</span><b>~$20 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Chico</td><td>40 g · 18 chips</td></tr><tr><td>Mediano</td><td>80 g · 35 chips</td></tr><tr><td>Grande</td><td>200 g · 90 chips</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>2 semanas</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita 80 g · $80 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$20 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 22
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">CHIPS DE MANZANA DESHIDRATADA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Manzana · 3 piezas</div></div><div class="ing"><i>2</i><div>Papel para hornear</div></div><div class="ing"><i>3</i><div>Cuchillo o mandolina</div></div><div class="ing"><i>4</i><div>Descorazonador</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 100 °C</div></div><div class="stp"><i>2</i><div>Lava las manzanas</div></div><div class="stp"><i>3</i><div>Retira el corazón y todas las semillas</div></div><div class="stp"><i>4</i><div>Corta rebanadas delgadas de 0.3 cm</div></div><div class="stp"><i>5</i><div>Acomoda en la charola sin encimar</div></div><div class="stp"><i>6</i><div>Hornea 1.5 horas</div></div><div class="stp"><i>7</i><div>Voltea las rebanadas</div></div><div class="stp"><i>8</i><div>Hornea 1.5 horas más</div></div><div class="stp"><i>9</i><div>Enfría en el horno y guarda en frasco</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Retira SIEMPRE semillas y corazón: son tóxicos</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita 80 g</div><div class="box">Combo con camote</div><div class="box">Premios de entrenamiento</div><div class="box">Venta en veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Si quedan flexibles, devuélvelas 20 min más al horno</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 23</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PALETAS DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Cremosas y muy aromáticas. Las que más se piden en verano.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>10 paletas</b></div><div class="row"><span>Tiempo</span><b>15 min + 4 h</b></div><div class="row"><span>Duración</span><b>1 mes congeladas</b></div><div class="row"><span>Costo aprox.</span><b>~$45 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>5 cm · 20 paletas</td></tr><tr><td>Estándar</td><td>8 cm · 10 paletas</td></tr><tr><td>Grande</td><td>11 cm · 6 paletas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Congelador</td><td>1 mes</td></tr><tr><td>No recongelar</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pack x5 · $100 MXN</div>
+          <div class="sm">Margen aproximado 72% · costo ~$45 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 23
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PALETAS DE PLÁTANO Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Yogur natural sin azúcar · 350 g</div></div><div class="ing"><i>2</i><div>Plátano maduro · 2 piezas</div></div><div class="ing"><i>3</i><div>Crema de cacahuate natural · 2 cdas</div></div><div class="ing"><i>4</i><div>Moldes para paletas</div></div><div class="ing"><i>5</i><div>Palitos o huesitos de galleta</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Machaca los plátanos</div></div><div class="stp"><i>2</i><div>Licúa con el yogur y la crema de cacahuate</div></div><div class="stp"><i>3</i><div>La mezcla debe quedar espesa</div></div><div class="stp"><i>4</i><div>Vierte en los moldes</div></div><div class="stp"><i>5</i><div>Coloca un palito o huesito</div></div><div class="stp"><i>6</i><div>Congela 4 horas</div></div><div class="stp"><i>7</i><div>Desmolda con agua tibia</div></div><div class="stp"><i>8</i><div>Envuelve cada paleta</div></div><div class="stp"><i>9</i><div>Guarda en el congelador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta de la crema de cacahuate</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pack x5</div><div class="box">Fiestas de verano</div><div class="box">Cafés pet friendly</div><div class="box">Parques y paseos</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Una bolsita de galletas + un pack de paletas es el combo que más sale</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 24</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">BOCADITOS DE POLLO Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Blanditos y del tamaño justo para premiar sin excederse.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>55 bocaditos</b></div><div class="row"><span>Tiempo</span><b>45 min</b></div><div class="row"><span>Duración</span><b>5 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$40 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>1 cm · 110 piezas</td></tr><tr><td>Estándar</td><td>2 cm · 55 piezas</td></tr><tr><td>Grande</td><td>3 cm · 28 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x30 · $90 MXN</div>
+          <div class="sm">Margen aproximado 76% · costo ~$40 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 24
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">BOCADITOS DE POLLO Y AVENA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pollo cocido deshebrado · 200 g</div></div><div class="ing"><i>2</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Caldo de pollo sin sal · 1/4 taza</div></div><div class="ing"><i>5</i><div>Perejil fresco · 1 cda</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 180 °C</div></div><div class="stp"><i>2</i><div>Pica el pollo muy fino</div></div><div class="stp"><i>3</i><div>Licúa el pollo con el huevo y el caldo</div></div><div class="stp"><i>4</i><div>Agrega la avena y el perejil hasta formar pasta</div></div><div class="stp"><i>5</i><div>Extiende en charola a 1 cm</div></div><div class="stp"><i>6</i><div>Hornea 20-25 min</div></div><div class="stp"><i>7</i><div>Enfría y corta en cuadritos</div></div><div class="stp"><i>8</i><div>Seca 45 min en el horno apagado</div></div><div class="stp"><i>9</i><div>Refrigera en frasco hermético</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Caldo y pollo siempre sin sal, cebolla ni ajo</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x30</div><div class="box">Entrenadores caninos</div><div class="box">Perros senior</div><div class="box">Combo de premios</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Más suaves que los de hígado: ideales para perros mayores</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 25</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PREMIOS DE ZANAHORIA DESHIDRATADA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Crujientes, bajos en calorías y el snack más económico del catálogo.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>45 premios</b></div><div class="row"><span>Tiempo</span><b>2.5 h</b></div><div class="row"><span>Duración</span><b>2 semanas en frasco</b></div><div class="row"><span>Costo aprox.</span><b>~$15 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Chico</td><td>40 g · 22 premios</td></tr><tr><td>Mediano</td><td>80 g · 45 premios</td></tr><tr><td>Grande</td><td>200 g · 115 premios</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Frasco hermético</td><td>2 semanas</td></tr><tr><td>Congelador</td><td>3 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita 80 g · $75 MXN</div>
+          <div class="sm">Margen aproximado 80% · costo ~$15 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 25
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PREMIOS DE ZANAHORIA DESHIDRATADA</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Zanahoria · 5 piezas grandes</div></div><div class="ing"><i>2</i><div>Papel para hornear</div></div><div class="ing"><i>3</i><div>Cuchillo o mandolina</div></div><div class="ing"><i>4</i><div>Charola</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 100 °C</div></div><div class="stp"><i>2</i><div>Lava y pela las zanahorias</div></div><div class="stp"><i>3</i><div>Corta rodajas de 0.4 cm</div></div><div class="stp"><i>4</i><div>Acomoda en la charola sin encimar</div></div><div class="stp"><i>5</i><div>Hornea 1.5 horas</div></div><div class="stp"><i>6</i><div>Voltea las rodajas</div></div><div class="stp"><i>7</i><div>Hornea 1 hora más</div></div><div class="stp"><i>8</i><div>Deja enfriar dentro del horno</div></div><div class="stp"><i>9</i><div>Guarda en frasco hermético</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Sin sal, azúcar ni especias</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita 80 g</div><div class="box">Perros con sobrepeso</div><div class="box">Combo tres snacks</div><div class="box">Venta en veterinarias</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> El margen más alto de todo el catálogo: perfecto para combos</div>
+      </div></div><div class="p divider">
+      <div class="kick" style="color:#3B2B20">CATEGORÍA D</div>
+      <div class="let serif">D</div>
+      <div class="nm serif">PARA GATOS</div>
+      <div class="sb">4 recetas · Nivel fácil</div>
+      <ol><li><span>14</span>Bocaditos de atún para gatos</li><li><span>15</span>Premios de pollo para gatos</li><li><span>26</span>Bocaditos de atún y calabaza para gatos</li><li><span>27</span>Paletas heladas de yogur para gatos</li></ol></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 14</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">BOCADITOS DE ATÚN PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Crujientes y con aroma a mar. Los gatos no se resisten.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>50 bocaditos</b></div><div class="row"><span>Tiempo</span><b>35 min</b></div><div class="row"><span>Duración</span><b>5 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$40 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>0.5 cm · 100 piezas</td></tr><tr><td>Estándar</td><td>1 cm · 50 piezas</td></tr><tr><td>Grande</td><td>1.5 cm · 30 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x25 · $80 MXN</div>
+          <div class="sm">Margen aproximado 70% · costo ~$40 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 14
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">BOCADITOS DE ATÚN PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Atún en agua sin sal · 1 lata</div></div><div class="ing"><i>2</i><div>Harina de avena · 1/2 taza</div></div><div class="ing"><i>3</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>4</i><div>Agua · 1-2 cdas</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Escurre bien el atún</div></div><div class="stp"><i>3</i><div>Mezcla atún, huevo y avena</div></div><div class="stp"><i>4</i><div>Agrega agua si está seca</div></div><div class="stp"><i>5</i><div>Forma bolitas pequeñas</div></div><div class="stp"><i>6</i><div>Aplana un poco con el dedo</div></div><div class="stp"><i>7</i><div>Hornea 12-15 min</div></div><div class="stp"><i>8</i><div>Enfría por completo</div></div><div class="stp"><i>9</i><div>Refrigera en frasco</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Atún solo en agua, nunca en aceite</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x25</div><div class="box">Combo perro y gato</div><div class="box">Tiendas de mascotas</div><div class="box">Kit para gatos</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Los gatos prefieren bocados pequeños</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill">RECETA 15</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PREMIOS DE POLLO PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Suaves por dentro y pura proteína.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>40 premios</b></div><div class="row"><span>Tiempo</span><b>40 min</b></div><div class="row"><span>Duración</span><b>5 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$45 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>1 cm · 80 piezas</td></tr><tr><td>Estándar</td><td>2 cm · 40 piezas</td></tr><tr><td>Grande</td><td>3 cm · 20 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x20 · $85 MXN</div>
+          <div class="sm">Margen aproximado 70% · costo ~$45 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 15
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PREMIOS DE POLLO PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Pollo cocido sin sal · 150 g</div></div><div class="ing"><i>2</i><div>Huevo · 1 pieza</div></div><div class="ing"><i>3</i><div>Harina de arroz · 1/3 taza</div></div><div class="ing"><i>4</i><div>Caldo de pollo casero · 2 cdas</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Tritura el pollo finamente</div></div><div class="stp"><i>3</i><div>Mezcla con el huevo</div></div><div class="stp"><i>4</i><div>Agrega la harina de arroz</div></div><div class="stp"><i>5</i><div>Añade caldo hasta formar masa</div></div><div class="stp"><i>6</i><div>Forma pescaditos o bolitas</div></div><div class="stp"><i>7</i><div>Hornea 15-18 min</div></div><div class="stp"><i>8</i><div>Enfría por completo</div></div><div class="stp"><i>9</i><div>Refrigera en frasco</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Sin cebolla ni ajo: son tóxicos para gatos</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x20</div><div class="box">Combo perro y gato</div><div class="box">Clínicas felinas</div><div class="box">Bazar navideño</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Un cortador de pescadito vende más</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 26</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">BOCADITOS DE ATÚN Y CALABAZA PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Con fibra de calabaza, pensados para gatos que necesitan digestión suave.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Fácil</b></div><div class="row"><span>Rinde</span><b>45 bocaditos</b></div><div class="row"><span>Tiempo</span><b>35 min</b></div><div class="row"><span>Duración</span><b>5 días refrigerados</b></div><div class="row"><span>Costo aprox.</span><b>~$38 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>0.5 cm · 90 piezas</td></tr><tr><td>Estándar</td><td>1 cm · 45 piezas</td></tr><tr><td>Grande</td><td>1.5 cm · 28 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>2 meses</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x25 · $80 MXN</div>
+          <div class="sm">Margen aproximado 72% · costo ~$38 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 26
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">BOCADITOS DE ATÚN Y CALABAZA PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Atún en agua sin sal · 1 lata</div></div><div class="ing"><i>2</i><div>Puré de calabaza natural · 1/3 taza</div></div><div class="ing"><i>3</i><div>Harina de avena · 1/2 taza</div></div><div class="ing"><i>4</i><div>Huevo · 1 pieza</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Precalienta el horno a 175 °C</div></div><div class="stp"><i>2</i><div>Escurre muy bien el atún</div></div><div class="stp"><i>3</i><div>Mezcla el atún con el puré de calabaza</div></div><div class="stp"><i>4</i><div>Agrega el huevo y une bien</div></div><div class="stp"><i>5</i><div>Incorpora la avena hasta formar pasta</div></div><div class="stp"><i>6</i><div>Forma bolitas pequeñas y aplánalas</div></div><div class="stp"><i>7</i><div>Hornea 14-16 min</div></div><div class="stp"><i>8</i><div>Enfría por completo</div></div><div class="stp"><i>9</i><div>Refrigera en frasco</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Atún solo en agua, nunca en aceite. Calabaza natural, nunca relleno para pay.</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x25</div><div class="box">Combo perro y gato</div><div class="box">Clínicas felinas</div><div class="box">Kit para gatos</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> La calabaza ayuda a la digestión: buen argumento de venta en clínicas felinas</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 27</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PALETAS HELADAS DE YOGUR PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Porciones mini congeladas. Un refresco para los días de calor.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>24 porciones mini</b></div><div class="row"><span>Tiempo</span><b>10 min + 4 h</b></div><div class="row"><span>Duración</span><b>1 mes congeladas</b></div><div class="row"><span>Costo aprox.</span><b>~$35 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>1 porción · 24 piezas</td></tr><tr><td>Pack chico</td><td>12 porciones</td></tr><tr><td>Pack grande</td><td>24 porciones</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Congelador</td><td>1 mes</td></tr><tr><td>No recongelar</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pack x12 · $90 MXN</div>
+          <div class="sm">Margen aproximado 75% · costo ~$35 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 27
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PALETAS HELADAS DE YOGUR PARA GATOS</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Yogur natural sin azúcar · 300 g</div></div><div class="ing"><i>2</i><div>Atún en agua sin sal · 1/2 lata</div></div><div class="ing"><i>3</i><div>Agua · 2 cdas</div></div><div class="ing"><i>4</i><div>Charola de hielo mini</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Escurre muy bien el atún</div></div><div class="stp"><i>2</i><div>Licúa el yogur con el atún y el agua</div></div><div class="stp"><i>3</i><div>La mezcla debe quedar homogénea</div></div><div class="stp"><i>4</i><div>Vierte en la charola de hielo mini</div></div><div class="stp"><i>5</i><div>Congela 4 horas</div></div><div class="stp"><i>6</i><div>Desmolda con agua tibia</div></div><div class="stp"><i>7</i><div>Guarda en bolsa hermética</div></div><div class="stp"><i>8</i><div>Sirve 1 porción por vez</div></div><div class="stp"><i>9</i><div>Mantén siempre en el congelador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Solo yogur natural sin azúcar ni xilitol. Porción muy pequeña: es un premio ocasional.</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pack x12</div><div class="box">Verano felino</div><div class="box">Clínicas felinas</div><div class="box">Combo perro y gato</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Muchos gatos son intolerantes a la lactosa. Ofrece una porción de prueba y consulta al veterinario.</div>
+      </div></div><div class="p divider">
+      <div class="kick" style="color:#3B2B20">CATEGORÍA E</div>
+      <div class="let serif">E</div>
+      <div class="nm serif">SIN HORNO</div>
+      <div class="sb">3 recetas · Nivel muy fácil</div>
+      <ol><li><span>28</span>Bolitas de avena y cacahuate</li><li><span>29</span>Paletas de calabaza y yogur</li><li><span>30</span>Trufas de plátano y coco</li></ol></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 28</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">BOLITAS DE AVENA Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Listas en 15 minutos y sin prender el horno. Para pedidos urgentes.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>24 bolitas</b></div><div class="row"><span>Tiempo</span><b>15 min + 1 h de frío</b></div><div class="row"><span>Duración</span><b>5 días refrigeradas</b></div><div class="row"><span>Costo aprox.</span><b>~$30 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>1.5 cm · 48 piezas</td></tr><tr><td>Estándar</td><td>3 cm · 24 piezas</td></tr><tr><td>Grande</td><td>4 cm · 14 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>1 mes</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Bolsita x12 · $85 MXN</div>
+          <div class="sm">Margen aproximado 78% · costo ~$30 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 28
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">BOLITAS DE AVENA Y CACAHUATE</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Harina de avena · 150 g</div></div><div class="ing"><i>2</i><div>Crema de cacahuate natural · 4 cdas</div></div><div class="ing"><i>3</i><div>Plátano maduro · 1 pieza</div></div><div class="ing"><i>4</i><div>Coco rallado sin azúcar · 2 cdas</div></div><div class="ing"><i>5</i><div>Agua · 1-2 cdas</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Machaca muy bien el plátano</div></div><div class="stp"><i>2</i><div>Mezcla con la crema de cacahuate</div></div><div class="stp"><i>3</i><div>Agrega la avena poco a poco</div></div><div class="stp"><i>4</i><div>Añade agua solo si la masa no se une</div></div><div class="stp"><i>5</i><div>Forma bolitas del tamaño de una nuez</div></div><div class="stp"><i>6</i><div>Rueda cada bolita sobre el coco rallado</div></div><div class="stp"><i>7</i><div>Acomoda en una charola</div></div><div class="stp"><i>8</i><div>Refrigera 1 hora para que firmen</div></div><div class="stp"><i>9</i><div>Guarda en frasco en el refrigerador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ ¡SIN XILITOL! Revisa la etiqueta de la crema de cacahuate</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Bolsita x12</div><div class="box">Pedidos exprés</div><div class="box">Combo con paletas</div><div class="box">Cafés pet friendly</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> Sin horno y sin esperas: perfectas para cerrar un pedido el mismo día</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 29</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">PALETAS DE CALABAZA Y YOGUR</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Tres ingredientes, cero horno. El margen más simple del catálogo.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>10 paletas</b></div><div class="row"><span>Tiempo</span><b>10 min + 4 h</b></div><div class="row"><span>Duración</span><b>1 mes congeladas</b></div><div class="row"><span>Costo aprox.</span><b>~$35 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>5 cm · 20 paletas</td></tr><tr><td>Estándar</td><td>8 cm · 10 paletas</td></tr><tr><td>Grande</td><td>11 cm · 6 paletas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Congelador</td><td>1 mes</td></tr><tr><td>No recongelar</td><td>—</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Pack x5 · $95 MXN</div>
+          <div class="sm">Margen aproximado 76% · costo ~$35 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 29
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">PALETAS DE CALABAZA Y YOGUR</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Yogur natural sin azúcar · 350 g</div></div><div class="ing"><i>2</i><div>Puré de calabaza natural · 1 taza</div></div><div class="ing"><i>3</i><div>Plátano maduro · 1 pieza</div></div><div class="ing"><i>4</i><div>Moldes para paletas</div></div><div class="ing"><i>5</i><div>Palitos o huesitos de galleta</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Licúa el yogur con el puré de calabaza</div></div><div class="stp"><i>2</i><div>Agrega el plátano y vuelve a licuar</div></div><div class="stp"><i>3</i><div>La mezcla debe quedar espesa</div></div><div class="stp"><i>4</i><div>Vierte en los moldes</div></div><div class="stp"><i>5</i><div>Coloca un palito o huesito</div></div><div class="stp"><i>6</i><div>Congela 4 horas</div></div><div class="stp"><i>7</i><div>Desmolda con agua tibia</div></div><div class="stp"><i>8</i><div>Envuelve cada paleta</div></div><div class="stp"><i>9</i><div>Guarda en el congelador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Calabaza natural, nunca relleno para pay. Yogur sin azúcar ni xilitol.</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Pack x5</div><div class="box">Fiestas de verano</div><div class="box">Edición otoño</div><div class="box">Parques y paseos</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> El color naranja se ve muy bien en fotos: úsalas para tus publicaciones</div>
+      </div></div><div class="p "><div class="hdbar" style="padding-bottom:5.5mm"><span class="pill new">NUEVA · RECETA 30</span><div class="ttl serif" style="margin-top:3mm;letter-spacing:0">TRUFAS DE PLÁTANO Y COCO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="lede" style="margin-bottom:5mm">Se ven de pastelería fina y se hacen en una sola tanda sin horno.</div>
+        <div class="card" style="margin-bottom:5mm"><div class="row"><span>Nivel</span><b>Muy fácil</b></div><div class="row"><span>Rinde</span><b>20 trufas</b></div><div class="row"><span>Tiempo</span><b>20 min + 1 h de frío</b></div><div class="row"><span>Duración</span><b>5 días refrigeradas</b></div><div class="row"><span>Costo aprox.</span><b>~$32 MXN</b></div></div>
+        <div class="lbl">TAMAÑOS Y RENDIMIENTO</div>
+        <table class="tbl" style="margin-bottom:5mm"><tr><td>Mini</td><td>2 cm · 40 piezas</td></tr><tr><td>Estándar</td><td>3 cm · 20 piezas</td></tr><tr><td>Grande</td><td>4 cm · 12 piezas</td></tr></table>
+        <div class="lbl">CONSERVACIÓN</div>
+        <table class="tbl"><tr><td>Refrigerador</td><td>5 días</td></tr><tr><td>Congelador</td><td>1 mes</td></tr></table>
+        <div class="grow"></div>
+        <div class="price"><div class="big">Caja x8 · $110 MXN</div>
+          <div class="sm">Margen aproximado 77% · costo ~$32 MXN</div></div>
+      </div></div><div class="p ">
+      <div class="hdbar">PASO A PASO · RECETA 30
+        <div class="ttl2 serif" style="letter-spacing:0;margin-top:1.5mm">TRUFAS DE PLÁTANO Y COCO</div></div>
+      <div class="pad grow" style="display:flex;flex-direction:column">
+        <div class="cols grow">
+          <div style="width:41%"><div class="lbl">INGREDIENTES</div><div class="ing"><i>1</i><div>Plátano maduro · 2 piezas</div></div><div class="ing"><i>2</i><div>Harina de avena · 120 g</div></div><div class="ing"><i>3</i><div>Coco rallado sin azúcar · 4 cdas</div></div><div class="ing"><i>4</i><div>Aceite de coco · 1 cda</div></div><div class="ing"><i>5</i><div>Capacillos mini</div></div></div>
+          <div style="flex:1"><div class="lbl">PREPARACIÓN</div><div class="stp"><i>1</i><div>Machaca los plátanos hasta obtener puré</div></div><div class="stp"><i>2</i><div>Mezcla con el aceite de coco</div></div><div class="stp"><i>3</i><div>Agrega la avena hasta formar una masa moldeable</div></div><div class="stp"><i>4</i><div>Refrigera la masa 20 min para trabajarla mejor</div></div><div class="stp"><i>5</i><div>Forma trufas del tamaño de una cereza</div></div><div class="stp"><i>6</i><div>Rueda cada trufa sobre el coco rallado</div></div><div class="stp"><i>7</i><div>Coloca cada una en un capacillo mini</div></div><div class="stp"><i>8</i><div>Refrigera 1 hora</div></div><div class="stp"><i>9</i><div>Guarda en el refrigerador</div></div></div>
+        </div>
+        <div class="warn" style="margin-top:3mm">⚠ Coco rallado siempre sin azúcar añadida</div>
+        <div class="lbl" style="margin-top:4mm">4 FORMAS DE VENDER</div>
+        <div class="grid2"><div class="box">Caja x8</div><div class="box">Regalo premium</div><div class="box">Mesa de dulces</div><div class="box">Pedidos por WhatsApp</div></div>
+        <div class="note" style="margin-top:3.5mm"><b>CONSEJO:</b> En caja de 8 con capacillos se ven de regalo y se venden al doble</div>
+      </div></div><div class="p divider">
+  <div class="kick" style="color:#3B2B20">PARTE 6</div>
+  <div class="let serif">6</div>
+  <div class="nm serif">TU NEGOCIO</div>
+  <ol><li><span>1</span>Cómo calcular tu precio</li><li><span>2</span>Empaque que vende</li>
+      <li><span>3</span>Tus primeros 10 pedidos</li><li><span>4</span>Qué escribir para vender</li></ol></div><div class="p ">
+  <div class="hdbar">TU NEGOCIO · CÓMO CALCULAR TU PRECIO</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">La fórmula</div>
+    <div class="price" style="margin-top:5mm"><div class="big">(Ingredientes + Empaque) × 3.5 = Tu precio</div>
+      <div class="sm">Multiplica por 4 si entregas a domicilio</div></div>
+    <div class="lbl" style="margin-top:6mm">EJEMPLO REAL · RECETA 01</div>
+    <table class="tbl">
+      <tr><td>Ingredientes</td><td>$25 MXN</td></tr>
+      <tr><td>Empaque (bolsita + etiqueta)</td><td>$6 MXN</td></tr>
+      <tr><td>Costo total</td><td>$31 MXN</td></tr>
+      <tr><td>Precio de venta</td><td>$70 MXN</td></tr>
+      <tr><td>Tu ganancia</td><td>$39 MXN por bolsita</td></tr>
+    </table>
+    <div class="grow"></div>
+    <div class="note"><b>NUNCA</b> cobres solo los ingredientes. Tu tiempo, el gas del horno
+      y el empaque también cuestan.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">TU NEGOCIO · EMPAQUE QUE VENDE</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">El empaque vale tanto como la receta</div>
+    <div class="grid2" style="margin-top:6mm">
+      <div class="box"><b>🛍️ Bolsita kraft</b>La más barata. Con una etiqueta y un moño ya se ve de tienda.</div>
+      <div class="box"><b>🫙 Frasco de vidrio</b>Para regalo. Permite cobrar casi el doble.</div>
+      <div class="box"><b>🎁 Caja de cumpleaños</b>Pastel + galletas + paletas. El ticket más alto.</div>
+      <div class="box"><b>📦 Mayoreo</b>Bolsas grandes para veterinarias y estéticas.</div>
+    </div>
+    <div class="lbl" style="margin-top:6mm">TU ETIQUETA SIEMPRE LLEVA</div>
+    <table class="tbl">
+      <tr><td>Nombre</td><td>Del producto y de tu marca</td></tr>
+      <tr><td>Ingredientes</td><td>Lista completa</td></tr>
+      <tr><td>Fecha</td><td>De elaboración y de caducidad</td></tr>
+      <tr><td>Conservación</td><td>Frasco, refrigerador o congelador</td></tr>
+      <tr><td>Contacto</td><td>Tu WhatsApp o Instagram</td></tr>
+    </table>
+    <div class="grow"></div>
+    <div class="note"><b>CONSEJO:</b> una etiqueta impresa en casa cuesta menos de $1 y sube
+      tu precio percibido muchísimo más que eso.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">TU NEGOCIO · TUS PRIMEROS 10 PEDIDOS</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">De dónde salen los primeros clientes</div>
+    <div style="margin-top:5mm">
+      <div class="stp"><i>1</i><div>Tus vecinos con perro. Regala 3 bolsitas de prueba.</div></div>
+      <div class="stp"><i>2</i><div>El grupo de WhatsApp de tu colonia o edificio</div></div>
+      <div class="stp"><i>3</i><div>La veterinaria del barrio: ofrécele comisión</div></div>
+      <div class="stp"><i>4</i><div>La estética canina: ahí esperan los dueños</div></div>
+      <div class="stp"><i>5</i><div>Grupos de Facebook de mascotas de tu ciudad</div></div>
+      <div class="stp"><i>6</i><div>El parque de perros un sábado por la mañana</div></div>
+      <div class="stp"><i>7</i><div>Publica el cumpleaños de TU perro con su pastel</div></div>
+      <div class="stp"><i>8</i><div>Pide a cada cliente que te etiquete en una foto</div></div>
+    </div>
+    <div class="grow"></div>
+    <div class="note"><b>LA REGLA:</b> las primeras 3 bolsitas se regalan. La cuarta se cobra.
+      Nadie compra comida para su perro sin verla antes.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">TU NEGOCIO · QUÉ ESCRIBIR PARA VENDER</div>
+  <div class="pad grow" style="display:flex;flex-direction:column">
+    <div class="ttl serif">Mensajes que puedes copiar</div>
+    <div class="lbl" style="margin-top:5mm">PARA TU VECINA</div>
+    <div class="box">«Hola 🐾 Empecé a hacer galletas caseras para perros, sin azúcar ni
+      conservadores. Te dejo una bolsita de regalo para que las pruebe tu lomito. Si le gustan,
+      la bolsita de 10 queda en $70.»</div>
+    <div class="lbl" style="margin-top:4mm">PARA LA VETERINARIA</div>
+    <div class="box">«Hola, hago premios naturales para perros con ingredientes seguros.
+      ¿Les interesaría venderlos en el mostrador? Les dejo una muestra y les doy el 30 % de comisión.»</div>
+    <div class="lbl" style="margin-top:4mm">PARA TUS REDES</div>
+    <div class="box">«El cumpleaños de Toby 🎂🐶 Pastel de zanahoria sin azúcar, 100 % apto para perros.
+      ¿Quieres uno para el tuyo? Escríbeme por DM.»</div>
+    <div class="grow"></div>
+    <div class="note"><b>CONSEJO:</b> siempre pon el precio. Quien pregunta «¿cuánto?»
+      y tiene que esperar la respuesta, casi nunca compra.</div>
+  </div></div><div class="p ">
+  <div class="hdbar">PARA CERRAR</div>
+  <div class="pad grow" style="display:flex;flex-direction:column;text-align:center;align-items:center">
+    <div style="font-size:40pt;margin-top:12mm">🐾</div>
+    <div class="ttl serif" style="margin-top:5mm">Ahora te toca a ti</div>
+    <div class="lede" style="margin-top:4mm">Tienes 30 recetas, los costos, los precios y el plan.
+      Lo único que falta es encender el horno.</div>
+    <div class="lede" style="margin-top:3mm">Empieza por la receta 01. Es la más fácil, la más barata
+      y la que más se vende.</div>
+    <div class="grow"></div>
+    <div class="price"><div class="big">Lomito Bakery · Edición 2026</div>
+      <div class="sm">Pastelería Canina que Vende</div></div>
+    <div class="fnote" style="margin-top:4mm">Las recetas de este libro son premios y no sustituyen
+      el alimento diario. Consulta siempre al veterinario ante dudas, alergias o condiciones de salud.</div>
+  </div></div></body></html>

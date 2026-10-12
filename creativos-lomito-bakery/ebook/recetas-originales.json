@@ -1,0 +1,49 @@
+{
+  "_nota": "Extraído del PDF original Pastelería Canina que Vende · Edición 2026. Recetas 01-05 (Categoría A · Galletas).",
+  "recetas": [
+    {"n":1,"cat":"A","titulo":"Galletas de plátano y avena","lede":"Huesitos crujientes con 5 ingredientes. La receta base que más se vende.",
+     "nivel":"Fácil","rinde":"30 galletas","tiempo":"45 min","duracion":"7 días","costo":"~$25 MXN","venta":"Bolsita x10 · $70 MXN","margen":"80%",
+     "ingredientes":["Harina de avena · 200 g","Plátano maduro · 1 pieza","Crema de cacahuate natural · 2 cdas","Huevo · 1 pieza","Agua · 3-4 cdas","Cortador de hueso"],
+     "pasos":["Precalienta el horno a 175 °C","Machaca el plátano","Mezcla con huevo y crema de cacahuate","Agrega la avena hasta formar masa","Estira a 0.5 cm","Corta huesitos","Hornea 20-25 min","Deja secar 1 h en el horno apagado","Enfría antes de empacar"],
+     "alerta":"¡SIN XILITOL! Revisa la etiqueta de la crema de cacahuate","consejo":"Más secas = más duración",
+     "tamanos":[["Mini","3 cm / 60 piezas"],["Mediana","6 cm / 30 piezas"],["Grande","10 cm / 12 piezas"]],
+     "conservacion":[["Frasco hermético","7 días"],["Congelador","3 meses"]],
+     "formas":["Bolsita x10","Frasco regalo","Caja de cumpleaños","Mayoreo a veterinarias"]},
+
+    {"n":2,"cat":"A","titulo":"Galletas de calabaza y canela","lede":"Crujientes y con aroma a otoño. Ideales para temporada.",
+     "nivel":"Fácil","rinde":"35 galletas","tiempo":"50 min","duracion":"7 días","costo":"~$30 MXN","venta":"Bolsita x10 · $75 MXN","margen":"80%",
+     "ingredientes":["Puré de calabaza · 120 g","Harina de avena · 220 g","Huevo · 1 pieza","Aceite de coco · 1 cda","Canela · 1 pizca","Cortador de huellita"],
+     "pasos":["Precalienta el horno a 175 °C","Mezcla el puré con el huevo hasta integrar","Agrega el aceite y la canela, mezclando suavemente","Incorpora la avena poco a poco hasta formar una masa manejable","Estira a 0.5 cm sobre superficie enharinada","Corta huellitas y colócalas en la bandeja","Hornea 25 min o hasta que estén ligeramente doradas","Deja secar 1 h en el horno apagado","Enfría antes de empacar en recipiente hermético"],
+     "alerta":"Usa calabaza natural, nunca relleno para pay","consejo":"Pínchalas con un tenedor para un acabado profesional y una cocción más uniforme",
+     "tamanos":[["Mini","3 cm / 70 piezas"],["Mediana","5 cm / 35 piezas"],["Grande","8 cm / 15 piezas"]],
+     "conservacion":[["Frasco hermético","7 días"],["Congelador","3 meses"]],
+     "formas":["Bolsita x10","Edición otoño","Caja de regalo","Mayoreo a estéticas caninas"]},
+
+    {"n":3,"cat":"A","titulo":"Galletas de pollo y zanahoria","lede":"Saladitas y llenas de sabor. Las favoritas de los perros exigentes.",
+     "nivel":"Fácil","rinde":"30 galletas","tiempo":"50 min","duracion":"5 días refrigeradas","costo":"~$40 MXN","venta":"Bolsita x10 · $85 MXN","margen":"75%",
+     "ingredientes":["Pollo cocido deshebrado · 100 g","Zanahoria rallada · 50 g","Harina integral · 200 g","Huevo · 1 pieza","Caldo de pollo sin sal · 4 cdas","Cortador redondo"],
+     "pasos":["Precalienta el horno a 180 °C","Pica el pollo muy fino","Mezcla el pollo, la zanahoria y el huevo","Agrega la harina","Añade caldo hasta formar masa","Estira a 0.5 cm y corta","Hornea 25 min","Enfría sobre una rejilla","Guarda en el refrigerador"],
+     "alerta":"Cocina el pollo sin sal, ajo ni cebolla","consejo":"Llevan carne: mantenlas siempre refrigeradas",
+     "tamanos":[["Mini","3 cm / 60 piezas"],["Mediana","5 cm / 30 piezas"],["Grande","8 cm / 12 piezas"]],
+     "conservacion":[["Refrigerador","5 días"],["Congelador","2 meses"]],
+     "formas":["Bolsita x10","Premios de entrenamiento","Caja mixta","Venta en veterinarias"]},
+
+    {"n":4,"cat":"A","titulo":"Galletas de manzana y avena","lede":"Dulces de forma natural, sin azúcar añadida.",
+     "nivel":"Fácil","rinde":"30 galletas","tiempo":"45 min","duracion":"7 días","costo":"~$25 MXN","venta":"Bolsita x10 · $70 MXN","margen":"80%",
+     "ingredientes":["Manzana rallada · 1 pieza","Harina de avena · 200 g","Huevo · 1 pieza","Aceite de coco · 1 cda","Agua · 2 cdas","Cortador de corazón"],
+     "pasos":["Precalienta el horno a 175 °C","Ralla la manzana sin semillas","Mezcla con el huevo y el aceite","Agrega la avena","Añade agua si la masa está seca","Estira a 0.5 cm y corta","Hornea 20 min","Deja secar 1 h en el horno apagado","Enfría antes de empacar"],
+     "alerta":"Retira siempre las semillas y el corazón de la manzana","consejo":"Los corazones se venden muy bien en San Valentín",
+     "tamanos":[["Mini","3 cm / 60 piezas"],["Mediana","5 cm / 30 piezas"],["Grande","8 cm / 12 piezas"]],
+     "conservacion":[["Frasco hermético","7 días"],["Congelador","3 meses"]],
+     "formas":["Bolsita x10","San Valentín","Frasco regalo","Mesa de dulces para fiestas"]},
+
+    {"n":5,"cat":"A","titulo":"Galletas de cacahuate y coco","lede":"Sin gluten y con un toque tropical. Para perros sensibles.",
+     "nivel":"Fácil","rinde":"30 galletas","tiempo":"40 min","duracion":"7 días","costo":"~$30 MXN","venta":"Bolsita x10 · $75 MXN","margen":"80%",
+     "ingredientes":["Harina de arroz · 200 g","Crema de cacahuate natural · 3 cdas","Coco rallado sin azúcar · 2 cdas","Huevo · 1 pieza","Agua · 4-5 cdas","Cortador de estrella"],
+     "pasos":["Precalienta el horno a 175 °C","Bate el huevo con la crema de cacahuate","Agrega el coco","Incorpora la harina de arroz","Añade agua hasta formar masa","Estira a 0.5 cm y corta estrellas","Hornea 20 min","Deja secar 1 h en el horno apagado","Enfría antes de empacar"],
+     "alerta":"¡SIN XILITOL! Revisa la etiqueta","consejo":"Ideal para clientes que piden opciones sin gluten",
+     "tamanos":[["Mini","3 cm / 60 piezas"],["Mediana","5 cm / 30 piezas"],["Grande","8 cm / 12 piezas"]],
+     "conservacion":[["Frasco hermético","7 días"],["Congelador","3 meses"]],
+     "formas":["Bolsita x10","Opción sin gluten","Frasco regalo","Mayoreo a veterinarias"]}
+  ]
+}
