@@ -50,20 +50,66 @@ Separado por placement, la landing convierte **bien**.
 **La landing no está rota. El tráfico estaba sucio.** Con 3.39% de CVR en tráfico limpio,
 tu funnel funciona.
 
-## 1.3 Tu ROAS real no es 0.60
+## 1.3 Economía unitaria real (precios confirmados)
 
-Me aclaraste que **vendiste 6 (una con upsell)** y Ads Manager solo reportó **4**.
+**Precios:** ebook **$8.90** · upsells disponibles: **$5.90, $5.90, $4.90**
 
-| Fuente | Ventas | Ingreso | ROAS sobre $67.48 |
+### Reconstrucción exacta de lo que reportó Meta
+
+Meta reportó ROAS `0.600178` sobre $67.48 → **$40.50** de ingreso. Eso calza al centavo con:
+
+```
+4 ebooks ($35.60) + 1 upsell de $4.90 = $40.50 ✅
+```
+
+**Conclusión importante: el upsell SÍ está siendo trackeado.** El `Purchase` dispara en el
+upsell. Lo que falta no es el upsell, son **2 ventas de ebook** que no se atribuyeron
+(el problema de `fbp` al 35.5%).
+
+### El número real
+
+| | Ventas | Ingreso | ROAS |
 |---|---|---|---|
-| Lo que reporta Meta | 4 | $40.49 | **0.60** |
-| Lo que pasó de verdad | 6 + 1 upsell | ~$70-85* | **~1.04 – 1.26** |
+| Lo que ve Meta | 4 + 1 upsell | $40.50 | **0.60** |
+| Lo que pasó de verdad | 6 + 1 upsell | **$58.30** | **0.86** |
+| Invisible para Meta | 2 ebooks | $17.80 (**31% del ingreso**) | — |
 
-\* asumiendo ticket ~$10 USD (sale de $40.49 ÷ 4) y upsell de $10-25. **Confirmar los números exactos.**
+### 🚨 El problema estructural: el ticket no paga el tráfico
 
-**No estás perdiendo 40 centavos por dólar: estás en el punto de equilibrio o apenas arriba.**
-Eso cambia la estrategia por completo: no hay que reconstruir nada desde cero,
-hay que **dejar de desperdiciar y medir bien**.
+| Métrica | Valor |
+|---|---|
+| CPA real (mezclado, 6 ventas) | **$11.25** |
+| Ticket | **$8.90** |
+| AOV actual (take rate upsell 17%) | **$9.72** |
+| **Pérdida por venta** | **−$2.35** |
+
+**Pagás $11.25 para ganar $9.72.** No es un problema de creativos ni de hooks:
+con este ticket y este CPA la cuenta no cierra ni con los mejores anuncios del mundo.
+
+La buena noticia: en placements limpios tu CPA es **$7.33**, y ahí sí cierra
+($8.90 de ticket contra $7.33 de costo = ROAS 1.21, delgado pero positivo).
+
+### CPA de equilibrio según lo que hagas
+
+| Configuración | AOV | CPA de equilibrio |
+|---|---|---|
+| Hoy (ticket $8.90, upsell 17%) | $9.72 | $9.72 |
+| + escalera de upsells al 35% | $10.85 | $10.85 |
+| + escalera al 50% | $11.69 | $11.69 |
+| Precio $11.90 + upsell 35% | $13.85 | $13.85 |
+| **Precio $14.90 + upsell 35%** | **$16.85** | **$16.85** |
+
+> Cada dólar que le sumás al AOV es un dólar más que podés pagar por cliente.
+> **Subir el AOV es más barato y más rápido que bajar el CPA.**
+
+### El upsell está desaprovechado
+
+Tenés **$16.70 en upsells disponibles** ($5.90 + $5.90 + $4.90) y solo **1 de 6
+compradores** tomó uno — el más barato ($4.90). Eso es un take rate del 17% y la elección
+del más chico. Dos hipótesis a verificar:
+
+1. **¿Se les muestra el upsell a todos?** Si el flujo se rompe o no aparece, no es take rate bajo: es que no se ofrece.
+2. **¿En qué orden se presentan?** Se tomó el de $4.90 y ninguno de $5.90 → probablemente se muestra primero el más barato. Hay que invertirlo.
 
 ## 1.4 El problema de atribución (más grave de lo que parece)
 
@@ -222,12 +268,12 @@ ROAS **1.39**, está pausado. Es tu segundo mejor anuncio.
 
 ## 🟠 FASE 1 — ESTA SEMANA. Arreglar la medición
 
-### Paso 4 — Trackear el upsell *(la venta que Meta no vio)*
-Disparar `Purchase` también en la página del upsell, **con su propio valor**. O si está en el
-mismo checkout, sumar el upsell al `value` del Purchase principal.
+### Paso 4 — Verificar que los TRES upsells disparen `Purchase`
+El de **$4.90 ya dispara** (se reconstruyó desde el ROAS reportado). Confirmar que los
+dos de **$5.90** también lo hagan, cada uno con su valor real.
 
-> Hoy ese ingreso es invisible para Meta. Tu ROAS reportado está mal **hacia abajo**, y el
-> algoritmo no sabe que ese comprador vale más.
+> Corrección respecto de la versión anterior de este documento: el upsell **no** era la
+> causa de las ventas faltantes. Las 2 ventas que faltan son de ebook y la causa es `fbp`.
 
 ### Paso 5 — Mandar el valor real en cada Purchase
 Verificar que el evento envíe `value` y `currency` con el monto cobrado de verdad
@@ -335,27 +381,42 @@ Power Pet. Esto es para escalar algo que ya funciona, **no para arreglar algo qu
 
 # PARTE 4 — LA MATEMÁTICA
 
-Mismo presupuesto de $67.48, aplicando las fases en orden:
+Mismo presupuesto de **$67.48**, usando tu CPA real de **$7.33** en placements limpios
+y los precios confirmados.
 
 | Escenario | Ventas | Ingreso | ROAS |
 |---|---|---|---|
-| Hoy (lo que Meta ve) | 4 | $40 | 0.60 |
-| Hoy (lo que pasó de verdad) | 6 + upsell | ~$70-85 | **~1.04-1.26** |
-| + Fase 0 (cortar placements) | ~9-11 | ~$95-115 | **~1.4-1.7** |
-| + Fase 1 (medir bien) | igual, **pero visible y mejor optimizado** | — | — |
-| + Fase 2 (oferta + upsell sistemático) | ~9-11 con ticket más alto | ~$130-160 | **~1.9-2.4** |
+| Hoy (lo que ve Meta) | 4 | $40.50 | **0.60** |
+| Hoy (real) | 6 | $58.30 | **0.86** ← perdés $2.35 por venta |
+| **+ Fase 0** (cortar placements) | 9.2 | $89.42 | **1.33** ✅ |
+| **+ Fase 2** (escalera de upsells al 35%) | 9.2 | $99.85 | **1.48** |
+| **+ precio a $14.90** (asumiendo CVR −20%) | 7.4 | $124.05 | **1.84** |
 
-> No son promesas: son proyecciones con **tu CPA real de $7.33** en placements limpios.
-> Lo importante es el orden: **Fase 0 y 2 no cuestan nada de pauta y son las que más mueven.**
+> El salto de 0.86 → 1.33 es **solo apagar placements**. No cuesta un peso.
+> El salto de 1.33 → 1.84 es **oferta y precio**. Tampoco cuesta pauta.
+> **Ni un solo tramo de esta tabla depende de hacer mejores creativos.**
 
 ## Las 3 cosas que importan si solo hacés tres
 
-1. **Cortar Audience Network y los placements que vendieron $0** → recuperás 57% del presupuesto
-2. **Trackear el upsell y arreglar `fbp`** → dejás de volar a ciegas y el algoritmo aprende con todo
-3. **Repackagear a 50+ recetas + order bump** → subís ticket y valor percibido sin gastar más
+1. **Cortar Audience Network y los placements de $0 ventas** → de ROAS 0.86 a ~1.33
+2. **Arreglar `fbp` (35.5% → 90%)** → Meta deja de volar ciego con 31% del ingreso invisible
+3. **Arreglar la escalera de upsells y subir el precio a $11.90-14.90** → te sube el CPA que podés pagar de $9.72 a ~$16.85
 
-## Pendiente de confirmar
-- **Precio exacto** del ebook (estimé ~$10 USD / $199 MXN desde $40.49 ÷ 4 ventas)
-- **Valor del upsell** que vendiste
+## Por qué el precio es la palanca decisiva
 
-Con esos dos números el cuadro de arriba deja de ser estimación.
+A $8.90 estás comprando tráfico en México con el ticket más bajo del nicho:
+
+| Competidor | Precio |
+|---|---|
+| **Vos** | **$8.90** |
+| Infinity Cursos (MX) | $199 MXN ≈ $10.80 |
+| CloudPets | **US$17** |
+
+CloudPets tiene **casi el doble de margen por venta** para pagar el mismo clic. Puede
+sobrevivir a un CPA de $17 donde vos morís a $10. En una subasta donde todos compran la
+misma atención, **el que tiene más AOV gana** — no el que tiene mejor creativo.
+
+## Datos confirmados por el anunciante
+- Ebook: **$8.90 USD**
+- Upsells disponibles: **$5.90, $5.90, $4.90**
+- Ventas reales: **6 ebooks + 1 upsell de $4.90** = $58.30
