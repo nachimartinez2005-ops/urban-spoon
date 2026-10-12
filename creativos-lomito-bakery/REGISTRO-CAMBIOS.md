@@ -385,3 +385,79 @@ En el bump que quede: describir el valor (no el nombre), anclar precio
 
 **No pre-tildarlo.** Sube el número a corto plazo y trae reembolsos y
 contracargos. Con un producto de $8.90, un contracargo cuesta más que 3 upsells.
+
+---
+
+## 2026-10-12 (quinta tanda) — Precio $12.90: landing + anuncios alineados
+
+Precio actualizado por el anunciante a **$12.90**. Upsells: 1 order bump en
+checkout + **2 post-compra ya existentes**.
+
+> 🔍 **Observación sobre los upsells:** si los 2 post-compra ya existían, entonces
+> tuvieron **0 tomas** en 6 ventas — el único upsell vendido fue el de $4.90 del
+> order bump. Con n=6 no es concluyente, pero un post-compra que no vende suele
+> ser: no se muestra, pide recargar la tarjeta, o la oferta no se entiende.
+> **Pendiente: hacer una compra de prueba y ver qué pasa después de pagar.**
+
+### Landing nueva
+
+`landing-lomito-bakery.html` — HTML autocontenido (CSS inline, sin scripts ni
+dependencias externas) para pegar en un bloque de HTML personalizado de Impultienda.
+
+Estructura: título "desde cero" → para quién → la cuenta $21→$85 → entregables
+itemizados con valor tachado → precio anclado ($57 → $12.90, 77% OFF) →
+garantía 7 días → FAQ → CTA final.
+
+Aplica los 5 movimientos de repackaging:
+1. "ebook" → **"curso"**
+2. "5 bonos" → **cada bono nombrado con su valor**
+3. ancla de cantidad
+4. **ancla de precio** ($57 tachado)
+5. **"desde cero"** en el título (patrón con 3 anunciantes de respaldo)
+
+**3 valores a verificar antes de pegar** (marcados en comentarios del HTML):
+- `50RECETAS` — poner el número REAL. Prometer de más = reembolsos.
+- `$57` — el ancla tiene que ser creíble.
+- Garantía 7 días — si no la da, borrar ese bloque.
+
+### Anuncios realineados a $12.90
+
+Los creativos de Meta son inmutables → hubo que rehacerlos otra vez.
+
+| Archivado ($8.90) | Nuevo ($12.90) | Anuncio |
+|---|---|---|
+| `52533179439726` | creativo `1805484000557178` | `52533181028726` ✅ |
+| `52533179442326` | creativo `2116534289001779` | `52533181029526` ✅ |
+| `52533179445126` | creativo `1496437402305575` | `52533181030726` ✅ |
+
+Cambios de copy además del precio: "ebook" → "curso", se agregó
+**"🛡️ Garantía de 7 días"**, y se quitó el conteo fijo de recetas hasta que el
+anunciante confirme el número real.
+
+> `ads_activate_entity` devolvió `INTERNAL / is_retryable: true` en 3 de 6
+> intentos. Todos resueltos reintentando. Error transitorio de Meta.
+
+### Estado final
+
+```
+🟢 CJ1  $14/día   1 v prob. + NEW-A/B/C ($12.90)    ← 4 anuncios compitiendo
+🟢 CJ2   $8/día   2 video neg
+🟢 CJ6   $4/día   6 video p.c. – copy ganancia
+🟢 CJ7   $4/día   7 v prob. – copy ingreso extra
+⏸️ CJ3, CJ4, CJ5, CJ6-Copia
+```
+
+Los anuncios viejos de CJ2, CJ6 y CJ7 **no mencionan precio**, así que siguen
+siendo compatibles con $12.90. Sí dicen "ebook" en vez de "curso" — inconsistencia
+menor con la landing nueva, no urgente.
+
+### Economía unitaria a $12.90
+
+| | Antes ($8.90) | Ahora ($12.90) |
+|---|---|---|
+| AOV (take rate upsell 17%) | $9.72 | **$13.72** |
+| CPA de equilibrio | $9.72 | **$13.72** |
+| CPA real en placements limpios | $7.33 | $7.33 |
+| **Margen** | **−$2.39/venta** ❌ | **+$6.39/venta** ✅ |
+
+Si el CPA se mantiene en $7.33, el negocio pasa de perder a ganar.
