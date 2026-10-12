@@ -286,3 +286,102 @@ Los 3 anuncios dicen **$8.90 USD** porque es el precio real de hoy.
 **Si se sube el precio a $14.90 (recomendado), hay que rehacer estos 3
 creativos** — los creativos de Meta son inmutables, no se pueden editar.
 Conviene decidir el precio primero y después activarlos.
+
+---
+
+## 2026-10-12 (cuarta tanda) — URL corregida y anuncios ACTIVADOS
+
+### El destino real
+
+El anunciante verificó en Ads Manager (campo "Destino → Sitio web" del anuncio
+ganador `1 v prob.`):
+
+```
+URL real de los anuncios:  https://lomitobakery.impultienda.ar      ← página de venta
+URL dada primero:          https://lomitobakery.impultienda.ar/checkout  ← formulario de pago
+```
+
+También confirmó que `/checkout` es **formulario pelado** (nombre, email, tarjeta)
+con una opción para agregar un upsell → es un **order bump**, no una página de venta.
+
+> ✅ Haber dejado los 3 anuncios pausados evitó mandar el 100% del tráfico frío
+> de CJ1 a un formulario de pago sin pitch. Tráfico frío no compra en un
+> formulario: la conversión se habría desplomado.
+
+### Creativos rehechos (los de Meta son inmutables)
+
+| Creativo | ID viejo (link malo) | ID nuevo (link correcto) |
+|---|---|---|
+| NEW-A Precio + desde cero | `1064418276589580` | **`1636729557909886`** |
+| NEW-B Negación curiosidad | `1867866977717409` | **`1094910450189201`** |
+| NEW-C Fin de semana | `2136004643971775` | **`2350729689010748`** |
+
+### Anuncios
+
+Archivados (link incorrecto, nunca entregaron, $0 gastado):
+`52533177900326`, `52533177911326`, `52533177917726`
+
+Creados y **ACTIVADOS** en CJ1:
+
+| Anuncio | ID | Estado |
+|---|---|---|
+| 8 NEW-A \| precio en titular + desde cero | `52533179439726` | 🟢 en revisión → activo |
+| 9 NEW-B \| negación curiosidad + precio | `52533179442326` | 🟢 en revisión → activo |
+| 10 NEW-C \| inmediatez fin de semana | `52533179445126` | 🟢 en revisión → activo |
+
+> `ads_activate_entity` sobre NEW-A falló una vez con `INTERNAL / is_retryable: true`.
+> Reintentado → ACTIVE. Error transitorio de Meta, no de configuración.
+
+### Presupuesto rebalanceado (CJ1 ahora tiene 4 anuncios)
+
+Con 4 creativos compitiendo, $10/día daban ~$2.50 por anuncio: muy poco para
+generar datos. Se le dio aire sin mover el total.
+
+| Conjunto | Antes | Ahora |
+|---|---|---|
+| **CJ1** (ganador + 3 nuevos) | $10 | **$14** |
+| CJ2 \| V2 Negocio | $8 | $8 |
+| CJ6 \| copy ganancia | $6 | **$4** |
+| CJ7 \| copy ingreso extra | $6 | **$4** |
+
+**Total: $30/día.** Sin cambios en la exposición diaria.
+
+> Bajar el presupuesto SÍ fuerza pausa (`status_forced_to_paused: true` en CJ6 y
+> CJ7, a diferencia de subirlo). Ambos reactivados y confirmados ACTIVE.
+
+### Estado final de la campaña
+
+```
+🟢 CJ1   $14/día   1 v prob. (ganador) + NEW-A + NEW-B + NEW-C   ← el test real
+🟢 CJ2    $8/día   2 video neg
+🟢 CJ6    $4/día   6 video p.c. – copy ganancia
+🟢 CJ7    $4/día   7 v prob. – copy ingreso extra
+⏸️ CJ3, CJ4, CJ5, CJ6-Copia
+```
+
+---
+
+## Hallazgo nuevo: el upsell es un ORDER BUMP en el checkout
+
+El anunciante confirmó que en `/checkout` "te deja elegir si querés agregar un upsell".
+Eso explica el take rate del 17% y que se eligiera el más barato.
+
+**Problema:** un order bump en la página de pago compite con la compra principal.
+Agrega una decisión justo cuando la persona está por pagar.
+
+**Reparto recomendado de los $16.70 disponibles:**
+
+| Momento | Qué poner | Por qué |
+|---|---|---|
+| Order bump (checkout) | **uno solo**, el de **$5.90** | una decisión, no tres; y el grande |
+| Post-compra #1 | el otro **$5.90** | un clic, sin recargar tarjeta, riesgo cero |
+| Post-compra #2 | **$4.90** como downsell | si rechaza el anterior |
+
+El post-compra es la clave: una vez cobrada la tarjeta, el upsell **no puede
+dañar la conversión principal**.
+
+En el bump que quede: describir el valor (no el nombre), anclar precio
+("normalmente $15, hoy $5.90") y ponerlo **arriba** del botón de pago.
+
+**No pre-tildarlo.** Sube el número a corto plazo y trae reembolsos y
+contracargos. Con un producto de $8.90, un contracargo cuesta más que 3 upsells.
