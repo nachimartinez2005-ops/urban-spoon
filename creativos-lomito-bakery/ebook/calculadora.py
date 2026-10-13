@@ -26,7 +26,7 @@ ws.sheet_view.showGridLines = False
 
 ws["A1"] = "CALCULADORA DE PRECIOS"
 ws["A1"].font = F(size=18, bold=True, color=BROWN)
-ws["A2"] = "Pastelería Canina que Vende · Lomito Bakery · Bono 2 de 5"
+ws["A2"] = "Pastelería Canina que Vende · Lomito Bakery · Bono 1 de 5"
 ws["A2"].font = F(size=10, color="7A6354")
 
 ws["A4"] = "CÓMO SE USA"

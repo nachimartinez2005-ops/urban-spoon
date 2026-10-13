@@ -295,7 +295,7 @@ def build_curso():
 # ═══════════════════ 03 · GUÍA DE INGREDIENTES ═══════════════════
 def build_guia():
     P = [pg("cvr", """
-      <div class="kick">LOMITO BAKERY · BONO 3</div>
+      <div class="kick">LOMITO BAKERY · BONO 2</div>
       <h1 class="serif" style="font-size:26pt">GUÍA DE<br>INGREDIENTES<span class="q" style="font-size:17pt">SEGUROS Y PROHIBIDOS</span></h1>
       <div class="lede" style="margin-top:5mm">Imprime estas páginas y pégalas<br>en tu refrigerador</div>
       <div class="hero" style="font-size:36pt">🥕 ✓ ✕ 🍫</div>
@@ -306,7 +306,7 @@ def build_guia():
 # ═══════════════════ 04 · PLAN DE NEGOCIO ═══════════════════
 def build_plan():
     P = [pg("cvr", """
-      <div class="kick">LOMITO BAKERY · BONO 4</div>
+      <div class="kick">LOMITO BAKERY · BONO 3</div>
       <h1 class="serif" style="font-size:28pt">PLAN DE<br>NEGOCIO<span class="q" style="font-size:18pt">DESDE CASA</span></h1>
       <div class="lede" style="margin-top:5mm">Cómo poner precio, empacar<br>y conseguir tus primeros pedidos</div>
       <div class="hero" style="font-size:36pt">💰 📦 📲</div>
@@ -408,7 +408,7 @@ def etiqueta(nombre, ings, cons):
 
 def build_etiquetas():
     P = [pg("cvr", """
-      <div class="kick">LOMITO BAKERY · BONO 5</div>
+      <div class="kick">LOMITO BAKERY · BONO 4</div>
       <h1 class="serif" style="font-size:27pt">PLANTILLAS<br>DE<span class="q" style="font-size:19pt">ETIQUETAS</span></h1>
       <div class="lede" style="margin-top:5mm">Imprime, recorta y pega en tus bolsitas.<br>
         Papel adhesivo A4 o papel común con cinta.</div>

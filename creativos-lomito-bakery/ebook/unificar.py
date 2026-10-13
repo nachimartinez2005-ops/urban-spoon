@@ -1,18 +1,42 @@
 # -*- coding: utf-8 -*-
-"""Fusiona los 4 PDFs del paquete en UN solo archivo, con portada e índice.
+"""Fusiona el curso y los 4 bonos en PDF en UN solo archivo, con portada,
+índice y marcadores.
 
-Para Impultienda, que acepta un PDF o un link, pero no un ZIP.
-Salida: entregables/Pasteleria-Canina-que-Vende-TODO-EN-UNO.pdf
+Impultienda acepta un PDF o un link, no un ZIP. Este archivo es la opción
+sin dependencias: todo menos la calculadora, que es una hoja de cálculo y
+dentro de un PDF no calcularía nada.
+
+Los números de página del índice se calculan leyendo los PDFs reales, no
+se escriben a mano: así no se desincronizan cuando cambia un bono.
 """
 import os
 from pypdf import PdfWriter, PdfReader
 import generar as G
 
 OUT = "entregables"
-PARTES = ["01-Curso-Pasteleria-Canina-30-recetas",
-          "03-Bono-Guia-de-ingredientes",
-          "04-Bono-Plan-de-negocio",
-          "05-Bono-Plantillas-de-etiquetas"]
+PORTADA = 2                      # páginas de portada + índice
+PARTES = [("01-Curso-Pasteleria-Canina-30-recetas", "Curso: las 30 recetas"),
+          ("03-Bono-Guia-de-ingredientes",          "Bono 2 · Ingredientes seguros"),
+          ("04-Bono-Plan-de-negocio",               "Bono 3 · Plan de negocio"),
+          ("05-Bono-Plantillas-de-etiquetas",       "Bono 4 · Plantillas de etiquetas"),
+          ("06-Bono-Porciones-y-soluciones",        "Bono 5 · Porciones y soluciones")]
+
+# ── 1. leer los PDFs reales y calcular dónde arranca cada uno ──
+lectores, inicio, cursor = [], [], PORTADA + 1
+for nom, _ in PARTES:
+    r = PdfReader(os.path.join(OUT, nom + ".pdf"))
+    lectores.append(r)
+    inicio.append(cursor)
+    cursor += len(r.pages)
+TOTAL = cursor - 1
+
+# ── 2. portada e índice con esos números ──
+FILAS = [("1", "Curso: las 30 recetas",          f"pág. {inicio[0]}"),
+         ("2", "Calculadora de precios",          "archivo aparte"),
+         ("3", "Guía de ingredientes seguros",   f"pág. {inicio[1]}"),
+         ("4", "Plan de negocio desde casa",     f"pág. {inicio[2]}"),
+         ("5", "Plantillas de etiquetas",        f"pág. {inicio[3]}"),
+         ("6", "Porciones y soluciones",         f"pág. {inicio[4]}")]
 
 def portada():
     p1 = G.pg("", f"""
@@ -21,24 +45,18 @@ def portada():
         <div class="ttl serif" style="margin-top:4mm">Pastelería Canina<br>que Vende</div>
         <div class="lede" style="margin-top:5mm">
           30 recetas aprobadas, los costos reales de cada una y el precio al que
-          se vende. Todo el paquete en un solo archivo.
+          se vende. El curso y sus 5 bonos en un solo archivo.
         </div>
         <div class="price" style="margin-top:9mm">
-          <div class="big">5 entregables · 88 páginas</div>
-          <div class="sm">Curso completo + 4 bonos</div>
+          <div class="big">Curso + 5 bonos · {TOTAL} páginas</div>
+          <div class="sm">Edición 2026</div>
         </div>
       </div>
-      <div class="pad fnote">Edición 2026. Uso personal del comprador.</div>""")
+      <div class="pad fnote">Uso personal del comprador.</div>""")
 
     filas = "".join(
-        f'<div class="row"><span><b>{n}.</b> {t}</span><span style="color:#7A6354">{pg}</span></div>'
-        for n, t, pg in [
-            ("1", "Curso: las 30 recetas", "pág. 3"),
-            ("2", "Calculadora de precios", "archivo aparte"),
-            ("3", "Guía de ingredientes seguros", "pág. 75"),
-            ("4", "Plan de negocio desde casa", "pág. 79"),
-            ("5", "Plantillas de etiquetas", "pág. 84"),
-        ])
+        f'<div class="row"><span><b>{n}.</b> {t}</span>'
+        f'<span style="color:#7A6354">{p}</span></div>' for n, t, p in FILAS)
 
     p2 = G.pg("", f"""
       <div class="hdbar">QUÉ CONTIENE ESTE ARCHIVO</div>
@@ -46,7 +64,7 @@ def portada():
         <div class="card">{filas}</div>
 
         <div class="note" style="margin-top:6mm">
-          <b>Sobre la calculadora (entregable 2)</b><br>
+          <b>Sobre la calculadora</b><br>
           Es una hoja de cálculo, no un PDF: le escribís tus costos y te devuelve
           el precio de venta y tu margen. Por eso viaja como archivo separado
           — adentro de un PDF no podría calcular nada.
@@ -69,24 +87,19 @@ def portada():
 
 G.render(portada(), "Pastelería Canina que Vende", "zz-portada-tmp")
 
+# ── 3. unir ──
 w = PdfWriter()
-for pg_ in PdfReader(os.path.join(OUT, "zz-portada-tmp.pdf")).pages:
-    w.add_page(pg_)
-total = 2
-marcas = []
-for nom in PARTES:
-    r = PdfReader(os.path.join(OUT, nom + ".pdf"))
-    marcas.append((nom, total + 1))
-    for pg_ in r.pages:
-        w.add_page(pg_)
-    total += len(r.pages)
-
-for nom, n in marcas:
-    w.add_outline_item(nom[3:].replace("-", " "), n - 1)
+for p in PdfReader(os.path.join(OUT, "zz-portada-tmp.pdf")).pages:
+    w.add_page(p)
+for (nom, titulo), r, n in zip(PARTES, lectores, inicio):
+    for p in r.pages:
+        w.add_page(p)
+    w.add_outline_item(titulo, n - 1)
 
 dest = os.path.join(OUT, "Pasteleria-Canina-que-Vende-TODO-EN-UNO.pdf")
 w.write(dest)
 os.remove(os.path.join(OUT, "zz-portada-tmp.pdf"))
-print(f"\n✓ {dest} · {total} págs · {os.path.getsize(dest)//1024} KB")
-for nom, n in marcas:
-    print(f"    pág {n:>3}  {nom}")
+
+print(f"\n✓ {dest} · {TOTAL} págs · {os.path.getsize(dest)//1024} KB")
+for (nom, titulo), n in zip(PARTES, inicio):
+    print(f"    pág {n:>3}  {titulo}")
