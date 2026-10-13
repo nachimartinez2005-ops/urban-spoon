@@ -173,6 +173,58 @@ def p_conservacion():
       </div>""")
 
 # ═══════════════════ 01 · CURSO PRINCIPAL ═══════════════════
+
+# ═══════════════════ PÁGINA DE OFERTAS (upsells) ═══════════════════
+# Los 3 upsells no tienen otro canal: la pantalla post-compra de
+# Impultienda no se muestra y su mail de compra no es editable. Los
+# archivos que entregamos son el único lugar que controlamos.
+OFERTAS = [
+    ("🎂", "Pack Pasteles de Cumpleaños", "4.90",
+     "5 pasteles de fiesta paso a paso: smash cake, pastel salado de pollo, "
+     "pastel de calabaza de dos pisos, pastel con forma de hueso y donas glaseadas. "
+     "Con betunes seguros.",
+     "Un smash cake se vende entre $350 y $380. Con uno solo lo recuperas 70 veces.",
+     "https://lomitobakery.impultienda.ar/checkout?p=3e559482-2689-41d8-a4f0-7f6cc47f88cd"),
+    ("📱", "Kit Vende en Redes", "5.90",
+     "Qué publicar, cómo escribirlo y cómo fotografiar tus productos para que "
+     "se vean de tienda y no caseros.",
+     "Para cuando ya tengas tus primeras tandas y quieras que te encuentren.",
+     "https://lomitobakery.impultienda.ar/checkout?p=4299c3a2-a25a-42d2-8d5b-87e5f6f9d216"),
+    ("📅", "Pack Fechas que Venden", "5.90",
+     "Las fechas del año en que más se vende en México y qué preparar para cada una, "
+     "con recetas de temporada.",
+     "Día de Muertos, Navidad y San Valentín concentran los pedidos más grandes.",
+     "https://lomitobakery.impultienda.ar/checkout?p=3e5e4caa-821c-435b-be78-20a60ecd595e"),
+]
+
+def _tarjeta(ico, nom, precio, desc, gancho, url):
+    return f"""<div class="card" style="margin-bottom:4mm">
+      <div style="padding:3.4mm 4mm">
+        <div style="display:flex;justify-content:space-between;align-items:baseline">
+          <span style="font-size:10pt;font-weight:800">{ico} &nbsp;{nom}</span>
+          <span style="font-size:11pt;font-weight:800;color:#B5533C">US$ {precio}</span></div>
+        <div style="font-size:8pt;color:#7A6354;line-height:1.35;margin-top:1.2mm">{desc}</div>
+        <div style="font-size:8pt;line-height:1.35;margin-top:1.8mm"><b>{gancho}</b></div>
+        <a href="{url}" style="display:block;margin-top:2.8mm;background:#B5533C;color:#fff;
+           text-decoration:none;text-align:center;font-size:8.5pt;font-weight:800;
+           padding:2.4mm;border-radius:99px">AGREGARLO A MI PAQUETE &rarr;</a>
+      </div>
+    </div>"""
+
+def p_ofertas(intro=None):
+    intro = intro or ("Con el curso y los 5 bonos ya tienes todo para empezar. Esto es para "
+                      "después, cuando los pedidos empiecen a llegar. Toca el botón de la que te sirva.")
+    return pg("", f"""
+      <div class="hdbar">CUANDO YA ESTÉS VENDIENDO</div>
+      <div class="pad grow">
+        <div class="ttl2 serif">Tres cosas que no vienen incluidas</div>
+        <div class="lede" style="margin-top:2.5mm;margin-bottom:5mm">{intro}</div>
+        {"".join(_tarjeta(*o) for o in OFERTAS)}
+      </div>
+      <div class="pad fnote" style="padding-top:0">
+        Se suman a tu carpeta al instante. &nbsp;·&nbsp; lomitobakery.impultienda.ar
+      </div>""")
+
 def build_curso():
     P = []
     P.append(pg("cvr", """
@@ -203,7 +255,8 @@ def build_curso():
           <div class="box"><b>🧮 2 · Calculadora</b>Excel para fijar tus precios.</div>
           <div class="box"><b>⚠️ 3 · Guía de ingredientes</b>Imprimible, para el refri.</div>
           <div class="box"><b>🏪 4 · Plan de negocio</b>Cómo conseguir pedidos.</div>
-          <div class="box" style="grid-column:1/-1"><b>🏷️ 5 · Plantillas de etiquetas</b>Para imprimir y pegar en tus bolsitas.</div>
+          <div class="box"><b>🏷️ 5 · Etiquetas</b>Para imprimir y pegar.</div>
+          <div class="box"><b>⚖️ 6 · Porciones y soluciones</b>Cuánto darle y cómo arreglar una tanda.</div>
         </div>
         <div class="grow"></div>
         <div class="warn">Importante: estas recetas son premios y no sustituyen el alimento diario de tu
@@ -290,6 +343,9 @@ def build_curso():
         <div class="fnote" style="margin-top:4mm">Las recetas de este curso son premios y no sustituyen
           el alimento diario. Consulta siempre al veterinario ante dudas, alergias o condiciones de salud.</div>
       </div>"""))
+    P.append(p_ofertas(
+        "Llegaste al final: ya tienes las 30 recetas, los costos y los precios. "
+        "Estas tres no vienen incluidas y son las que más piden quienes ya empezaron a vender."))
     render(P, "Pastelería Canina que Vende · Curso", "01-Curso-Pasteleria-Canina-30-recetas")
 
 # ═══════════════════ 03 · GUÍA DE INGREDIENTES ═══════════════════
