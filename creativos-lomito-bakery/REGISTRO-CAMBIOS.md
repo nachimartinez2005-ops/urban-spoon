@@ -461,3 +461,80 @@ menor con la landing nueva, no urgente.
 | **Margen** | **−$2.39/venta** ❌ | **+$6.39/venta** ✅ |
 
 Si el CPA se mantiene en $7.33, el negocio pasa de perder a ganar.
+
+---
+
+## 2026-10-13 — Ebook aprobado: 30 recetas en landing y anuncios
+
+### Lectura de rendimiento (día 1 post-cambios)
+
+| Anuncio | Gasto hoy | Impr | CTR | CPM | Compras | CPA |
+|---|---|---|---|---|---|---|
+| **7 v prob. – copy ingreso extra** | $6.67 | 369 | 6.23% | $18.08 | **1** | **$6.67** ✅ |
+| 1 v prob. | $8.68 | 479 | 5.01% | $18.12 | 0 | — |
+| 6 video p.c. – copy ganancia | $6.28 | 443 | 2.26% | $14.18 | 0 | — |
+| 2 video neg | $0.35 | 22 | 0% | $15.91 | 0 | — |
+| NEW-A / B / C ($12.90) | $0.51 | **19** | — | — | 0 | — 🚨 |
+| CJ5 y CJ3 (ya pausados) | $15.14 | 1664 | — | 0 | — | gasto previo a la pausa |
+
+### 🚨 Problema 1: los 3 creativos nuevos no recibían entrega
+
+19 impresiones en ~24 h. Meta concentró el presupuesto de CJ1 en `1 v prob.`,
+que tiene todo el historial, y dejó a los nuevos sin aire. **Un test que no
+entrega no es un test.**
+
+**Solución aplicada:** se pausó el anuncio `1 v prob.` (`52532706691526`).
+CJ1 queda con $14/día **exclusivos para los 3 creativos nuevos**.
+
+> No se pierde el ángulo: `1 v prob.` usa el video `2513584822498079`, el mismo
+> que usan NEW-A y NEW-C, pero con copy sin precio y CTA `SEE_DETAILS`.
+> Los nuevos son el mismo asset con mejor copy y `BUY_NOW`.
+> Se evitó crear un 5º conjunto: habría empeorado la fragmentación.
+
+### 🚨 Problema 2: CPM subió más de lo tolerado
+
+`1 v prob.` pasó de **$11.60 a $18.12** de CPM (+56%), por encima del umbral
+del 40% que se fijó como alarma al cortar placements.
+
+**Decisión: todavía NO se revierte.** El CTR se sostuvo (5.01%) y la única
+venta del día entró a **CPA $6.67**, justo en el objetivo. Si en 48 h el CPA
+sigue arriba de $12, se vuelve a agregar `instagram_positions: ["stream"]`.
+
+### Nota sobre CJ3 y CJ5
+
+Figuran con $15.14 gastados "hoy" pese a estar pausados. Verificado:
+`effective_status: PAUSED` en ambos, y el gasto supera su presupuesto diario
+de $6, o sea que se acumuló **antes** de que la pausa tomara efecto dentro del
+día de reporte. No es una fuga activa.
+
+### Creativos actualizados a 30 recetas
+
+El ebook ampliado quedó aprobado, así que el ancla de cantidad ya es verdad.
+Se suma a los otros dos patrones validados ("desde cero" y precio).
+
+| Anuncio | ID | Titular |
+|---|---|---|
+| 14 A | `52533183938926` | `30 recetas desde cero · $12.90` |
+| 15 B | `52533183939926` | `Ninguna de las 30 lleva estos 5 · $12.90` |
+| 16 C | `52533183942726` | `30 recetas y vendes este fin de semana` |
+
+Los 3 anteriores (sin conteo de recetas) quedaron archivados sin datos que perder
+(19 impresiones entre los tres).
+
+**NEW-A4 combina los tres patrones validados en un solo titular:**
+cantidad + "desde cero" + precio.
+
+### Landing actualizada
+
+`15 recetas` → **30** · `4 categorías` → **5** · `64 páginas` → **79**
+Ancla de precio $49 → **$56** (77% OFF), valor del módulo principal $22 → **$29**.
+
+### Estado
+
+```
+🟢 CJ1  $14/día  →  14 A + 15 B + 16 C  (los 3 nuevos, sin competencia interna)
+🟢 CJ2   $8/día  →  2 video neg
+🟢 CJ6   $4/día  →  6 video p.c. – copy ganancia
+🟢 CJ7   $4/día  →  7 v prob. – copy ingreso extra  ← mejor CPA de hoy ($6.67)
+⏸️ CJ3, CJ4, CJ5, CJ6-Copia
+```
