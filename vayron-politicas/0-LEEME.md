@@ -1,6 +1,6 @@
 # Políticas legales de Vayron — instrucciones
 
-El conector de Shopify no tiene permiso de escritura sobre políticas legales
+El conector de Shopify no tiene permiso de escritura sobre politicas legales
 (`write_legal_policies`), así que estas hay que pegarlas a mano. Son 5 minutos.
 
 ## Dónde van
@@ -9,17 +9,17 @@ Shopify Admin → **Configuración → Políticas**
 
 | Archivo | Campo de Shopify |
 |---|---|
-| `1-devoluciones.html` | Política de reembolsos |
-| `2-envios.html` | Política de envío |
-| `3-terminos.html` | Términos del servicio |
-| `4-contacto.html` | Información de contacto |
+| `1-devoluciones.txt` | Política de reembolsos |
+| `2-envios.txt` | Política de envío |
+| `3-terminos.txt` | Términos del servicio |
+| `4-contacto.txt` | Información de contacto |
 
-En cada campo, tocá el botón `<>` (**Ver HTML**) del editor y pegá el contenido
-del archivo. Si pegás sin activar esa vista, te va a quedar el código a la vista.
+Abrí el campo, pegá el contenido del archivo tal cual y guardá. Son texto plano:
+los títulos van en MAYÚSCULAS para que funcionen como encabezados sin formato.
 
 ## Antes de publicar
 
-1. En `3-terminos.html` hay dos `[COMPLETAR]`: razón social / nombre y apellido,
+1. En `3-terminos.txt` hay dos `[COMPLETAR]`: razón social / nombre y apellido,
    y CUIT. Son obligatorios para operar como vendedor.
 2. Verificá que el domicilio (Belgrano 893, Quilmes) sea el correcto para
    publicar. Lo tomé de los datos ya cargados en tu Política de Privacidad.
