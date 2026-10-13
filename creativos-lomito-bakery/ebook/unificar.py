@@ -73,13 +73,13 @@ def portada():
         <div class="box" style="margin-top:5mm">
           <b>Cómo se usa el curso</b>
           Cada receta trae su costo aproximado, el precio al que se vende y el
-          margen. Son precios de referencia en pesos mexicanos: cambiá los
-          costos por los de tu ciudad y multiplicá por 5 para fijar tu precio.
+          margen. Son precios de referencia en pesos mexicanos: cambia los
+          costos por los de tu ciudad y multiplica por 5 para fijar tu precio.
         </div>
 
         <div class="warn" style="margin-top:5mm">
           Ninguna receta reemplaza al veterinario. Si tu perro tiene alergias,
-          sobrepeso o una condición médica, consultá antes de darle premios caseros.
+          sobrepeso o una condición médica, consulta antes de darle premios caseros.
         </div>
       </div>
       <div class="pad fnote">lomitobakery.impultienda.ar</div>""")

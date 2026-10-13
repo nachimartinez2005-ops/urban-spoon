@@ -25,11 +25,11 @@ BONOS = [("02", "Calculadora de precios", "Excel / Google Sheets",
           "Cuánto darle según su peso, qué usar si falta un ingrediente y cómo "
           "salvar una tanda que salió mal.")]
 
-PASOS = [("1", "Abrí el archivo <b>01</b> y andá directo a la Receta 01. Es la más "
+PASOS = [("1", "Abre el archivo <b>01</b> y ve directo a la Receta 01. Es la más "
                "fácil, la más barata y la que más se vende."),
-         ("2", "Imprimí el archivo <b>03</b> y pegalo en tu refrigerador."),
-         ("3", "Cuando quieras poner precios, abrí el <b>02</b> en Excel o Google "
-               "Sheets y llená solo las celdas amarillas.")]
+         ("2", "Imprime el archivo <b>03</b> y pégalo en tu refrigerador."),
+         ("3", "Cuando quieras poner precios, abre el <b>02</b> en Excel o Google "
+               "Sheets y llena solo las celdas amarillas.")]
 
 def ficha(n, t, f_, d, destacado=False):
     borde = "border:1.4pt solid #B5533C;" if destacado else ""
@@ -67,20 +67,20 @@ p2 = G.pg("", f"""
 
     <div class="box" style="margin-top:6mm">
       <b>Un consejo para la primera semana</b>
-      No intentes las 30 recetas. Elegí 3: una galleta, un pastel y un premio
-      deshidratado. Con esas tres armás una bolsita, una caja de cumpleaños y
+      No intentes las 30 recetas. Elige 3: una galleta, un pastel y un premio
+      deshidratado. Con esas tres armas una bolsita, una caja de cumpleaños y
       un premio de entrenamiento, que es todo lo que te van a pedir al principio.
     </div>
 
     <div class="note" style="margin-top:5mm">
-      <b>¿ALGO NO ABRE?</b> Respondé el correo con el que recibiste este paquete
+      <b>¿ALGO NO ABRE?</b> Responde el correo con el que recibiste este paquete
       y te lo mandamos por otro medio. No te quedes sin tus archivos.
     </div>
   </div>
   <div class="pad" style="padding-top:0">
     <div class="warn">
       Estas recetas son premios y no sustituyen el alimento diario de tu mascota:
-      no deben superar el 10 % de su alimentación. Consultá siempre al veterinario
+      no deben superar el 10 % de su alimentación. Consulta siempre al veterinario
       ante dudas, alergias o condiciones de salud.
     </div>
     <div class="fnote" style="margin-top:3.5mm">

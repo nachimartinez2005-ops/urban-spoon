@@ -161,7 +161,7 @@ def build():
       <div class="kick">LOMITO BAKERY · BONO 5</div>
       <h1 class="serif" style="font-size:25pt">PORCIONES<span class="q" style="font-size:16pt">SUSTITUCIONES Y SOLUCIONES</span></h1>
       <div class="lede" style="margin-top:5mm">Cuánto darle, qué hacer si falta<br>un ingrediente y cómo salvar una tanda</div>
-      <div class="hero" style="font-size:36pt">⚖️ 🔄 🔧</div>
+      <div class="hero" style="font-size:74pt;letter-spacing:4mm">⚖️ 🔄 🔧</div>
       <div class="fnote" style="font-weight:700">Pastelería Canina que Vende · 2026</div>"""),
       p_porciones(), p_sustituciones(), p_problemas(), p_medidas()]
     G.render(P, "Porciones, sustituciones y soluciones", "06-Bono-Porciones-y-soluciones")
