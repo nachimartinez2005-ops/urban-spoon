@@ -538,3 +538,57 @@ Ancla de precio $49 → **$56** (77% OFF), valor del módulo principal $22 → *
 🟢 CJ7   $4/día  →  7 v prob. – copy ingreso extra  ← mejor CPA de hoy ($6.67)
 ⏸️ CJ3, CJ4, CJ5, CJ6-Copia
 ```
+
+## 2026-10-13 · Paso 2: píxel y reasignación de presupuesto
+
+### Diagnóstico corregido del píxel (dataset 1712126017302327)
+
+Lectura real de `ads_get_dataset_quality` el 13/10:
+
+| Evento | EMQ | fbp | Carga |
+|---|---|---|---|
+| Purchase | **9.3** | **100 %** | navegador |
+| AddToCart | 6.1 | 100 % | navegador |
+| InitiateCheckout | 5.6 | 63,4 % | tiempo real |
+| PageView | 5.3 | **38,9 %** | por hora |
+
+**Corrección a lo que dije antes.** Yo había afirmado que con fbp al
+35,5 % Meta no veía el 31 % de la facturación. Era falso: generalicé el
+fbp del PageView al Purchase. El Purchase tiene su propio fbp al 100 %
+y EMQ 9.3, así que la atribución de ventas está sana. Lo que el fbp
+bajo rompe es el público de retargeting, no los ingresos.
+
+Causa: la landing (bloque de HTML personalizado) no tenía el píxel.
+Los eventos de checkout sí lo tienen — de ahí el 100 % en Purchase y
+AddToCart contra el 38,9 % del PageView, que incluye la landing.
+Arreglado: `landing-lomito-bakery.html` ahora trae el código base con
+una guarda que no lo duplica si Impultienda ya lo inyecta.
+
+### InitiateCheckout inflado (hallazgo nuevo, sin resolver)
+
+7 días de eventos: 479 PageView · 123 InitiateCheckout · 11 AddToCart ·
+7 Purchase. El IC es el 25,7 % de las visitas y hay 17,6 IC por compra.
+El 12/10 a las 16 h: 16 IC con 15 PageView en la misma hora. Hoy el IC
+cuesta $0,99 contra $0,58 del landing page view, o sea que ~58 % de las
+visitas a la landing registran un IC.
+
+No es intención real: Impultienda dispara InitiateCheckout al cargar la
+página, no al apretar comprar. No daña la entrega porque las campañas
+optimizan a PURCHASE, pero vuelve imposible medir la fuga del checkout
+y envenenaría cualquier público basado en IC.
+
+### Presupuesto
+
+| Conjunto | Antes | Ahora | Por qué |
+|---|---|---|---|
+| CJ6 copy ganancia | $4 ACTIVO | **PAUSADO** | $17,87 gastados, 0 compras, CTR 3,03 % |
+| CJ7 copy ingreso extra | $4 | **$8** | CPA de hoy $6,94, CTR 6,17 % |
+| CJ1 / CJ2 | $14 / $8 | igual | CJ1 corriendo los 3 creativos nuevos |
+
+Total: $30/día.
+
+**Corrección operativa.** Yo tenía anotado que subir el presupuesto no
+force-pausa un conjunto activo. Es falso: subir CJ7 de $4 a $8 devolvió
+`status_forced_to_paused: true` y lo apagó. Lo reactivé con
+`ads_activate_entity` y verifiqué ACTIVE / delivery active. De acá en
+más, después de cada cambio de presupuesto hay que verificar el estado.

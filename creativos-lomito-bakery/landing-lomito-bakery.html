@@ -243,3 +243,44 @@
 
 </div>
 </div>
+
+<!--
+  ============================================================
+  PÍXEL DE META  ·  dataset "Lomito Bakery"  ·  1712126017302327
+
+  Para qué: sin este código, la visita a la landing no deja la cookie
+  _fbp en el navegador. Meta recibe el PageView desde el servidor de
+  Impultienda pero no lo puede vincular a una persona. Medido el
+  13/10/2026: solo el 38,9 % de los PageView llegaban con _fbp,
+  contra el 100 % de los Purchase. El público de "visitantes del
+  sitio" vale, entonces, un tercio de lo que debería.
+
+  Es seguro aunque Impultienda ya cargue su propio píxel: el código
+  espera a que la página termine de cargar y solo se activa si no
+  encuentra ninguno. Si ya hay uno, no hace nada y no duplica eventos.
+  ============================================================
+-->
+<script>
+(function () {
+  var ID = '1712126017302327';
+
+  function arrancar() {
+    if (window.fbq) return;            // Impultienda ya lo cargó: no tocar nada
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0; t.src = v;
+      s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', ID);
+    fbq('track', 'PageView');
+  }
+
+  // Esperar 1,5 s después de cargar: si Impultienda inyecta su píxel
+  // más tarde, para entonces ya está y no lo duplicamos.
+  if (document.readyState === 'complete') setTimeout(arrancar, 1500);
+  else window.addEventListener('load', function () { setTimeout(arrancar, 1500); });
+})();
+</script>
