@@ -265,8 +265,7 @@
   sitio" vale, entonces, un tercio de lo que debería.
 
   Es seguro aunque Impultienda ya cargue su propio píxel: el código
-  espera a que la página termine de cargar y solo se activa si no
-  encuentra ninguno. Si ya hay uno, no hace nada y no duplica eventos.
+  espera 400 ms tras la carga y solo se activa si no encuentra ninguno. Si ya hay uno, no hace nada y no duplica eventos.
   ============================================================
 -->
 <script>
@@ -287,9 +286,10 @@
     fbq('track', 'PageView');
   }
 
-  // Esperar 1,5 s después de cargar: si Impultienda inyecta su píxel
-  // más tarde, para entonces ya está y no lo duplicamos.
-  if (document.readyState === 'complete') setTimeout(arrancar, 1500);
-  else window.addEventListener('load', function () { setTimeout(arrancar, 1500); });
+  // Esperar 400 ms: suficiente para ver si Impultienda carga su propio
+  // píxel y no duplicarlo, sin perder a quien se va enseguida. Con 1500 ms
+  // (13/10) la visita de quien rebotaba rápido no se contaba nunca.
+  if (document.readyState === 'complete') setTimeout(arrancar, 400);
+  else window.addEventListener('load', function () { setTimeout(arrancar, 400); });
 })();
 </script>
