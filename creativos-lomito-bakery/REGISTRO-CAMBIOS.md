@@ -639,3 +639,41 @@ Riesgos anotados:
 Nota de zona horaria: la cuenta publicitaria corre en America/Buenos_Aires.
 Una compra a las 2 AM hora de Nacho cuenta en el día NUEVO para Meta, aunque
 en México todavía sea el día anterior. La tabla diaria usa ese mismo reloj.
+
+## 2026-10-16 noche — Entrega congelada y corrección de mi propia recomendación
+
+**El problema.** Tras dejar un solo anuncio activo al mediodía, CJ1 dejó de
+gastar: $4.25 a las 18:25 y $4.27 a las 18:40 (2 centavos en 15 minutos),
+375 impresiones en todo el día contra $14 de presupuesto. Con un solo creativo
+Meta no tiene material para rotar y prefiere no gastar. CPM $11.39: no es precio,
+es falta de inventario creativo.
+
+**Corrección importante sobre mis creativos v2.** Al inspeccionar el creativo
+de 15 B descubrí que el anuncio ganador NO es una imagen: es un video vertical
+de metraje real (manos cortando galletas con forma de hueso) con una caja de
+titular arriba y subtítulos quemados. Mis 4 estáticos son pósters tipográficos,
+otra especie. Y mis 2 videos de Higgsfield son de 5 segundos, mudos, sin gancho
+ni subtítulos: materialmente más débiles que el que funciona. Recomendé subirlos
+esta noche antes de haber visto esto. Era una recomendación mal fundada.
+
+**Segundo bloqueo.** La API no expone el link_url de ningún creativo de la cuenta
+(object_story_spec no es un campo soportado) y el iframe de preview de
+business.facebook.com está bloqueado por el proxy. No tengo forma de verificar a
+dónde apunta el anuncio, y no voy a mandar tráfico pago a una URL adivinada.
+
+**Lo que sí hice.** Revisando el histórico encontré que varios anuncios se
+juzgaron contra un embudo roto (sin upsells, ticket de $8.90):
+
+| Anuncio | Gasto | CTR | Ventas | CPA | ¿Rentable hoy? |
+|---|---|---|---|---|---|
+| 1 v prob. | $21.59 | 5.26% | 2 | $10.80 | SÍ — bajo el equilibrio de $12.20 |
+| 2 video neg | $20.57 | 3.57% | 1 | $20.57 | No |
+| 5 video p.c. | $20.52 | 5.27% | 1 | $20.52 | No |
+| 3 notas | $20.44 | 4.60% | 0 | — | No |
+
+`1 v prob.` ya vivía dentro de CJ1, solo pausado. Lo reactivé: no hace falta
+crear creativos ni conocer la URL de destino. Quedan 2 anuncios rotando en CJ1,
+ambos con economía defendible al ticket de hoy. El presupuesto no se tocó.
+
+Descartados a propósito: 2 video neg, 5 video p.c. y 3 notas. CPA por encima del
+equilibrio incluso con upsell.
