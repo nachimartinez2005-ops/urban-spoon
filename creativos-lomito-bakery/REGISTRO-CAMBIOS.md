@@ -609,3 +609,33 @@ Era una conclusión mal sacada. Lo real, verificado hoy:
 Imágenes base ya generadas (listas para animar cuando haya créditos):
 - A1 (cocina, mujer amasando): job `625b02f8-b08b-4a14-9844-3e78720c580c`
 - A2 (pastel en caja kraft): job `8a6d015b-6c26-4029-bfba-06fc984767ec`
+
+## 2026-10-16 mediodía — Concentración del presupuesto en 15 B
+
+Acumulado de vida por anuncio al mediodía:
+
+| Anuncio | Gasto | Impr. | CTR | LPV | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|
+| 15 B negación | $8.28 | 436 | 4.36% | 10 | 3 | $50.70 | $2.76 |
+| 16 C fin de semana | $8.01 | 472 | 2.33% | 4 | 0 | $0 | — |
+| 7 v prob. (CJ7) | $44.31 | 2667 | 4.35% | 48 | 2 | $30.00 | $22.16 |
+| 14 A (ya pausado) | $35.41 | 2618 | 2.14% | 35 | 1 | $12.49 | $35.41 |
+
+Acciones:
+- Pausado 16 C. 472 impresiones, por debajo de mi regla de 500, pero sin
+  ninguna venta y con la mitad del CTR de 15 B. Distinto del caso 14 A, donde
+  casi corto un anuncio que SÍ vendía.
+- Pausado 7 v prob. ROAS 0.68: $44.31 gastados, $30 devueltos.
+
+Resultado: 15 B queda como único anuncio activo, en CJ1 a $14/día.
+El gasto diario baja de $22 a $14. Proyección al sábado a la noche: ~$221
+acumulados, dentro del techo de $250 que puso Nacho.
+
+Riesgos anotados:
+- El CPA de $2.76 no se va a sostener. 15 B venía con ~$2/día; pasarlo a $14
+  es multiplicar por 7 y Meta va a buscar público más caro.
+- Queda un solo anuncio corriendo: si se fatiga, no hay nada atrás.
+
+Nota de zona horaria: la cuenta publicitaria corre en America/Buenos_Aires.
+Una compra a las 2 AM hora de Nacho cuenta en el día NUEVO para Meta, aunque
+en México todavía sea el día anterior. La tabla diaria usa ese mismo reloj.
