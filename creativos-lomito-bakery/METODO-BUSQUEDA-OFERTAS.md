@@ -71,3 +71,25 @@ completa (ebook, bonos, landing, creativos, anuncios) se produce en un día.
   anuncios de Meta, ordenadas por velocidad de producción
 - Escenarios de $50, $100 y $200 por semana
 - Calendario concreto de producción
+
+## Selección de mercado (planteado por Nacho, 16/10 noche)
+
+Nacho observa que hay países que gastan más en producto digital y quiere que
+se tenga en cuenta al buscar ofertas. Correcto, pero con dos matices:
+
+**1. No es poder adquisitivo, es ticket ÷ CPM.** Un mercado con el doble de
+ingreso suele tener también más CPM, porque hay más anunciantes compitiendo.
+Si el ticket sube 2x y el CPM 2.5x, el mercado es peor. La referencia a
+superar es la de México hoy: CPM $11.39 con ticket de $12.37.
+
+**2. Límite duro antes de cualquier análisis: el cobro.** Impultienda es
+argentina y hoy cobra en MXN. PENDIENTE DE NACHO: preguntarle a Impultienda a
+qué países puede cobrar y en qué monedas. Si no puede cobrar ahí, el poder
+adquisitivo del mercado es irrelevante.
+
+**Pendiente mío para el sábado:** usar `ads_insights_industry_benchmark` para
+traer CPM y CTR reales por mercado y armar la tabla de ticket ÷ CPM ordenada
+por dato, no por intuición. Nada de estimar poder adquisitivo de memoria.
+
+NO cambiar el mercado de Lomito ahora: el corte del sábado se decide con los
+datos de México.
