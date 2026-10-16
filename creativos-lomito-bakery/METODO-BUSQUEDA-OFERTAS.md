@@ -93,3 +93,40 @@ por dato, no por intuición. Nada de estimar poder adquisitivo de memoria.
 
 NO cambiar el mercado de Lomito ahora: el corte del sábado se decide con los
 datos de México.
+
+### Actualización 16/10 noche — el cobro NO es la restricción
+
+Nacho confirma que Impultienda cobra a muchísimos países: Europa, África,
+América. El límite duro que yo había planteado no existe.
+
+**La restricción pasa a ser el idioma.** El ebook está en español, así que el
+universo real para Lomito es:
+- Europa: España (el de mayor poder adquisitivo del idioma)
+- América: México, Colombia, Chile, Perú, Argentina, Uruguay, Costa Rica,
+  Panamá, Ecuador, y el hispano de EE.UU. (mayor ingreso y mayor CPM)
+- África: descartado. Solo Guinea Ecuatorial habla español y es minúscula.
+
+Poder cobrar en 100 países sí es ventaja real para las OFERTAS FUTURAS, donde
+se puede elegir idioma desde el día cero. Para Lomito son ~10 mercados.
+
+### Oportunidad más barata detectada: mismo producto, mercado más rico
+
+| | México | España |
+|---|---|---|
+| Precio actual | 229 MXN = $12.37 | — |
+| Equivalente razonable | — | €19–24 = $21–26 |
+
+Mismo PDF, misma landing, mismos creativos (adaptando "colonia" → "barrio" y
+los precios de ejemplo). El ticket casi se duplica con costo de producción
+cero. No es una oferta nueva: es la actual en otro mercado. Se testea con $25.
+
+Riesgo: el CPM de España es bastante mayor que el de México. NO afirmarlo
+hasta tener los benchmarks reales de Meta. Si el ratio ticket ÷ CPM no supera
+al de México, no sirve.
+
+### Pendiente de Nacho (junto con lo anterior)
+
+Preguntarle a Impultienda por el **IVA digital de la UE**. Vender
+infoproductos a consumidores europeos tiene obligaciones fiscales.
+Probablemente lo manejen ellos o esté debajo del umbral, pero hay que
+confirmarlo antes de facturar en Europa, no después.
