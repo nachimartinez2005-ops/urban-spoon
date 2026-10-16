@@ -725,3 +725,28 @@ Textos quemados (tuteo, verificado):
   "30 recetas paso a paso"
 - V2: gancho "Lo difícil no es hornear" / subs "Es saber cuánto cobrar",
   "Te cuesta $25.", "La vendes a $70."
+
+### Upsells — precios confirmados por Nacho (16/10 noche)
+
+| Upsell | Precio | Post-compra con 20% off |
+|---|---|---|
+| Pack Pasteles de Cumpleaños | 89 MXN | **71.2** |
+| Kit Vende en Redes | 109 MXN | 87.2 |
+| Pack Fechas que Venden | 109 MXN | 87.2 |
+
+El 71.2 que aparecía en las ventas es el de cumpleaños con su descuento.
+Está bien configurado, no había nada roto.
+
+Observación con 2 casos (muestra chica, no concluyente): las dos ventas con
+upsell tomaron el de 89 y ninguna el de 109. Puede ser azar o puede ser que el
+embudo muestre primero el más barato. Diferencia si tomaran uno de 109: 16 MXN
+por venta, ~48 MXN/día a 3 ventas diarias.
+
+Decisión: NO tocarlo ahora. Es poca plata contra el riesgo de romper un embudo
+que recién empezó a funcionar, y el de cumpleaños probablemente convierta mejor
+por ser el más barato. Anotado para probar cuando el negocio esté estable.
+
+Economía por venta actualizada y confirmada:
+- Solo ebook: 229 MXN = $12.37
+- Con upsell de cumpleaños: 300.2 MXN = $16.22
+- Con upsell de 109: 316.2 MXN = $17.08
