@@ -14,7 +14,10 @@ h3 { font-size:11pt; margin:6mm 0 2mm; color:#3B2B20; }
 p  { margin:0 0 2.6mm; }
 ul,ol { margin:0 0 3mm; padding-left:5.5mm; }
 li { margin-bottom:1.3mm; }
-table { width:100%; border-collapse:collapse; margin:3mm 0 4mm; font-size:9.2pt; }
+table { width:100%; border-collapse:collapse; margin:3mm 0 4mm; font-size:9.2pt;
+        page-break-inside:avoid; }
+tr { page-break-inside:avoid; }
+h3 { page-break-after:avoid; }
 th { background:#B5533C; color:#fff; text-align:left; padding:2.1mm 2.6mm; font-weight:600; }
 td { padding:2mm 2.6mm; border-bottom:0.5pt solid #E6D9C4; }
 tr:nth-child(even) td { background:#FBF6EC; }
@@ -186,7 +189,11 @@ BODY = """
   <p class="muted">Tipo de cambio 18.51 MXN/USD, deducido de las conversiones de Meta,
   no de una cotización externa.</p>
 
-  <h3>Día por día desde el 10/10</h3>
+</div>
+
+<div class="page">
+  <h2>3b · Lomito día por día</h2>
+  <h3>Desde el 10 de octubre</h3>
   <table>
     <tr><th>Fecha</th><th class="n">Ventas</th><th class="n">Facturado</th>
         <th class="n">Invertido</th><th class="n">Resultado</th></tr>
