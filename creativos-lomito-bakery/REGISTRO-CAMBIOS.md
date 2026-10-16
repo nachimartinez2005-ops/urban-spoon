@@ -592,3 +592,20 @@ force-pausa un conjunto activo. Es falso: subir CJ7 de $4 a $8 devolvió
 `status_forced_to_paused: true` y lo apagó. Lo reactivé con
 `ads_activate_entity` y verifiqué ACTIVE / delivery active. De acá en
 más, después de cada cambio de presupuesto hay que verificar el estado.
+
+## 2026-10-16 — Corrección: Higgsfield y video
+
+Dije que no podía hacer video "porque las descargas de Higgsfield están bloqueadas".
+Era una conclusión mal sacada. Lo real, verificado hoy:
+
+- Generar SÍ funciona. Probé `generate_image_batch` con `nano_banana_flash` y salieron
+  2 imágenes base 9:16 para los ángulos A1 y A2.
+- Lo que está bloqueado es que YO baje el archivo: el CDN de Higgsfield
+  (`d8j0ntlcm91z4.cloudfront.net`) devuelve 403 en el túnel del proxy. Nacho sí puede
+  abrir el link y bajarlo desde su navegador, así que no es un bloqueo real del flujo.
+- El bloqueo real hoy es otro: **se acabaron los créditos**. Quedan 3.05 en el workspace
+  privado (plan plus) y `seedance_2_0_mini` necesita más. Las 2 imágenes consumieron 3.
+
+Imágenes base ya generadas (listas para animar cuando haya créditos):
+- A1 (cocina, mujer amasando): job `625b02f8-b08b-4a14-9844-3e78720c580c`
+- A2 (pastel en caja kraft): job `8a6d015b-6c26-4029-bfba-06fc984767ec`
