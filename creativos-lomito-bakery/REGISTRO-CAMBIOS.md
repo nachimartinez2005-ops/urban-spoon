@@ -680,10 +680,11 @@ equilibrio incluso con upsell.
 
 ### Link de destino (dato de Nacho, 16/10 noche)
 
-Landing: `https://lomitobakery.impultienda.ar`
+Landing: `https://lomitobakery.impultienda.ar/` (con barra final)
 
-No lo pude verificar yo: el proxy de esta sesión devuelve 403 en
-`impultienda.ar`, así que no puedo abrirlo ni comprobar que cargue la landing.
-Queda registrado bajo palabra de Nacho. Falta confirmar que sea el MISMO
-destino que usan los anuncios actuales; si no lo fuera, cualquier anuncio nuevo
-que yo cree mandaría tráfico a otra página y arruinaría la comparación.
+CONFIRMADO por Nacho contra el campo "URL del sitio web" del anuncio 15 B en
+Ads Manager: es el mismo destino que usan los anuncios que están corriendo.
+Cualquier anuncio nuevo tiene que usar exactamente esa URL.
+
+No lo pude verificar yo mismo: el proxy de esta sesión devuelve 403 en
+`impultienda.ar`.
