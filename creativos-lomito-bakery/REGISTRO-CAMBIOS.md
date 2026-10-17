@@ -750,3 +750,34 @@ Economía por venta actualizada y confirmada:
 - Solo ebook: 229 MXN = $12.37
 - Con upsell de cumpleaños: 300.2 MXN = $16.22
 - Con upsell de 109: 316.2 MXN = $17.08
+
+## 2026-10-16 23:20 — Diagnóstico real de la entrega congelada
+
+La entrega se volvió a frenar con 4 creativos activos: entre las 21:15 y las
+23:15 la cuenta sumó 3 impresiones y $0 de gasto. O sea, el problema NO eran
+los creativos. Mi hipótesis del mediodía ("falta material para rotar") era
+incompleta.
+
+**Causa raíz.** El ad set optimiza para `OFFSITE_CONVERSIONS` con evento
+PURCHASE. Meta necesita del orden de 50 conversiones semanales por ad set para
+salir de aprendizaje; acá hay ~1 compra por día. Sin señal suficiente no puede
+construir el modelo y prefiere no gastar antes que gastar mal. Es aprendizaje
+limitado permanente, y explica el freno del mediodía y el de la noche.
+
+**Factor agravante.** Las ubicaciones estaban restringidas a mano a solo 3:
+Feed de Facebook, feed de escritorio y Reels de Instagram. Frecuencia 1.17, o
+sea que ni siquiera repetía: le faltaba inventario, no le sobraba.
+
+**Acción tomada (decisión mía, Nacho dijo "tomá la decisión").** Abrí las
+ubicaciones a todas. De 3 page_types a 30. Plataformas efectivas ahora:
+facebook, instagram, audience_network, whatsapp, threads.
+
+Verificado: status ACTIVE, sin pausa forzada, presupuesto intacto en $14/día,
+optimización sin cambios. Reversible.
+
+Por qué este cambio y no otro: no altera qué se optimiza ni cuánto se gasta,
+solo amplía dónde buscar. El cambio grande —mover la optimización a un evento
+más frecuente para darle señal a Meta— queda para el sábado con datos delante.
+
+A vigilar mañana: que Audience Network no traiga un aluvión de impresiones
+baratas sin ventas. Si pasa, recortarla.
