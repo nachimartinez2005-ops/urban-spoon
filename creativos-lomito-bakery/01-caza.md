@@ -75,3 +75,49 @@ Aplicado a nosotros: la oferta estaba bien, pero el test estuvo sucio —
 píxel ausente los primeros días, embudo de upsells pausado, producto
 desalineado con el anuncio, presupuesto repartido en 7 anuncios, ubicaciones
 cerradas y optimización a un evento sin volumen. Todo eso ya está arreglado.
+
+---
+
+# Ronda 2 — barrido por footprints (18/10 madrugada)
+
+Búsquedas: `hotmart` (23.132 resultados) y `recetario digital` (2.431), mundial, activos.
+
+## Candidatos y score de 4 señales
+
+| Candidato | page_id | Nicho | Ads | Antigüedad | Score | Veredicto |
+|---|---|---|---|---|---|---|
+| Gastón Aguirre | 1293185060555800 | pastelería canina | 26 | 14 d | ~3/4 | **Candidata B** |
+| Alimentos Caseiros p/ Mascota | 1264036410121626 | comida casera perros | 1 | 78 d | 1/4 | Observar |
+| Clara Herrera | 1409966302195890 | pastelería canina | 7 | 2.5 d | 0/4 | Tester |
+| Cocina Sin Estrés | 651885831331101 | panettones gourmet | 12 | 1.6 d | 0/4 | Tester |
+| Lana Baryw | 1359690903890662 | nervio vago / ansiedad | 9 | horas | 0/4 | Tester |
+| Kaivie.productos | 1061809287018821 | pastelería canina | 11 | 1 d | 0/4 | Tester |
+
+**Ninguno llegó a 4/4.** Cinco de seis arrancaron hace menos de 3 días: son
+testers, no ganadores. El filtro de 3+ días es exactamente lo que los separa.
+
+## Señales secundarias anotadas
+
+- **Panettones gourmet**: misma oferta en dos páginas (Cocina Sin Estrés en USD
+  y Centro de Soluciones Académicas LT en voseo). Señal multi-fanpage, pero
+  ambas arrancaron anteayer. Estacional de Navidad → revisar en 3-4 días; si
+  sostienen el arsenal, pasa a candidata.
+- **Lana Baryw**: 9 ángulos distintos sobre un mismo tema (nervio vago, sueño,
+  ansiedad) lanzados a la vez. Es el patrón de alguien que testea ángulos en
+  masa. Volver a mirarla en 5 días: si queda con 20+ ads, el nicho validó.
+- **La Bibbia Della Cucina Antinfiammatoria** (1370545572803221): EUR, Italia.
+  Mercado de prioridad 2. Pendiente de contar arsenal.
+
+## Conclusión de las dos rondas
+
+La oferta mejor validada a la que Nacho tiene acceso **es la que ya tiene
+construida**. Gastón la escala hace 2 semanas en Argentina y España está sin
+players locales. No tiene sentido salir a buscar oferta nueva mientras la
+propia nunca corrió en un mercado con hueco.
+
+## Pendiente — caza completa
+
+Lo de esta madrugada fueron 2 rondas. Una caza en serio son 6-8 nichos × 3-5
+variaciones de keyword (español, portugués, inglés) + conteo de arsenal de
+cada candidato. Decenas de búsquedas. Queda para el lunes como entrega aparte
+del plan de España.
