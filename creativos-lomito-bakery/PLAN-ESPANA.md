@@ -60,16 +60,42 @@ Pack Fechas que Venden 9,90 €.
 
 `landing-lomito-ES.html` — renderizado y revisado visualmente.
 
-⚠️ **Los 4 enlaces de compra dicen `PEGAR-AQUI-EL-LINK-DEL-PRODUCTO-EN-EUROS`
-a propósito.** No se puede publicar por error apuntando al producto en pesos.
-Antes de subirla hay que crear el producto en euros en Impultienda y pegar su
-link en los 4 lugares.
+Los 4 enlaces de compra apuntan a `https://lomitobakery.impultienda.ar/`.
+Nacho confirmó que Impultienda usa **el mismo link para todos los markets** y
+detecta el país del visitante, así que no hace falta una URL distinta para
+España. Ya no quedan placeholders: la landing está lista para subir.
+
+## Precios a cargar en el market de España
+
+Misma lógica de descuento que el market de México, para que no haya
+incoherencias entre lo que dice la landing y lo que muestra el checkout.
+
+| Producto | Tachado | Precio de venta |
+|---|---|---|
+| Pastelería Canina que Vende (principal) | 44,90 € | **19,90 €** |
+| Pack Pasteles de Cumpleaños (upsell 1) | 14,90 € | **7,90 €** |
+| Kit Vende en Redes (upsell 2) | 18,90 € | **9,90 €** |
+| Pack Fechas que Venden (upsell 3) | 18,90 € | **9,90 €** |
+
+El descuento post-compra del 20% se mantiene: el upsell de cumpleaños queda
+en 6,32 € efectivos.
+
+Salto de ticket respecto de México:
+
+| | México | España |
+|---|---|---|
+| Principal | 229 MXN = $12.37 | 19,90 € = ~$21.50 |
+| Con upsell de cumpleaños | 300 MXN = $16.22 | 26,22 € = ~$28.30 |
+
+El punto de equilibrio sube de $12.20 a unos **$21**.
+
+⚠️ **No usar la conversión automática de Impultienda.** Convertiría 229 MXN a
+~11 € y se cae el motivo entero de ir a España. Los números se cargan a mano.
 
 ## Lo que falta y es de Nacho
 
-1. **Crear el producto en euros en Impultienda** y pasarme el link de checkout.
-2. **Confirmar que Impultienda cobra en EUR a clientes de España.**
-3. **Preguntar por el IVA digital de la UE** — vender infoproductos a
+1. **Cargar el market de España** con los precios de la tabla de arriba, a mano.
+2. **Preguntar por el IVA digital de la UE** — vender infoproductos a
    consumidores europeos tiene obligaciones fiscales. Probablemente lo manejen
    ellos o esté bajo el umbral, pero hay que saberlo antes de facturar.
 
