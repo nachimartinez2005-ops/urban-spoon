@@ -130,3 +130,71 @@ Preguntarle a Impultienda por el **IVA digital de la UE**. Vender
 infoproductos a consumidores europeos tiene obligaciones fiscales.
 Probablemente lo manejen ellos o esté debajo del umbral, pero hay que
 confirmarlo antes de facturar en Europa, no después.
+
+## Presupuesto real — corregido 17/10 noche
+
+Yo venía manejando los $250 como TOPE DE GASTO. Nacho aclaró que son
+**TOPE DE PÉRDIDA, Y POR MES**. No es lo mismo: lo facturado descuenta.
+
+| | |
+|---|---|
+| Gastado en Lomito | $219.09 |
+| Facturado | $133.69 |
+| **Perdido en octubre** | **$85.40** |
+| Disponible hasta el 31 | **$164.60** |
+| Días restantes de octubre | 14 |
+| **Pérdida permitida por día** | **$11.76** |
+
+Ritmo actual desde que el presupuesto bajó a $14/día: **−$4.51 por día**
+(viernes +$5.28, sábado −$14.30). Va holgado.
+
+Runway real: entre 12 días (peor caso, cero ventas, −$14/día) y 36 días
+(ritmo actual). NO los 2 días que yo había calculado con el marco equivocado.
+
+Nacho cuenta los $128.44 de Noches en Calma como mes anterior. Observación
+hecha una vez y no se insiste: ese gasto ocurrió del 2 al 6 de octubre, o sea
+que es caja de este mes. Es su contabilidad y su decisión.
+
+### Reparto de los $164.60
+
+| Destino | Asignado |
+|---|---|
+| Lomito México | $70 |
+| Test de España | $50 |
+| Reserva | $44.60 |
+
+Entran los dos frentes sin pedir plata nueva.
+
+### Regla de freno
+
+Si la pérdida acumulada del mes llega a **$200**, se para todo y los $50
+finales se reservan para noviembre. No se espera a tocar los $250 exactos:
+el último tramo es el que deja sin capacidad de reacción.
+
+## Cierre del sábado 17/10
+
+| | Viernes | Sábado |
+|---|---|---|
+| Invertido | $10.94 | $14.30 |
+| LPV | 8 | 30 |
+| CTR | 2.78% | 5.38% |
+| Ventas | 1 | 0 |
+
+15 B viernes+sábado: $15.59 gastados, 1 venta → **CPA $15.59 → rama amarilla**.
+
+La entrega quedó arreglada: el sábado CJ1 gastó $14.30 de $14 contra $4.27 el
+viernes. Fue el primer día de toda la campaña con entrega funcionando.
+
+Decisión: **no tocar nada el domingo.** Un solo día de entrega sana no alcanza
+para juzgar, y cada cambio reinicia el aprendizaje. El lunes se lee sábado +
+domingo, los dos primeros días limpios.
+
+Tampoco se recorta el video in-stream de Facebook (CPM $37.77, clics
+probablemente accidentales, $1.17/día): el costo de reiniciar el aprendizaje
+supera el ahorro.
+
+### Corrección a un número que di mal
+
+El viernes le dije a Nacho "11 ventas, $149.91 facturados". Estaba mal, conté
+dos veces la venta del 16. El número correcto desde el 10/10 es **10 ventas y
+$133.69**, que es lo que ya decía el PDF del informe.
