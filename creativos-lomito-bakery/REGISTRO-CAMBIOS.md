@@ -818,3 +818,39 @@ Las 4 preguntas enviadas el 18/10 a la noche quedaron respondidas:
    → Argumento adicional a favor de migrar: en España la penetración de
    tarjeta es mucho más alta. El problema no es que México sea mal
    mercado, es que nuestro método de cobro no funciona ahí.
+
+## 2026-10-19 — México repuntó: la migración queda EN REVISIÓN
+
+Datos reales (campaña Test ABO | Pastelería Canina | MX):
+
+| Día | Gasto | Impr. | CTR | LPV | Checkouts | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|---|
+| Sáb 17 | $14.32 | 958 | 4.80% | 30 | 6 | 0 | — | — |
+| Dom 18 | $19.74 | 1753 | 3.94% | 30 | 5 | 1 | $17.11 | $19.74 |
+| Lun 19 (parcial) | $6.75 | 810 | 3.46% | 9 | 3 | 1 | $20.95 | $6.75 |
+
+- Venta del 19/10: $20.95 ≈ 388 MXN → consistente con ebook 229 + bump 89
+  + upsell post-compra 71,2. Ticket más alto de toda la campaña.
+- CPA del 19/10: $6.75 contra un break-even con bump de $16.94. Rentable.
+- **Pérdida de octubre: $86.46 → ≈ $74.89.** Primera vez que BAJA.
+- 3 días juntos: $40.81 gastados / $38.06 facturados → break-even.
+
+### Consecuencia sobre el plan
+La decisión de migrar a España se tomó el sábado leyendo "30 LPV / 0 ventas".
+Dos días después hay 2 ventas y la pérdida baja. NO se da vuelta el plan por
+un día sin cerrar, pero tampoco se ejecuta la pausa de México a ciegas.
+→ El martes 20 se hace el cierre con 4 días limpios (16-19) y recién ahí se
+decide pausar México o dejarlo correr. La tienda ES se sigue armando igual:
+armarla no cuesta pauta.
+
+### Fuga identificada
+14 checkouts iniciados en 3 días → 2 compras. **86% de abandono en el
+checkout**, con la gente ya en el botón de pagar. El CTR es bueno y el
+tráfico llega: el problema no está en la pauta. OXXO (no disponible)
+explica una parte. Revisar el checkout el martes.
+
+### Pendiente técnico
+**CJ7 | V1 Problema – copy ingreso extra | MX** está ACTIVO con $8/día
+asignados y gastó $0. Misma entrega congelada que ya tuvimos. No se toca
+hoy para no resetear el aprendizaje en medio de una racha. Primer punto
+del martes.
