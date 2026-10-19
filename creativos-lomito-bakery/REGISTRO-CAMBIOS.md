@@ -781,3 +781,40 @@ más frecuente para darle señal a Meta— queda para el sábado con datos delan
 
 A vigilar mañana: que Audience Network no traiga un aluvión de impresiones
 baratas sin ventas. Si pasa, recortarla.
+
+## 2026-10-19 — Respuestas de Impultienda (soporte)
+
+Las 4 preguntas enviadas el 18/10 a la noche quedaron respondidas:
+
+1. **Píxel compartido: SÍ.** Configuraciones > Meta / Tracking > botón
+   "Usar un píxel de mis otras tiendas" > elegir `1712126017302327` >
+   Guardar. Copia el ID y el token de la API de Conversiones. Las otras
+   tiendas no se tocan. En Meta se filtra por dominio para separar
+   México de España.
+   → Corrige el riesgo que yo había marcado: España NO arranca con el
+   píxel en cero, hereda el historial de conversiones.
+
+2. **Segunda tienda: sin costo.** Entra en el mismo plan.
+   → Nada bloquea el lanzamiento del martes.
+
+3. **Pasarela: Impul Pay.** Una sola activación, y en la sección
+   Impul Pay se elige con qué cobra cada tienda.
+
+4. **IVA: va INCLUIDO en el precio en las tres opciones**
+   (Ninguno / Whop recauda y remite / Lo recaudo yo).
+   → IVA español 21%: de 19,90 € quedan 16,45 €. Se pierde 17,4% de
+   CADA precio de España, no solo del principal.
+   → El break-even CPA de ~$21 que yo había proyectado para España está
+   calculado SIN esto, o sea que es optimista. RECALCULAR el martes
+   antes de fijar presupuesto.
+   → Opción elegida: "Whop recauda y remite" (evita registrarse en el
+   régimen OSS de la UE desde Argentina).
+
+5. **OXXO: NO lo permiten.** Solo tarjeta.
+   → Fuga real en México: una parte importante de las compras digitales
+   mexicanas se pagan en efectivo por OXXO. Puede explicar parte del
+   30 LPV / 0 ventas del sábado 17. Yetzel Vazgar es el caso visible;
+   probablemente hubo otros que se fueron sin escribir.
+   → Argumento adicional a favor de migrar: en España la penetración de
+   tarjeta es mucho más alta. El problema no es que México sea mal
+   mercado, es que nuestro método de cobro no funciona ahí.
