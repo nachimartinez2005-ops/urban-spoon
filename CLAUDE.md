@@ -3,6 +3,9 @@
 Este repo es la memoria del negocio. **No es un proyecto de software.** Es la
 bitácora de un negocio de infoproductos (ebooks) que corre pauta en Meta Ads.
 
+La branch oficial es **`main`**. Todo lo que valga se mergea ahí: lo que queda
+solo en una branch de sesión no lo ve ninguna sesión nueva.
+
 Si Nacho pregunta algo del negocio, la respuesta sale de estos archivos, no de
 lo que vos supongas. Si no está escrito acá, no está verificado: decilo en vez
 de completar el hueco.
@@ -39,6 +42,18 @@ cuando era "$250 de pérdida", y eso inventó una urgencia que no existía.
 | `creativos-lomito-bakery/landing-lomito-bakery.html` | Landing de México (viva) |
 | `creativos-lomito-bakery/landing-lomito-ES.html` | Landing de España (en espera) |
 | `resumen-negocio/` | Informe general del negocio + `datos.md` |
+
+### Otro negocio en el mismo repo: Vayron
+
+`vayron-politicas/` son las politicas legales de **Vayron**, una tienda Shopify
+de Argentina. Es un negocio **distinto** de Lomito Bakery: no mezclar los datos,
+los presupuestos ni las campanas de uno con el otro.
+
+Estado: los textos estan escritos y listos para pegar a mano en Shopify
+(el conector no tiene permiso `write_legal_policies`). Leer `vayron-politicas/0-LEEME.md`.
+Pendientes antes de publicar: los dos `[COMPLETAR]` de `3-terminos.txt`
+(razon social y CUIT), verificar el domicilio, y dar de alta el Boton de
+Arrepentimiento en el menu del pie (obligatorio por Res. 424/2020).
 
 ---
 
