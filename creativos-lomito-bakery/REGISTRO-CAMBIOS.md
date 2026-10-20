@@ -854,3 +854,50 @@ explica una parte. Revisar el checkout el martes.
 asignados y gastó $0. Misma entrega congelada que ya tuvimos. No se toca
 hoy para no resetear el aprendizaje en medio de una racha. Primer punto
 del martes.
+
+## 2026-10-20 — CIERRE DE 4 DÍAS: se CANCELA la migración a España
+
+### Los 4 días limpios (16-19/10)
+
+| Día | Gasto | Impr. | CTR | CPM | LPV | Checkouts | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|---|---|
+| Vie 16 | $10.94 | 899 | 2.78% | $12.17 | 8 | 2 | 1 | $16.22 | $10.94 |
+| Sáb 17 | $14.32 | 958 | 4.80% | $14.95 | 30 | 6 | 0 | — | — |
+| Dom 18 | $19.76 | 1754 | 3.93% | $11.27 | 30 | 5 | 1 | $17.11 | $19.76 |
+| Lun 19 | $14.55 | 1769 | 3.22% | $8.22 | 30 | 4 | **2** | **$33.27** | **$7.28** |
+| **Total** | **$59.57** | 5380 | — | — | 98 | 17 | **4** | **$66.60** | **$14.89** |
+
+**Los 4 días dieron POSITIVO: +$7.03.** Primera vez en toda la campaña.
+
+Pérdida de octubre: $86.46 (17/10) → **≈ $72.12**.
+
+### El ganador está identificado
+**15 B | negacion + 30 recetas** (id 52533183939926), acumulado 16-19:
+$49.33 gastados / $66.61 facturados / 4 ventas / **CPA $12.33** / CTR 3.86%
+/ 92 LPV / 14 checkouts.
+→ Es rentable solo: break-even sin upsell $12.20, con bump $16.94.
+→ TODAS las ventas de los 4 días son de este anuncio. Los demás: cero.
+
+### Señales de que Meta está aprendiendo
+- CPM en caída limpia: $12.17 → $14.95 → $11.27 → $8.22 → $7.33 (hoy).
+- Frecuencia 1.12-1.24: la audiencia NO está saturada, hay espacio para escalar.
+
+### DECISIÓN: México se queda, España se posterga
+El plan del sábado decía migrar. Se cancela. No se abandona un activo que
+acaba de dar positivo para irse a un mercado sin validar. La tienda ES queda
+armada y en espera — no cuesta nada tenerla lista.
+
+### Acciones ejecutadas hoy
+1. Pausado **1 v prob.** (id 52532706691526): 57 impresiones, CTR 1.75%,
+   cero resultados. Ya tuvo sus oportunidades.
+2. **CJ1 subido de $14 a $17/día** (+21%, debajo del 25% que resetea el
+   aprendizaje). El conjunto se auto-pausó con el cambio y fue reactivado.
+   Verificado: daily_budget $17, effective_status ACTIVE.
+3. **17 V1 | no se cocinar CC** y **18 V2 | cuanto cobrar CC** se dejan
+   correr: tienen 118-141 impresiones, muestra demasiado chica para matarlos
+   aunque su CTR (1.4-1.7%) sea malo contra el 3.86% de 15 B.
+
+### Sigue abierto
+- CJ7 activo con $8/día gastando $0 (entrega congelada).
+- 17 checkouts → 4 compras = **76% de abandono**. Sigue siendo la fuga más
+  grande. OXXO explica parte.
