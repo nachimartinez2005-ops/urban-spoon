@@ -901,3 +901,78 @@ armada y en espera — no cuesta nada tenerla lista.
 - CJ7 activo con $8/día gastando $0 (entrega congelada).
 - 17 checkouts → 4 compras = **76% de abandono**. Sigue siendo la fuga más
   grande. OXXO explica parte.
+
+## 2026-10-21 — Martes cerrado, presupuesto se MANTIENE, A y B al aire
+
+### Martes 20/10 cerrado
+
+| Anuncio | Gasto | Impr. | CTR | CPM | LPV | Checkouts | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|---|---|
+| 15 B | $16.04 | 1871 | 3.63% | $8.57 | 25 | 1 | 1 | $12.38 | $16.04 |
+| 17 V1 | $0.09 | 8 | 0.00% | — | 0 | 0 | 0 | — | — |
+| 18 V2 | $0.20 | 8 | 0.00% | — | 0 | 0 | 0 | — | — |
+| **Total** | **$16.33** | 1887 | — | — | 25 | 1 | **1** | **$12.38** | **$16.33** |
+
+**Día NEGATIVO: −$3.95.** La racha de días en positivo se corta en 1.
+La venta fue de $12.38 (ebook solo, sin bump ni upsell).
+Pérdida de octubre: ≈ $76.07.
+
+**Lectura honesta del salto de presupuesto:** con $14.55 el lunes hubo 2
+ventas; con $16.04 el martes hubo 1. Más gasto, más impresiones (1871, el
+máximo histórico), CPM más barato ($8.57, el mínimo histórico), y MENOS
+ventas. Con un solo día de muestra eso es ruido, no tendencia — pero no es
+la confirmación que buscábamos.
+
+El martes al mediodía yo había dicho "va justo en ritmo" mirando el ritmo de
+GASTO, que efectivamente se mantuvo ($7.89 → $16.04). Lo que no llegó fue la
+segunda venta de la tarde.
+
+### Decisión de presupuesto: SE MANTIENE EN $17
+El criterio fijado el lunes decía:
+- 2+ ventas y CPA ≤ $15 → subir a $20-21
+- 1 venta, CPA $17-25 → dejar en $17
+- 0 ventas → volver a $14
+
+Resultado: 1 venta, CPA $16.04. Cae en la banda del medio (apenas por debajo
+de $17). **Se mantiene en $17.** El criterio hizo su trabajo: sin él, el
+impulso habría sido subir igual porque "el CPM está bajando".
+
+### Lanzadas A y B
+Creatives nuevos sobre el MISMO video 2497533197399959 (los creatives de
+Meta son inmutables). Cero créditos de Higgsfield gastados.
+
+| Variación | Creative | Ad | Estado |
+|---|---|---|---|
+| 19 A \| negacion bolsa supermercado | 1652734899898327 | 52534970928926 | ACTIVE |
+| 20 B \| negacion no se cocinar | 4561278850851238 | 52534970958726 | ACTIVE |
+
+Page 1289151314292479 (Lomito Bakery) · link lomitobakery.impultienda.ar ·
+CTA BUY_NOW. Verificado por lectura: ambas ACTIVE.
+
+**C y D siguen en reserva** hasta que el presupuesto pase de ~$30/día.
+**15 B no se toca:** es el control del experimento.
+
+### CORRECCIÓN: CJ7 no tenía "entrega congelada"
+Yo venía diciendo desde el 20/10 que CJ7 estaba "activo con $8/día y entrega
+congelada", y lo arrastré en dos tareas programadas. **Era un conjunto SIN
+ANUNCIOS.** No gastaba porque no tenía nada que entregar. No era un problema
+de delivery, era un conjunto vacío.
+→ CJ7 (52532940166926) pausado.
+
+### Pausados 17 V1 y 18 V2
+Acumulado 17-20/10: 17 V1 con 73 impresiones y CTR 1.37%; 18 V2 con 106 y
+1.89%. Contra el 3.84% de 15 B.
+
+**No llegaron a las ~500 impresiones de mi propio criterio de corte.** Los
+pauso igual, y por un motivo distinto al criterio: Meta ya les cerró el
+grifo (8 impresiones cada uno el martes) y nunca van a juntar muestra. Lo
+que sí hacen es competir por el presupuesto de exploración con A y B, que
+son los tests que me importan ahora.
+
+Detalle a tener en cuenta: **17 V1 era "no sé cocinar", el mismo ángulo que
+mi variación B.** Con otro video, rindió 1.37% de CTR. B no es un ángulo
+virgen — pero sí es un test distinto, porque mantiene fijo el video ganador
+y varía solo el copy.
+
+### Estado del conjunto CJ1
+$17/día · 3 anuncios activos: 15 B (control), 19 A, 20 B.
