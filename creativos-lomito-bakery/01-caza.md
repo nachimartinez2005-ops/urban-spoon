@@ -121,3 +121,103 @@ Lo de esta madrugada fueron 2 rondas. Una caza en serio son 6-8 nichos × 3-5
 variaciones de keyword (español, portugués, inglés) + conteo de arsenal de
 cada candidato. Decenas de búsquedas. Queda para el lunes como entrega aparte
 del plan de España.
+
+---
+
+# Ronda 3 — 2026-10-21 · Búsqueda de la oferta #2
+
+Barrido mundial (sin filtro de país), `ad_active_status: ACTIVE`.
+Nichos cubiertos en esta tanda: **4 de los 6-8 planificados** — adiestramiento
+canino, velas artesanales, recetas caseras para perros, y los arsenales de
+4 anunciantes. **Quedan pendientes**: crochet/amigurumi, huerto en casa,
+resina/manualidades, y las variantes en inglés y portugués.
+
+## Score de 4 señales
+
+| Anunciante | Moneda | Ads activos | Antigüedad | ① 45d+ | ② 50+ ads | ③ duplicación | Score |
+|---|---|---|---|---|---|---|---|
+| Adiestramiento canino Akindi | EUR | 35 | **44 días** | casi | ✗ | ✓ 35× mismo título | **2,5/4** |
+| Piel Sana para Perros | USD | 10 | 6,6 días | ✗ | ✗ | ✓ 9× mismo creativo | 1/4 |
+| Arte y Emprendimiento en Velas | MXN | 9 | 6,3 días | ✗ | ✗ | — | 0,5/4 |
+| Métodos Adiestramiento Canino 15/30 | USD | 16 | 1 día | ✗ | ✗ | ✓ | 1/4 |
+| La panadería del perro | USD | 8 | **<1 día** | ✗ | ✗ | ✗ | 0/4 |
+| Aprendia: Guías Oficiales | MXN | ~9 | <1 día | ✗ | ✗ | ✓ | 0,5/4 |
+
+**NINGUNO pasa el filtro duro (50+ ads activos, 3+ días).** No hay whale en
+esta tanda. El único que se acerca es Akindi.
+
+## El hallazgo real: no es un anunciante, es un avatar
+
+Lo valioso de esta ronda no es un candidato suelto. Es que **el dueño de
+perro tiene por lo menos 4 operadores distintos lanzando infoproductos
+AHORA MISMO**, cada uno sobre un dolor diferente:
+
+| Operador | Dolor que ataca |
+|---|---|
+| Akindi / Métodos 15/30 | El perro no obedece |
+| Piel Sana para Perros | Al perro le pica |
+| Perro nutri / Saber Práctico | Qué darle de comer |
+| La panadería del perro | Ganar plata horneando (= nuestra oferta) |
+
+Ese avatar está validado por redundancia, no por un solo jugador.
+**Y nosotros ya lo tenemos comprado**: píxel con datos de dueños de perro,
+una fanpage, y compradores reales.
+
+## Competidor directo detectado
+
+**La panadería del perro** (page 1360701717127931, USD, voseo argentino)
+corre **exactamente nuestra oferta**. 8 anuncios, todos creados hace menos
+de un día → es un tester, todavía no validó nada.
+
+Sus títulos: "Cajas de cumpleaños para perros" · "Algo propio, desde tu
+cocina" · "Un oficio lindo para tu tiempo libre" · "Sabé qué come tu perro"
+· "Hacé de lo que amás tu oficio" · "Con el horno de tu casa alcanza" ·
+"Lo que sí y lo que nunca" · **"Leé la etiqueta. Después mirá esto"**
+
+⚠️ Ese último es, casi palabra por palabra, la variación A que lancé hoy
+("Dale vuelta a la bolsa de premios que le compras a tu perro y lee").
+Convergencia independiente sobre el mismo ángulo. No nos copiaron ni los
+copiamos: los dos llegamos al mismo lugar. **Eso valida el ángulo A.**
+
+## Piel Sana para Perros — el patrón a mirar
+
+10 ads. El primero hace 6,6 días, solo. Después, 5 días de silencio. Y hace
+1,4 días, **9 copias del mismo creativo de golpe**.
+
+Es el movimiento clásico de "encontré el ganador, ahora lo escalo". Vale
+volver a mirarlo en 5-7 días: si esas 9 siguen vivas, encontró algo.
+
+## Veredicto
+
+- **Adiestramiento canino como nicho general: DESCARTAR.** 768 resultados,
+  casi todos servicios locales (adiestradores con fanpage). No es un
+  mercado de infoproducto, es un mercado de servicios.
+- **Infoproductos para dueños de perro: ENTRAR.** 4+ operadores distintos
+  sobre dolores distintos, ninguno dominando. Demanda validada y espacio.
+- **Akindi (EUR, 44 días): candidata B.** Vale revisar si es infoproducto o
+  servicio antes de modelarla — "+5000 casos de éxito" puede ser cualquiera
+  de las dos.
+
+## Recomendación para la oferta #2
+
+**No buscar un nicho nuevo. Vender un segundo producto al mismo avatar.**
+
+Razones, en orden de peso:
+1. El píxel ya tiene datos de dueños de perro mexicanos que COMPRARON.
+   Una oferta #2 al mismo avatar arranca con ese aprendizaje; un nicho
+   nuevo arranca de cero.
+2. Hay compradores reales a quienes ofrecérselo por email.
+3. La fanpage ya existe y tiene historial.
+4. Cuatro operadores distintos acaban de validar que ese avatar compra
+   infoproductos.
+
+**Candidato concreto: el dolor de la piel/picazón.** Es el que "Piel Sana
+para Perros" está escalando ahora mismo, es un dolor urgente (a diferencia
+de "quiero ganar plata", que es aspiracional), y no compite con lo nuestro:
+se le puede vender a la MISMA persona que ya compró el ebook de repostería.
+
+## Pendiente de la caza
+- Nichos sin barrer: crochet/amigurumi, huerto en casa, resina/manualidades.
+- Variantes en inglés y portugués (mercados fuente y destino).
+- Verificar si Akindi es infoproducto o servicio.
+- Re-mirar Piel Sana para Perros el 27-28/10.
