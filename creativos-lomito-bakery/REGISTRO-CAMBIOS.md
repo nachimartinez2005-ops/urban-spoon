@@ -976,3 +976,33 @@ y varía solo el copy.
 
 ### Estado del conjunto CJ1
 $17/día · 3 anuncios activos: 15 B (control), 19 A, 20 B.
+
+## 2026-10-21 (tarde) — Pago rechazado: verificado, sin consecuencias
+
+Nacho recibió un aviso de pago rechazado y lo abonó con tarjeta de crédito.
+Verificado contra la API de Meta el 21/10:
+
+| Chequeo | Resultado |
+|---|---|
+| `account_status` de 1560224662043860 | **ACTIVE** |
+| `has_payment_method` | **true** |
+| Errores que bloquean entrega (`ads_get_errors`) | **ninguno** (lista vacía) |
+| Entrega del día | normal, los 3 anuncios activos gastando |
+| Anuncios pausados por el incidente | **ninguno** |
+
+No hubo interrupción de entrega ni se perdió aprendizaje. El pago rechazado
+fue un rechazo del medio de pago, no una restricción de la cuenta: Meta
+reintenta y, al cobrarse, la cuenta sigue igual. El riesgo real de estos
+casos —que Meta pause la cuenta por deuda— **no se materializó**.
+
+### Dato del día (21/10, parcial, ~mediodía)
+15 B: $7.73 gastados · 824 impresiones · CTR 3.52% · 16 LPV ·
+**2 ventas · $35.38 facturados · CPA $3.87**.
+→ Aparecieron las DOS ventas que Nacho reportó. La segunda era retraso de
+atribución, como estimé: no era venta orgánica ni atribución perdida.
+Día en curso: $8.04 gastados / $35.38 facturados → **+$27.34**.
+
+### Sobre A y B
+19 A: 26 impresiones. 20 B: 7. Ya NO están en cero, pero siguen con muestra
+mínima. Meta les da exploración con cuentagotas, como estaba previsto.
+Decisión sobre si necesitan conjunto propio: mañana, con el día cerrado.
