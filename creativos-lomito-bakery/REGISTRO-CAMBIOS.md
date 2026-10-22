@@ -1177,3 +1177,49 @@ invertirla peor.
 - El cierre de la ventana 19-25/10 el domingo 25 (fecha dura).
 - Freno a los $200 de pérdida mensual.
 - Nunca saltos de presupuesto de más de 25%.
+
+## 2026-10-22 — CORRECCIÓN: el cierre del 21 se hizo con el día abierto
+
+### El error
+Cerré el miércoles 21 cuando en Buenos Aires eran ~21:00. **La cuenta usa
+America/Buenos_Aires, así que el día de Meta terminaba recién a medianoche.**
+Reporté como cierre un día que seguía corriendo.
+
+| | Reportado | Real (3 h más tarde) |
+|---|---|---|
+| Gasto | $15.09 | **$17.39** |
+| Impresiones | 1722 | **1982** |
+| LPV | 34 | **37** |
+| Checkouts | 7 | 7 |
+| Ventas | 2 | 2 |
+| Facturado | $35.38 | $35.38 |
+| **Resultado** | +$20.29 | **+$17.99** |
+| Frecuencia | — | 1.1457 |
+| CPA | $7.55 | **$8.70** |
+
+Sigue siendo el mejor día de la campaña, pero el número correcto es
+**+$17.99**. El gasto siguió subiendo y las ventas no.
+
+**Pérdida de octubre corregida: $55.78 → $58.08.**
+
+### Consecuencia sobre la suba de presupuesto
+La decisión de subir CJ1 de $17 a $20 **se sostiene**: el criterio pedía
+2+ ventas con CPA ≤ $15, y con los datos finales fueron 2 ventas con CPA
+$8.70. La acción fue correcta.
+
+Pero la tomé con un día a medio cerrar, y eso es un procedimiento malo
+aunque el resultado haya salido bien.
+
+### Regla nueva
+**Los cierres se hacen después de medianoche de Buenos Aires, nunca antes.**
+Antes de esa hora los números del día son parciales y el gasto sigue
+acumulando. Si Nacho pide el cierre más temprano, se le dan los números
+aclarando que son parciales y se difiere cualquier cambio de presupuesto.
+
+### La tercera venta del 21 no aparece en Meta
+Nacho reportó una venta más alrededor de las 22:00 BA. Meta sigue mostrando
+2 compras y $35.38.
+Lo más probable es retraso de atribución — ya pasó el martes 20 y apareció
+después. Verificar en el cierre del 22. Si no aparece, es venta orgánica o
+atribución perdida; en ambos casos la plata entró igual.
+Con esa venta el 21 cerraría en torno a **+$30**.
