@@ -1223,3 +1223,62 @@ Lo más probable es retraso de atribución — ya pasó el martes 20 y apareció
 después. Verificar en el cierre del 22. Si no aparece, es venta orgánica o
 atribución perdida; en ambos casos la plata entró igual.
 Con esa venta el 21 cerraría en torno a **+$30**.
+
+## 2026-10-23 — Cierre REAL del 21: la tercera venta apareció. +$29.31
+
+### Miércoles 21/10, ya cerrado de verdad
+
+| Anuncio | Gasto | Impr. | CTR | LPV | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|
+| **15 B** | $17.42 | 2022 | 3.76% | 39 | **3** | **$47.76** | **$5.81** |
+| 19 A | $0.83 | 78 | 1.28% | 0 | 0 | — | — |
+| 20 B | $0.12 | 12 | 16.67% | 1 | 0 | — | — |
+| 17 / 18 (pausados) | $0.08 | 10 | — | 1 | 0 | — | — |
+| **Total** | **$18.45** | 2122 | 3.77% | 41 | **3** | **$47.76** | **$6.15** |
+
+**+$29.31. Mejor día de toda la campaña por amplio margen.**
+Frecuencia 1.149 · CPM $8.69 · 8 checkouts iniciados.
+
+**La tercera venta que Nacho reportó el 21 a la noche SÍ era de Meta.** Era
+retraso de atribución, como se estimó las dos veces anteriores. Queda
+confirmado el patrón: las ventas tardías del día aparecen al día siguiente.
+
+### Historial de lo que reporté vs. lo real (el 21 se midió tres veces)
+| Momento | Gasto | Ventas | Resultado |
+|---|---|---|---|
+| Cierre prematuro (21:00 BA) | $15.09 | 2 | +$20.29 |
+| Revisión (23:00 BA) | $17.39 | 2 | +$17.99 |
+| **Cierre real** | **$18.45** | **3** | **+$29.31** |
+
+Los dos primeros estaban mal por cerrar con el día abierto. **La regla de
+cerrar después de medianoche de Buenos Aires queda confirmada en la práctica.**
+
+### Pérdida de octubre
+$72.12 (cierre 16-19) → $76.07 (20/10) → **$46.76** al cierre del 21.
+Pico histórico: $86.46 el 17/10. **46% por debajo del peor momento.**
+
+### Presupuesto: SUBE A $24/DÍA
+Criterio: 2+ ventas y CPA ≤ $15 → +20%. Resultado: 3 ventas, CPA $6.15.
+$20 → $24 es +20% exacto, debajo del 25% que resetea el aprendizaje.
+Verificado por lectura: `daily_budget` $24, `effective_status` ACTIVE.
+
+Progresión: $14 (19/10) → $17 (20/10) → $20 (22/10) → **$24 (23/10)**.
+
+### Las dos señales de alarma: ninguna se cumple
+1. **Frecuencia 1.149** — muy lejos del 2.0. La audiencia no está saturada.
+2. **CPA $6.15** — lejísimos de los $17 del umbral. Van dos días seguidos
+   por debajo.
+→ Se sigue escalando Lomito. La oferta #2 no se financia con los $600.
+
+### Jueves 22 en curso (parcial, NO es cierre)
+$8.33 gastados · 832 impresiones · **CTR 4.57%, el más alto de la campaña** ·
+18 LPV · 3 checkouts · 0 ventas todavía.
+El CTR más alto con cero ventas al mediodía no dice nada: el 21 también
+arrancó sin ventas y cerró con 3.
+
+### A y B siguen sin muestra
+19 A: 78 impresiones el 21 (acumulado ~170), CTR 1.28%.
+20 B: 12 impresiones (acumulado ~30).
+Entre las dos: $0.95 de $18.45 = **5% del presupuesto**. Meta sigue sin
+explorar. Con $24/día debería aflojar un poco. NO matarlas: el criterio
+sigue siendo ~500 impresiones sin venta y A va por un tercio de eso.
