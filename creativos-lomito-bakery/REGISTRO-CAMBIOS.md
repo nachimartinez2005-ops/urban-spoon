@@ -1072,3 +1072,48 @@ Revisar el 25/10.
 
 ⚠️ No matar a A por su CTR de 1.49%: con 93 impresiones eso no es una señal,
 es ruido. El criterio sigue siendo ~500 impresiones sin venta.
+
+## 2026-10-22 — CORRECCIÓN DE CRITERIO: la regla de "3 días seguidos" estaba mal
+
+Nacho preguntó hasta cuándo esperamos los 3 días. Tenía razón: **la regla
+como estaba escrita no tiene fecha de vencimiento.** Si Lomito oscila
+(+, −, +, −), el contador nunca llega a 3 y la decisión se posterga para
+siempre. Eso no es un criterio, es una excusa para no decidir.
+
+### Qué reemplaza a la racha
+
+**1. Fecha dura: domingo 25/10.** Se decide ese día, pase lo que pase.
+
+Por qué el 25: noviembre es el mes de testeo según PLAN-NOV-DIC.md, y armar
+una oferta lleva ~10 días (producto, landing, creativos, tienda, píxel,
+compra de prueba). Para tener la #2 al aire el 1 de noviembre hay que
+empezar a construirla el 26.
+
+| Fecha | Qué |
+|---|---|
+| Jue 22, vie 23, sáb 24 | Corren y cierran |
+| **Dom 25** | **Decisión, sin excepción** |
+| 26-31 oct | Construcción de la oferta #2 |
+| 1 nov | Lanzamiento |
+
+**2. Ventana de 7 días (19-25/10), no racha.** Una racha se rompe con un
+solo día malo. Una ventana se promedia.
+
+| Resultado 19-25 oct | Lectura | Con qué plata se abre la #2 |
+|---|---|---|
+| 🟢 Positivo | Lomito se autofinancia | Ganancia de Lomito |
+| 🟡 Entre −$20 y +$20 | Break-even | Presupuesto de noviembre ($300) |
+| 🔴 Peor que −$40 | Pierde | Se baja/apaga Lomito y se usa ese presupuesto |
+
+**En los tres casos se abre la oferta #2.** Lo único que cambia es la
+fuente de financiamiento, no la decisión.
+
+Esto es lo que no estaba explícito y hay que tener claro: **NO se está
+esperando para decidir SI se lanza otra oferta.** Eso ya está decidido en
+PLAN-NOV-DIC.md — noviembre testea, son 4 ofertas nuevas entre nov y dic.
+Estos días solo definen quién paga la búsqueda.
+
+### Frenos que pasan por encima de la fecha
+1. **Pérdida del mes toca $200** → se frena todo ese día, sin esperar al 25.
+2. **Lomito con 3 días seguidos de 0 ventas** → está muerto, se apaga y se
+   pasa directo a la oferta siguiente.
