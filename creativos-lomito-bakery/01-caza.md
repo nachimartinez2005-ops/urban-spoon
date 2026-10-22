@@ -505,3 +505,94 @@ Descartados con razón escrita:
 **Hace falta la lista de lo que Nacho ya probó.** Seis rondas de caza no
 sirven de nada si los candidatos ya están quemados. Esa lista hay que
 pedírsela y escribirla acá antes de la próxima ronda.
+
+---
+
+# Ronda 7 — 2026-10-22 · Mapa de los nichos masivos
+
+Nacho confirmó que **no probó ningún otro nicho** además del sueño infantil.
+Pidió subnichos dentro de los grandes.
+
+## Dónde está el hueco del infoproducto en cada nicho grande
+
+| Nicho grande | Cómo se monetiza de verdad | ¿Hay lugar para un ebook? |
+|---|---|---|
+| **Salud / síntoma** (picazón, azúcar alta) | Suplementos, sprays, pastillas | ❌ No. Pierde contra un objeto de $15 que llega a la puerta |
+| **Salud / rutina** (hernia, lumbalgia, pilates) | **Método y rutina** | ✅ **Sí** |
+| **Dinero / oficio casero** (repostería, velas, crochet) | **Recetario + cómo vender** | ✅ **Sí** — es donde está Lomito |
+| **Relaciones / reconquista** | Tarotistas, videntes, apps de novelas | ❌ No es mercado de ebook |
+| **Crianza / sueño** | Método | ⚠️ Probado por Nacho: cero ventas |
+| **Espiritualidad** | Cursos en catálogo (Academia Arcana, 137 ads) | ✅ Sí, pero son fábricas con mucha plata |
+| **Mascotas / conducta y salud** | Producto físico y servicio local | ❌ No |
+
+## Ronda sobre `reconquistar a tu ex` — DESCARTADO
+2.644 anuncios activos, pero el mercado es de **videntes y tarotistas**
+("CONSULTA GRATIS", "Alta magia Negra y Blanca", Templo de Caminos de Amor,
+Juli tarot, Tarot de Nexum) y de **apps de novelas** (Gaze Views, Dragon
+Essentials, Stephanie Clark y 4 páginas más corriendo el mismo creativo:
+"Traicionado por sus cinco compañeras, el futuro rey lobo..."). No es
+territorio de ebook, y además es un espacio turbio.
+
+## Ronda sobre `postres para vender desde casa` — EL MEJOR CALCE
+67 anuncios activos, **7 operadores distintos, ninguno dominando**:
+
+| Página | Oferta | Antigüedad |
+|---|---|---|
+| **Chef July Jimenez** (741692342362992) | "Por sólo ₡2000 colones" (Costa Rica) | **7,9 días**, repone cada 7 |
+| **Academia Esencia & Salud** (1179446881926962) | "🍮 Arranca tu negocio de postres desde casa" | 6,3 días |
+| **Academia Repostera Emprendedora** (1057782127418715) | "Recetario de Mini Cheesecakes Creativos🍰" | 2,1 días, 6 ads |
+| **Cecilia Luzia** (1113455598513572) | "🍰 **Recibe tus recetarios por WhatsApp**" | 1,2 días |
+| **Dulce Vitrina** (1382756744911782) | "Tortas de Vitrina 2.0 ⭐4.9 de 5" | — |
+| **Repostería Cursos y Recetas** (533536036502348) | "🔴 Único Pago 10 SOLES" | — |
+| **Emprende Javi** (1443317405525383) | CLP | — |
+
+**Es Lomito para humanos.** Recetario + cómo vender + precio bajo. El copy de
+15 B se traduce casi palabra por palabra.
+
+## Ronda sobre `ejercicios en casa dolor de espalda` — LA ÚNICA DIVERSIFICACIÓN REAL
+103 anuncios activos. Infoproducto puro, sin producto físico que compita:
+
+| Página | Oferta |
+|---|---|
+| **Programa Hernia ZERO** (787024551167469, CLP) | "Hernia discal: descubre el Método Hernia Zero" — método de marca |
+| **Bienestar Ebook** (115116398572754, PEN) | "🧘‍♀️ Pilates en Casa" — 5 ads, la página se llama literalmente así |
+| **Genius 1st** (111469568487986) | "Dolor lumbar: ejercicios en casa" |
+| **Wellspring Center** (102137339426617) | 6 ads |
+| **FibroAmigas** (115513811654639) | Hook de historia larga, estilo advertorial |
+
+Casi todos recientes, ningún whale. Pero la estructura es sana: **dolor
+crónico tratado con rutina = el ebook es la forma natural del producto.**
+
+## El punto que importa para elegir
+
+Repostería y velas **son la misma apuesta que Lomito**: el dolor es "quiero
+un ingreso extra desde casa". Si ese dolor deja de convertir, se caen las
+tres juntas. No diversifican nada, solo multiplican la misma posición.
+
+**El dolor crónico de espalda es la única opción que diversifica de verdad**,
+porque el comprador, el dolor y el momento de compra no tienen nada que ver
+con los de Lomito.
+
+| | Repostería | Velas | Dolor de espalda |
+|---|---|---|---|
+| Reusa el copy de 15 B | ✅ casi literal | ✅ bastante | ❌ desde cero |
+| Velocidad de armado | **Máxima** | Alta | Baja |
+| Estacional | Algo | **Sí** | **No** |
+| Dolor | Aspiracional | Aspiracional | **Urgente** |
+| Público se renueva | Medio | Medio | **Sí, se envejece hacia adentro** |
+| ¿Diversifica el riesgo? | ❌ | ❌ | ✅ |
+| Competencia | 7 operadores | 4-6 | 5+ |
+
+## Recomendación revisada para el 25/10
+- **Si el objetivo es facturar rápido con lo que ya sabemos hacer: repostería
+  para vender.** Mejor que velas: mismo mecanismo, sin la estacionalidad de
+  Halloween/Navidad, y 7 operadores validando.
+- **Si el objetivo es no tener todos los huevos en el mismo dolor: dolor
+  crónico de espalda / hernia.** Cuesta más armarlo y no reusa nada, pero es
+  la única apuesta que no muere junto con Lomito.
+
+Ninguno pasa el filtro duro de whale. A esta altura de la caza eso ya es una
+conclusión en sí misma: **en infoproductos de bajo ticket en español no
+aparecen whales de 50+ ads sobre una sola oferta; aparecen muchos operadores
+chicos reponiendo creativos cada 3-7 días.** El filtro de la mentora está
+calibrado para otro tipo de mercado (dropshipping, mercados en inglés).
