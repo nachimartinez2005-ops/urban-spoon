@@ -435,3 +435,73 @@ probado, pero son estacionales y el dolor es aspiracional.
 
 Las dos quedan sobre la mesa para el domingo 25. La decisión real es:
 **velocidad y reuso (velas) contra durabilidad y urgencia (sueño infantil).**
+
+---
+
+# Ronda 6 — 2026-10-22 · Sueño infantil DESCARTADO por dato de Nacho
+
+## Dato del usuario que pisa a la caza
+**Nacho ya probó el nicho de sueño infantil, en Argentina. Fue la primera
+oferta que modeló. Vendió CERO ebooks.**
+
+**Se descarta.** Su test con plata real le gana a mi inferencia: yo estaba
+juzgando por títulos de anuncios que ni siquiera pude abrir (el proxy bloquea
+facebook.com).
+
+Lo que NO se va a hacer: rescatar el nicho con el argumento de que "Argentina
+no es México". Es cierto que son mercados distintos, y también que si aquel
+test corrió con el presupuesto partido y la entrega congelada el aprendizaje
+es flojo. Pero usar eso para defender mi propia recomendación es hacer trampa.
+
+## Intento siguiente: recetas para diabéticos — TAMBIÉN DESCARTADO
+Búsqueda `recetas para diabéticos bajar azúcar` → 54 anuncios activos.
+**Dominado por suplementos**, el mismo patrón que mató a la picazón:
+
+- Canela de Ceilán 7200mg con aceite MCT — corriendo en EUR desde al menos
+  4 páginas distintas (Isabel González, Carlos Hernández, Vivir Mejor a los
+  50, Yesenia Rodríguez RN)
+- ALA puro forma «R» 600mg (Dr. Emily Hartman)
+- PrimeLab Magnesio 5 en 1
+- Apex MX
+
+El dolor "tengo el azúcar alta" se monetiza con **pastillas**, no con un
+ebook. Mismo filtro, mismo resultado.
+
+## Lo que sí apareció, y apunta a otro lado
+Tres anuncios que son infoproducto de verdad y comparten un patrón:
+
+| Página | Qué dice |
+|---|---|
+| **Lumia Cocina** | "🍞 Recetario de Panes para Diabéticos (**Enviamos primero a tu WhatsApp**)" |
+| **Recetas que Dan Dinero** (1068480343018108, COP) | "**Primero recibe, luego pagas**" |
+| **Biatriz Langone** | "Primeiro recibes y luego pagas" |
+| **MI Panadería Saludable** (989714970896344) | Panadería saludable |
+
+El mismo patrón "recibís primero y pagás después" ya había aparecido en la
+búsqueda de velas (LinKaso.Peru, Soluciones Digitales). **Es un embudo
+distinto al nuestro: infoproducto vendido por WhatsApp con pago contra
+entrega.** Resuelve justo el problema que tenemos con OXXO en México.
+Anotado para estudiar, no es un nicho sino un MÉTODO DE VENTA.
+
+Y **"Recetas que Dan Dinero"** es, literalmente, el mecanismo de Lomito
+aplicado a comida humana.
+
+## Estado honesto de la caza después de 6 rondas
+**Ningún candidato pasó el filtro duro (50+ ads activos sobre la misma oferta,
+3+ días).** No encontré un whale.
+
+Lo mejor que hay sobre la mesa sigue siendo **velas y jabones artesanales**
+(2,5/4), con el defecto conocido de la estacionalidad.
+
+Descartados con razón escrita:
+- Picazón / piel de perro → mercado de producto físico
+- Conducta canina / tirón de correa → producto físico o servicio local
+- Adiestramiento canino → servicios locales
+- Crochet / amigurumi → saturado, 8+ jugadores, ventana cerrándose
+- Sueño infantil → **probado por Nacho, cero ventas**
+- Recetas para diabéticos → mercado de suplementos
+
+## Lo que falta para no seguir girando en falso
+**Hace falta la lista de lo que Nacho ya probó.** Seis rondas de caza no
+sirven de nada si los candidatos ya están quemados. Esa lista hay que
+pedírsela y escribirla acá antes de la próxima ronda.
