@@ -12,18 +12,41 @@ o se regeneran con los prompts de abajo.
 
 ## Avance
 
-| Bloque | Páginas | Estado |
-|---|---|---|
-| Receta 01 | 3 | lista |
-| Recetas 02-05 | 12 | listas |
-| Recetas 06-09 | 12 | listas |
-| Recetas 10-13 | 12 | listas |
-| Recetas 14-17 | 12 | listas |
-| Recetas 18-20 | 9 | listas |
-| **Total** | **60 de 103** | |
+**El ebook está terminado: 102 páginas, PDF armado.**
 
-Faltan 43 páginas: recetas 21 a 30 (30 páginas) + portada, índice/bienvenida,
-5 separadores de categoría, 4 páginas de sistema de negocio y cierre (13).
+| Bloque | Páginas |
+|---|---|
+| Portada, bienvenida e índice | 3 |
+| 5 separadores de categoría | 5 |
+| 30 recetas × 3 páginas | 90 |
+| Precio, clientes, primera semana y cierre | 4 |
+| **Total** | **102** |
+
+PDF: `reposteria-que-vende.pdf`, 30 MB, 102 páginas, 1272×1896 por página
+(equivale a 150 ppp en media carta). Queda en el sandbox de Higgsfield en
+`/home/user/rqv/` y subido como media `f5c20122-4d80-48cd-88a1-5becb197c183`.
+
+### El PDF se arma así
+
+ImageMagick tiene el coder de PDF bloqueado por política y `pip install` no
+tiene permisos de escritura, así que el armado va con un escritor de PDF en
+Python puro que embebe los JPEG con `DCTDecode`. El script está en el
+historial de la sesión; si hay que rehacerlo, el orden de páginas vive en
+`/home/user/rqv/orden.txt`.
+
+## Defectos que hubo que corregir
+
+| Página | Qué salió mal |
+|---|---|
+| Receta 01 p3 | Texto inventado en inglés y mal escrito |
+| Receta 15 p3 | La etiqueta "Masa de chocolate" dos veces |
+| Receta 23 p3 | La etiqueta "Papel encerado" dos veces |
+| Receta 24 p2 | El paso 1 pedía azúcar que no estaba en los ingredientes |
+| Índice | **Inventó ocho recetas que no existen** (red velvet, croissants, macarons). Hubo que pasarle la lista exacta y prohibirle agregar nada |
+| Portada | "EDICIÓN 2026" repetido, y decía 103 páginas cuando son 102 |
+
+La lección: el modelo respeta el formato pero rellena el contenido si lo
+dejás. Toda página con una lista hay que dictársela entera.
 
 ## Modelo y parámetros (esto ya costó créditos de más, no cambiarlo)
 
@@ -42,8 +65,8 @@ Faltan 43 páginas: recetas 21 a 30 (30 páginas) + portada, índice/bienvenida,
 > correctly, no duplicated labels, no repeated words.
 
 Sin ella salió "CHFRIADO POR G REFRIIGORADOR" y "Chill Time" en la receta 01.
-Con ella, cero defectos de idioma en 60 páginas. Igual revisar: la 15 p3 salió
-con la etiqueta "Masa de chocolate" duplicada y hubo que rehacerla.
+Con ella, cero defectos de idioma en las 102 páginas. Lo que la cláusula no
+evita es que invente contenido: para eso hay que dictarle la lista completa.
 
 ## Estructura de cada receta (3 páginas)
 
@@ -56,7 +79,6 @@ con la etiqueta "Masa de chocolate" duplicada y hubo que rehacerla.
 
 ## Qué falta antes de vender
 
-- Terminar las 43 páginas y armar el PDF.
 - Landing (copia de `landing-lomito-bakery.html` con el contenido cambiado).
 - Creativos con el ángulo de negación de 15 B.
 - **De Nacho**: crear la 2da tienda en Impultienda con el nombre *Repostería
