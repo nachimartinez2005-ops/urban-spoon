@@ -1117,3 +1117,63 @@ Estos días solo definen quién paga la búsqueda.
 1. **Pérdida del mes toca $200** → se frena todo ese día, sin esperar al 25.
 2. **Lomito con 3 días seguidos de 0 ventas** → está muerto, se apaga y se
    pasa directo a la oferta siguiente.
+
+## 2026-10-22 — DECISIÓN DE ASIGNACIÓN: la plata va a escalar Lomito
+
+Nacho pidió una decisión y la aprobó. **Cambia la prioridad de PLAN-NOV-DIC.md.**
+
+### La decisión
+**Todo el presupuesto va a escalar Lomito. La oferta #2 la paga Lomito, no
+los $600.**
+
+### Por qué cambia respecto del plan original
+PLAN-NOV-DIC.md se escribió cuando Lomito estaba en break-even. Ahí la regla
+"un activo en break-even es gratis, la plata va a buscar otra cosa" era
+correcta. **El miércoles 21 eso dejó de ser cierto:** CPA $7.11 contra un
+break-even de $16.94, y sin llegar al techo (frecuencia 1.13, CPM $8.57 y
+bajando).
+
+Un activo que gana y todavía tiene aire es el mejor destino del próximo
+dólar. Una oferta nueva es un billete de lotería: por estimación propia,
+una de cada cinco funciona.
+
+### Oferta #2 elegida: REPOSTERÍA PARA VENDER (no espalda, no velas)
+
+Esto corrige la recomendación que yo mismo había hecho horas antes en
+01-caza.md, donde argumenté que lo correcto era diversificar con el dolor de
+espalda. **Estaba razonando como si ya hubiera un portafolio que proteger.**
+No lo hay: hay un activo a medio probar.
+
+1. El cuello de botella es el tiempo de armado, no la plata. Repostería
+   reusa el pipeline del ebook, el mecanismo y el copy de 15 B casi literal:
+   ~3 días contra ~10.
+2. Diversificar es para cuando haya dos cosas que funcionen.
+3. **Dato propio de Nacho:** su única prueba con una oferta tipo "método"
+   fue el sueño infantil → cero ventas. Su única prueba con "oficio casero +
+   números concretos" es un negocio que funciona. Se apuesta a la evidencia
+   que hay.
+
+**Dolor de espalda / hernia queda guardado como oferta #3.**
+
+### Reparto
+| Cuándo | Plata | Qué |
+|---|---|---|
+| Ahora → que Lomito se frene | **Todo a Lomito** | +20% cada vez que se cumpla el criterio |
+| En paralelo | **$0** | Armado de repostería (tiempo, no plata) |
+| Cuando Lomito se frene, o el 10/11 | $100 | Lanzamiento de repostería |
+| Diciembre | Reserva $200 | Escalar lo que funcione en temporada |
+
+**Los $600 no se tocan mientras Lomito siga subiendo.**
+
+### Señales que dan vuelta esta decisión
+1. **Frecuencia > 2.0** con CPA subiendo y CPM quieto → audiencia agotada,
+   15 B se quema, la oferta nueva pasa a ser urgente.
+2. **3 días seguidos con CPA > $17** → Lomito dejó de ser el mejor destino.
+
+Mientras esas dos no pasen, sacar plata de Lomito para probar otra cosa es
+invertirla peor.
+
+### Qué sigue sin cambiar
+- El cierre de la ventana 19-25/10 el domingo 25 (fecha dura).
+- Freno a los $200 de pérdida mensual.
+- Nunca saltos de presupuesto de más de 25%.
