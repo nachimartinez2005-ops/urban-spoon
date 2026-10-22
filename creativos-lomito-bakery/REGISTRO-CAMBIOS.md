@@ -1006,3 +1006,69 @@ Día en curso: $8.04 gastados / $35.38 facturados → **+$27.34**.
 19 A: 26 impresiones. 20 B: 7. Ya NO están en cero, pero siguen con muestra
 mínima. Meta les da exploración con cuentagotas, como estaba previsto.
 Decisión sobre si necesitan conjunto propio: mañana, con el día cerrado.
+
+## 2026-10-22 — Cierre del miércoles 21: el mejor día de la campaña
+
+### Miércoles 21/10 cerrado
+
+| Anuncio | Gasto | Impr. | CTR | CPM | LPV | Checkouts | Ventas | Facturado | CPA |
+|---|---|---|---|---|---|---|---|---|---|
+| 15 B | $14.21 | 1634 | 3.73% | $8.70 | 33 | 7 | **2** | **$35.38** | **$7.11** |
+| 19 A | $0.69 | 67 | 1.49% | $10.30 | 0 | 0 | 0 | — | — |
+| 20 B | $0.11 | 11 | 9.09% | $10.00 | 0 | 0 | 0 | — | — |
+| 17 / 18 (pausados) | $0.08 | 10 | — | 1 | 0 | 0 | — | — |
+| **Total** | **$15.09** | 1722 | 3.72% | $8.76 | 34 | 7 | **2** | **$35.38** | **$7.55** |
+
+**+$20.29. El mejor día de toda la campaña.**
+
+Comparación con los dos días previos, mismo presupuesto nominal ($17):
+
+| | Gasto | LPV | Checkouts | Ventas | Resultado |
+|---|---|---|---|---|---|
+| Mar 20 | $16.33 | 25 | 1 | 1 | −$3.95 |
+| Mié 21 | $15.09 | 34 | **7** | **2** | **+$20.29** |
+
+El salto no fue de tráfico (1889 → 1722 impresiones, menos) sino de
+**intención**: 25 → 34 visitas a la landing y 1 → 7 checkouts iniciados.
+Gastó menos y vendió más.
+
+### Pérdida de octubre
+$72.12 (cierre 16-19) → $76.07 (martes) → **$55.78**.
+Pico histórico: $86.46 el 17/10. Vamos 35% por debajo del peor momento.
+
+### Decisión de presupuesto: SUBE A $20/DÍA
+Criterio fijado el 20/10: *2+ ventas y CPA ≤ $15 → subir +20%*.
+Resultado: 2 ventas, CPA $7.55. **Criterio cumplido con margen.**
+
+$17 → $20 es +17,6%, debajo del 25% que resetea el aprendizaje.
+El conjunto se auto-pausó con el cambio y fue reactivado.
+Verificado por lectura: `daily_budget` $20, `effective_status` ACTIVE.
+
+### Racha de días en positivo: 1, no 3
+- Dom 19: +$18.72 ✅
+- Mar 20: −$3.95 ❌ (corta la racha)
+- Mié 21: +$20.29 ✅
+
+**El disparador para abrir la oferta #2 son 3 días seguidos en positivo.**
+Vamos por el primero. Si jueves y viernes acompañan, el sábado se abre.
+No adelantar esto por entusiasmo: el martes ya mostró que un día bueno no
+garantiza el siguiente.
+
+### A y B: el test está vivo pero va lentísimo
+Entre las dos se llevaron **$0.80 de $15.09 — el 5% del presupuesto**.
+Meta explora con cuentagotas porque tiene un ganador claro.
+
+| | Impresiones acumuladas | CTR |
+|---|---|---|
+| 19 A | ~93 | 1.49% |
+| 20 B | ~18 | 9.09% (muestra irrelevante) |
+
+A ese ritmo, A necesita ~7 días para llegar a 500 impresiones.
+
+**Decisión: NO se les arma conjunto propio.** Dividir el presupuesto para
+acelerar un test es exactamente el error que ya pagamos. El test es lento
+pero gratis. Con $20/día la exploración gana algo de aire.
+Revisar el 25/10.
+
+⚠️ No matar a A por su CTR de 1.49%: con 93 impresiones eso no es una señal,
+es ruido. El criterio sigue siendo ~500 impresiones sin venta.
