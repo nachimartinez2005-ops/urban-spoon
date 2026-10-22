@@ -331,3 +331,107 @@ Razones:
 **Lo que NO recomiendo, y lo digo porque lo recomendé mal ayer:** otra oferta
 para dueños de perro. Ese avatar lo tienen tomado los vendedores de producto
 físico.
+
+---
+
+# Ronda 5 — 2026-10-22 · Búsqueda de un dolor EVERGREEN
+
+Pedido de Nacho: una alternativa a las velas que **no pase de moda**, un
+dolor que no se le vaya al cliente ideal en mucho tiempo.
+
+## El filtro nuevo, derivado de la ronda 4
+
+> **Si el dolor se resuelve con un producto físico, el infoproducto pierde.**
+
+La picazón se arregla con un spray. El tirón de correa, con un arnés. Un
+ebook no compite contra un objeto de $15 que llega a la puerta y se paga al
+recibirlo.
+
+A eso le sumo dos condiciones de durabilidad:
+- **Crónico o recurrente**, no una moda ni una fecha.
+- **Público que se renueva solo**: que entre gente nueva al mercado todo el
+  tiempo, sin depender de que vuelva la misma.
+
+## Candidato: SUEÑO INFANTIL (el bebé que no duerme)
+
+Búsqueda `sueño infantil método para dormir` → **solo 20 anuncios activos en
+todo el mundo**. Un espacio fino y limpio, al revés de los pantanos de 700+
+anuncios de producto físico.
+
+| Anunciante | Moneda | Señal |
+|---|---|---|
+| **Sono Angelical Infantil** (1316003098260876) | BRL | "APP SUEÑO DEL BEBE - Samuel Poian \| **Hotmart**". 3 ads, **43,5 días activos**. Brasil = mercado fuente del método. |
+| **Dra. Marisa Gandsas** (460839664008753) | USD | "Formación online en sueño infantil con el Método Pícaro Sueño®". Profesional con método de marca registrada. |
+| **Arrurrú sueño infantil** (1310167082187845) | EUR | Europa. |
+| **dormirconapapacho** (555466167652730) | MXN | **México — un solo anuncio.** |
+| **Marly Lactancia** (1213219015502585) | USD | "10 ajustes. Una semana para empezar a aplicarlos." |
+
+**El huella técnica de Hotmart en el brasileño confirma que es infoproducto**,
+no servicio ni producto físico.
+
+## CORRECCIÓN: Eliana Fernández NO es una operadora de sueño infantil
+
+Estuve a punto de contarla como señal fuerte del nicho. **Me equivoqué.**
+
+Al traer su arsenal completo (page 1161580147032002): **137 anuncios
+activos**, pero son un catálogo esotérico — tarot, registros akáshicos,
+psicomagia, astrocartografía, auriculoterapia, geometría sagrada, amuletos,
+lectura de iris, rituales de prosperidad. "Comando de Apagado: Tu Bebé
+Dormirá 8 Horas" es **uno de ~20 productos** de Academia Arcana.
+
+Además, los 137 anuncios se lanzaron hace ~7 días, todos juntos. Es una
+fábrica de infoproductos haciendo un lanzamiento masivo, no longevidad.
+
+**Pero el dato sirve igual, de otra forma:** un operador con plata que testea
+20 ofertas a la vez eligió incluir el sueño del bebé en su catálogo. Su
+investigación también lo marcó.
+
+## Score
+
+| Señal | Sueño infantil |
+|---|---|
+| ① Longevidad 45d+ | ✓ borderline (43,5 días el brasileño) |
+| ② 50+ ads una sola oferta | ✗ |
+| ③ Duplicación 10+ | ✗ débil |
+| ④ Hueco de arbitraje | ✓✓ **fuerte** — validado 43 días en Brasil, México tiene 1 anuncio |
+| **Total** | **≈ 2,5/4 — candidata B** |
+
+Mismo puntaje que las velas. **La diferencia no está en el score, está en la
+estructura del mercado.**
+
+## Velas vs. sueño infantil
+
+| | 🕯️ Velas | 👶 Sueño infantil |
+|---|---|---|
+| Estacionalidad | **Alta** — apareció "velas de Halloween" en los datos | **Cero** |
+| Tipo de dolor | Aspiracional: "quiero ganar plata" | **Urgente y físico**: "no duermo hace 4 meses" |
+| ¿Lo resuelve un producto? | n/a | **No.** Las máquinas de ruido blanco lo intentan y no alcanzan |
+| Público | Se agota: el que aprendió, aprendió | **Se renueva solo** — nacen bebés todos los días |
+| Urgencia de compra | Baja, se posterga | **Altísima a las 3 AM** |
+| Competencia | 4-6 operadores | 5-6, casi ninguno en México |
+| Reutiliza el copy de 15 B | **Sí, casi línea por línea** | No, mecanismo nuevo |
+| Tiempo de armado | Menor | Mayor |
+
+**Lo que hace evergreen al sueño infantil no es que el dolor dure: es que el
+comprador se reemplaza.** Un padre deja de necesitarlo en 1-2 años y entra
+otro. Para pauta eso significa que los creativos **no se queman** como en una
+audiencia fija. Es la definición operativa de perenne.
+
+## Riesgos, dichos de frente
+1. **No es un whale.** 2,5/4, igual que las velas. Nadie acá pasó el filtro duro.
+2. **Riesgo de políticas de Meta.** Prometer "tu bebé dormirá 8 horas" toca
+   salud infantil. Los anuncios se pueden rechazar. El copy hay que escribirlo
+   con cuidado y sin promesas médicas.
+3. **Cero datos de píxel sobre padres.** Arranca de cero — igual que las velas.
+4. **No pude leer el cuerpo de ningún anuncio**: el proxy de esta sesión
+   bloquea `facebook.com`. Estoy juzgando por títulos y por la huella de
+   plataforma (Hotmart), no por la oferta completa. Es evidencia más débil
+   que leer el anuncio entero.
+
+## Recomendación
+Para lo que Nacho pidió —algo que no pase de moda— **el sueño infantil es la
+respuesta correcta**. Las velas son más rápidas de armar y reutilizan el copy
+probado, pero son estacionales y el dolor es aspiracional.
+
+Las dos quedan sobre la mesa para el domingo 25. La decisión real es:
+**velocidad y reuso (velas) contra durabilidad y urgencia (sueño infantil).**
