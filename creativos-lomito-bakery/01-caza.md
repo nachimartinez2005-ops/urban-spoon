@@ -221,3 +221,113 @@ se le puede vender a la MISMA persona que ya compró el ebook de repostería.
 - Variantes en inglés y portugués (mercados fuente y destino).
 - Verificar si Akindi es infoproducto o servicio.
 - Re-mirar Piel Sana para Perros el 27-28/10.
+
+---
+
+# Ronda 4 — 2026-10-22 · CORRECCIÓN de la recomendación de la ronda 3
+
+## Lo que estaba mal
+
+En la ronda 3 recomendé la **oferta #2 sobre el dolor de piel/picazón en
+perros**, apoyándome en que "Piel Sana para Perros" lo estaba escalando.
+**Esa recomendación era incorrecta.** La hice sin barrer el nicho: miré un
+anunciante y generalicé.
+
+Al barrerlo (`picazón perro se rasca`, 763 resultados activos) el mercado es
+**abrumadoramente de producto físico con pago contra entrega**:
+
+| Anunciante | Qué vende |
+|---|---|
+| Skinpet (EUR) | Spray, "Oferta 2x1 + envío gratis" |
+| Puainta Pipot Skin Spray (COP) | Spray, "ENVÍO GRATIS PAGA EN CASA" |
+| Zoe PET (USD) | "ELIMINA PICAZÓN CON ZOE PET" |
+| Granadagranshop (COP) | 6 ads del mismo creativo |
+| Maca Shop (COP) | "Galletitas antipicazón" |
+| Vitalix PRO (ARS), Bonapet, Zafnar | Suplementos y sprays |
+
+**"Piel Sana para Perros" no es el modelo del mercado: es la excepción.**
+Un ebook peleando contra un spray de $15 que le llega a la puerta y se paga
+al recibirlo es una pelea que se pierde.
+
+Mismo resultado con el dolor de conducta (`tira de la correa`, 752
+resultados): lo monetizan **arneses** (Brize, Manchi Pet, Reino Animal), no
+infoproductos.
+
+## El patrón real, y es más útil que cualquier candidato
+
+Para el avatar dueño-de-perro:
+
+| Tipo de dolor | Cómo se monetiza |
+|---|---|
+| Salud (picazón, otitis, piel) | **Producto físico** + COD |
+| Conducta (tira, ladra, no obedece) | **Producto físico** (arnés) o servicio local |
+| Negocio ("ganar plata con perros") | **INFOPRODUCTO** ← el único hueco |
+
+**Por eso funciona Lomito, y por eso el avatar NO es el activo reutilizable.**
+Lo reutilizable es el MECANISMO: *hacelo en casa con el horno que tenés →
+vendelo → acá está el costo y acá el precio de venta*. Un número concreto,
+no una aspiración.
+
+El avatar dueño-de-perro ya está ocupado por vendedores de producto físico
+que gastan mucho más que nosotros. No conviene volver ahí con un ebook.
+
+## Entonces: la oferta #2 cambia de mecanismo, no de avatar
+
+El candidato tiene que cumplir dos cosas:
+1. Un oficio que se hace en casa con poca inversión.
+2. Que el comprador quiera **vender** lo que hace, no solo hacerlo.
+
+### Candidato 1 — Velas y jabones artesanales para vender
+- **Arte y Emprendimiento en Velas** (610344918819634, MXN): 9 ads activos,
+  6,3 días, reponiendo creativos cada 3 días. **Nivel 1 — convierte.**
+- **Aprendia: Guías Oficiales** (1453826204471738, MXN): corre varias ofertas
+  a la vez, entre ellas "VELAS Y JABONES DE HALLOWEEN HECHOS A MANO, PASO A
+  PASO" y "50 FICHAS POR DENTRO". Operador con catálogo, no tester suelto.
+- **Portal Digital** (CLP), **Soluciones Digitales** (USD, "Recíbelo en tu
+  celular ahora y paga después"), **LinKaso.Peru** (PEN, "Recibe el curso y
+  después pagas").
+- Veredicto: **ENTRAR.** 4-6 anunciantes con gasto sostenido, ninguno domina.
+- Ventaja operativa: el mecanismo es calcado al de Lomito. Costo de
+  materiales → precio de venta → cómo empacar → cómo conseguir pedidos.
+  El copy ganador de 15 B se traduce casi línea por línea.
+
+### Candidato 2 — Crochet / amigurumi para vender
+- 144 resultados activos. **Tejidos Con Amor**, **Tejiendo en cas4**,
+  **Casacrochet Atelier**, **Academia Emprendedora Digital**, **Smart Reads**
+  (BRL), **Boutique de Muñecas Crochet & Amigurumi**, **Raízdigital.online**
+  (CLP), **Aprende y Juega**.
+- Veredicto: **SUBNICHO.** 8+ anunciantes con creativos muy parecidos, casi
+  todos lanzados en los últimos días. Validado pero saturado y con la ventana
+  cerrándose. Si se entra, hay que entrar por un subnicho (amigurumi navideño,
+  muñecas por encargo).
+
+## Hallazgo lateral sin relación con perros
+**Secretos de Mujer** (1293049197214218) y **Secretos en Novelas**
+(1092995197240312): dos fanpages distintas corriendo **el mismo creativo**
+("💔 5 años de matrimonio... y él gemía el nombre de OTRA en la ducha"),
+10+ copias, USD. La misma oferta en varias fanpages es una de las señales
+fuertes del método (se esconde de los cloners). Nicho de novelas/contenido,
+no es ebook clásico. **Anotado para mirar, no para entrar ahora.**
+
+## Lo que no se pudo verificar
+**Adiestramiento canino Akindi** (392349350864726, 35 ads, 44 días, EUR)
+sigue sin clasificar: infoproducto o servicio. El proxy de esta sesión
+bloquea `facebook.com`, así que no puedo abrir el `ad_snapshot_url` para
+leer el cuerpo del anuncio. Queda pendiente — y dado el patrón de arriba
+(conducta → producto o servicio local), lo más probable es que sea servicio.
+
+## Recomendación final para el 25/10
+**Oferta #2: velas y jabones artesanales para vender, mercado México.**
+
+Razones:
+1. Mismo mecanismo que el ganador probado, no una apuesta nueva.
+2. Mercado validado por 4-6 operadores, ninguno dominante.
+3. Público mexicano, donde ya sabemos operar (y donde el OXXO duele igual,
+   ojo con eso).
+4. El copy de 15 B se adapta casi línea por línea: el costo de la cera y el
+   precio de la vela reemplazan al costo de los ingredientes y el precio de
+   la bolsita.
+
+**Lo que NO recomiendo, y lo digo porque lo recomendé mal ayer:** otra oferta
+para dueños de perro. Ese avatar lo tienen tomado los vendedores de producto
+físico.
