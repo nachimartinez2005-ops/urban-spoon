@@ -59,25 +59,33 @@ No van en la carpeta del principal. Cada uno con su carpeta y su link.
 **No se nombran en la landing**: se ofrecen en el order bump del checkout y
 en el mail post-compra.
 
-| # | Producto | Precio | Qué trae |
-|---|---|---|---|
-| 1 | Pack Pastelería de Fiesta | $119 MXN | Pasteles de evento que **no están** en el curso: dos pisos, número, temáticos y la mesa de postres armada |
-| 2 | Kit Vende en Redes | $139 MXN | Publicaciones, textos, historias y cómo fotografiar un postre con luz de ventana |
-| 3 | Pack Fechas que Venden | $139 MXN | El calendario mexicano: Día de Muertos, Navidad, 10 de Mayo, San Valentín, graduaciones. Qué producir y con cuánta anticipación ofrecerlo |
+| # | Producto | Precio | Páginas | Qué trae |
+|---|---|---|---|---|
+| 1 | Pastelería de Fiesta | $119 MXN | 10 | Cinco pasteles de evento que **no están** en el curso (dos pisos, de número, naked cake, smash cake, temático con fondant), cómo cotizar un evento y cómo cobrar la mesa de postres como paquete |
+| 2 | Vende en Redes | $139 MXN | 7 | Cómo fotografiar con luz de ventana, 15 publicaciones escritas, la semana en historias y qué contestar cuando preguntan el precio |
+| 3 | Fechas que Venden | $139 MXN | 6 | El calendario mexicano mes por mes, las 5 fechas grandes con qué producir y cuándo abrir pedidos, y cómo armar una preventa |
+
+Los tres están **hechos**: 23 páginas en total, todas en 1696×2528.
 
 ### Las dos verificaciones que no se pueden saltear
 
-**El Pack de Fiesta no pisa al curso.** El curso tiene 7 pasteles, pero
-ninguno de evento: no hay de dos pisos, ni con forma de número, ni temático,
-ni la mesa de postres armada como conjunto. Hay que comprobarlo receta por
-receta antes de publicar.
+**El Pack de Fiesta no pisa al curso — verificado el 23/10.** Los 7 pasteles
+del curso (tres leches, pay de queso, pay de limón, elote, zanahoria, tarta
+de fresas e imposible) son todos caseros. Ninguno de los cinco del Pack
+aparece ahí.
 
-**El Kit de Redes roza al curso.** La página 101 del ebook enseña a
-conseguir los primeros diez clientes, y una de las cinco vías es el teléfono
-propio. La línea: el curso enseña a **escribirle a tus contactos**, el Kit
-enseña a **publicar para desconocidos**. Si al armar el Kit aparece de nuevo
-"mandá foto y precio a veinte contactos", esa parte sale del Kit, no del
-curso.
+**Pero hay un roce con la categoría 5**, que se llama "Mesa de postres e
+individuales" y ya trae cakepops, fresas con chocolate y mini cheesecakes.
+Por eso el Pack **no vende esas recetas**: vende el pastel de evento y el
+armado y cotización de la mesa como paquete. La página 10 del Pack lo dice
+con todas las letras — "las piezas salen de las recetas que ya tienes en el
+curso" — para que nadie sienta que le cobraron dos veces lo mismo.
+
+**El Kit de Redes roza al curso — resuelto.** La página 101 del ebook enseña
+a conseguir los primeros diez clientes y una de las cinco vías es el teléfono
+propio. La página 2 del Kit declara la línea: el curso te enseña a venderle a
+quien ya te conoce, el Kit a que te encuentre quien no. Ninguna de las 15
+publicaciones del Kit repite "mandá foto y precio a tus veinte contactos".
 
 ---
 
@@ -92,12 +100,11 @@ que cerrar con la calculadora en la mano.
 
 ## Orden para hacerlo
 
-1. Terminar los 4 bonos que faltan y el LEEME
-2. Armar los 3 upsells
-3. Nacho: crear la tienda en Impultienda con el nombre *Repostería que Vende*
-4. Compartir el pixel `1712126017302327` (el mismo de Lomito, Impultienda
+1. El LEEME del producto principal
+2. Nacho: crear la tienda en Impultienda con el nombre *Repostería que Vende*
+3. Compartir el pixel `1712126017302327` (el mismo de Lomito, Impultienda
    deja usarlo en varias tiendas)
-5. Pegar la landing y subir los archivos
-6. Crear los 3 productos de upsell con su link
-7. **Compra de prueba real de punta a punta**, mirando que la pantalla final
+4. Pegar la landing y subir los archivos
+5. Crear los 3 productos de upsell con su link
+6. **Compra de prueba real de punta a punta**, mirando que la pantalla final
    muestre los 7 archivos
