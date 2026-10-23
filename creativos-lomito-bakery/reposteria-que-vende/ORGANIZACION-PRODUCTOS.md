@@ -107,14 +107,18 @@ El ancla no es inventada: es la suma de los 6 precios tachados.
 
 $229 sobre $1.204 da **81% de descuento**. Los dos números cierran.
 
-**Checkout real y verificado el 23/10:**
-`https://reposteria-que-vende.impultienda.ar/checkout` — ya está puesto en
-la landing.
+**Checkout real, verificado el 23/10 contra el contenido de la página:**
+`https://reposteriaquevende.impultienda.ar/checkout` — ya está en la landing.
 
-⚠️ **Cuidado con el subdominio sin guiones.** `reposteriaquevende` (todo
-junto) también existe, devuelve 200 y carga **la tienda de Lomito**. No da
-404: carga bien y muestra el producto equivocado, así que el error no se
-nota hasta el cierre. El bueno lleva guiones.
+⚠️ **No cambiarlo por la versión con guiones.** `reposteria-que-vende`
+(con guiones) es la tienda de **otro vendedor**: un argentino con el mismo
+nombre de tienda, que cobra en pesos argentinos por Mercado Pago. Apuntar
+ahí es pagarle clientes a un competidor.
+
+⚠️ **El título de la tienda dice "lomitobakery"**, porque es el nombre de la
+cuenta de Impultienda y no el de la tienda. Para identificar cuál es cuál
+hay que mirar el contenido de la página, nunca el título. Ese error me costó
+dos vueltas el 23/10 y estuvo a punto de mandar la pauta al competidor.
 
 Los 3 upsells **no se nombran** en la landing: van en el order bump del
 checkout y en el mail post-compra.
