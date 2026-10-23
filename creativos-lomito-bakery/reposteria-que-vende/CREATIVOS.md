@@ -153,15 +153,38 @@ costos, tu zona y tus ventas.
 
 ---
 
-## El texto que va EN el video
+## Los dos videos — HECHOS
 
-Los primeros 3 segundos deciden. El video lleva el hook quemado en pantalla
-porque **la mayoría mira sin sonido y sin leer el copy de arriba**.
+`R1-flatlay.mp4` y `R2-tresleches.mp4`. 720×1280, 5 segundos, sin audio,
+listos para subir a Meta.
+
+Los primeros 3 segundos deciden, y **la mayoría mira sin sonido y sin leer el
+copy de arriba**. Por eso el hook va quemado en pantalla, arriba, que es la
+parte que se ve en el feed sin expandir y la que no tapa la interfaz de
+Reels.
 
 | Video | Texto en pantalla |
 |---|---|
-| Tres leches | `Te cuesta $95.` → `Se vende en $450.` → `30 recetas con su precio ya calculado.` |
-| Flat lay | `Hay miles de recetas gratis.` → `Ninguna te dice a cuánto venderlas.` → `30 recetas con su precio ya calculado.` |
+| `R1-flatlay` | `Hay miles de recetas gratis en internet.` → `Ninguna te dice a cuánto venderlas.` → `30 recetas con su precio de venta YA CALCULADO` |
+| `R2-tresleches` | `Te cuesta $95 hacerlo.` → `Se vende en $450.` → `30 recetas con su precio de venta YA CALCULADO` |
+
+### Cómo se hicieron, y por qué así
+
+El riesgo de un video de IA es que salga una mano de seis dedos o una cara
+rara: eso mata la conversión y no se nota hasta que ya gastaste. Para
+evitarlo:
+
+1. **Primero la imagen, después el video.** Generé el fotograma inicial con
+   control total y recién ahí lo animé. El modelo no inventa la escena, solo
+   la mueve.
+2. **Sin personas y sin manos.** Solo comida. No hay dónde equivocarse.
+3. **Movimiento mínimo**: un acercamiento lento y la luz. La comida se queda
+   quieta, que es lo que un modelo de video hace bien.
+4. **Revisados fotograma por fotograma** antes de darlos por buenos.
+
+Costo: 70 créditos los dos. El texto se montó con ffmpeg, que es gratis, así
+que **cambiar el hook de un video no cuesta un crédito**. Eso importa: si
+R1 no vende, lo primero que se prueba es otro texto sobre el mismo video.
 
 ---
 
