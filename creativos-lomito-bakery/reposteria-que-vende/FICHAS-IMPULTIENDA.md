@@ -321,10 +321,74 @@ llegue diciembre, que se llena en noviembre.
 
 ---
 
+# PRECIOS EN USD (para cargar en Impultienda)
+
+Impultienda se carga en dólares y después se agrega el market de México en
+pesos. **Estos son los números a cargar.**
+
+## El tipo de cambio no es inventado
+
+Sale del propio negocio: Lomito está a **$12.90 USD** y su landing muestra
+**$229 MXN**. Mismo producto, misma plataforma, misma pasarela. Esa paridad
+es **17.75 MXN por USD**, y es la que usé para todo.
+
+⚠️ **Verificá al cargar que Impultienda siga usando ese tipo de cambio.** Si
+hoy convierte distinto, los pesos van a salir otros y hay que revisar que
+los tachados sigan cerrando con los precios.
+
+## Los 4 productos
+
+| Producto | USD | USD tachado | Off | ≈ MXN | ≈ MXN tachado |
+|---|---|---|---|---|---|
+| **Repostería que Vende** | **$12.90** | $67.90 | 81% | $229 | $1,205 |
+| Pastelería de Fiesta | **$6.70** | $16.90 | 60% | $119 | $300 |
+| Vende en Redes | **$7.90** | $19.90 | 60% | $140 | $353 |
+| Fechas que Venden | **$7.90** | $19.90 | 60% | $140 | $353 |
+
+Si compra todo: **$35.40 USD**.
+
+El principal queda **al mismo precio que Lomito**, a propósito: así los dos
+tests se comparan sin una variable de más y el break-even se calcula una
+sola vez.
+
+## Los 6 ítems del principal (valor de referencia)
+
+| Ítem | USD | ≈ MXN |
+|---|---|---|
+| El curso · 102 páginas | $28.10 | $499 |
+| Bono 1 · Calculadora de precios | $11.80 | $209 |
+| Bono 2 · Sustituciones y rescates | $8.40 | $149 |
+| Bono 3 · Etiquetas y empaque | $7.30 | $129 |
+| Bono 4 · Conservación y traslado | $5.60 | $99 |
+| Bono 5 · Dónde comprar más barato | $6.70 | $119 |
+| **Suma** | **$67.90** | **$1,204** |
+
+La suma en dólares da exactamente $67.90, que es el ancla. Cierra en las dos
+monedas.
+
+## Sobre las diferencias de un peso
+
+Entre la columna de pesos de acá y la de más arriba hay diferencias de $1 a
+$4 por el redondeo. No importa y no rompe nada: **nunca se muestran las dos
+monedas juntas**. Lo que importa es que el descuento cierre en la moneda que
+el comprador ve, y cierra en las dos.
+
+⚠️ Lo que sí hay que corregir: la **landing dice $229 MXN** en tres lugares
+y los creativos también. Si cargás el principal a $12.90 USD y Impultienda
+lo muestra en pesos a otro número, hay que actualizar la landing para que
+coincida. **Un precio distinto en el anuncio y en el checkout es de las
+cosas que más abandono de carrito generan**, y ya tenemos 76% de abandono en
+Lomito sin agregarle esto.
+
+---
+
 ## Dos cosas a revisar antes de publicar
 
 1. **El break-even todavía no está calculado.** Hace falta la comisión de
-   Impultienda y el tipo de cambio del día para saber a qué CPA esto es
-   rentable. Sin ese número no se lanza pauta.
-2. **La compra de prueba.** De punta a punta, mirando que la pantalla final
+   Impultienda para saber a qué CPA esto es rentable. Sin ese número no se
+   lanza pauta. A $12.90 USD el break-even debería parecerse al de Lomito
+   ($12.20 sin upsell), pero hay que confirmarlo y no suponerlo.
+2. **Que el precio en pesos del checkout coincida con el de la landing y los
+   creativos.** Hoy dicen $229 MXN.
+3. **La compra de prueba.** De punta a punta, mirando que la pantalla final
    muestre los 7 archivos y que el bump de los upsells aparezca.
