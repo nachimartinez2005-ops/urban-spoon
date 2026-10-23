@@ -1282,3 +1282,84 @@ arrancó sin ventas y cerró con 3.
 Entre las dos: $0.95 de $18.45 = **5% del presupuesto**. Meta sigue sin
 explorar. Con $24/día debería aflojar un poco. NO matarlas: el criterio
 sigue siendo ~500 impresiones sin venta y A va por un tercio de eso.
+
+## 2026-10-23 — Cierre del 22: primer día en cero desde el rebote. −$21.60
+
+### Jueves 22/10, cerrado
+
+| Anuncio | Gasto | Impr. | CTR | CPM | LPV | Ventas | CPA |
+|---|---|---|---|---|---|---|---|
+| **15 B** | $20.25 | 2085 | 3.65% | $9.71 | 31 | **0** | — |
+| 19 A | $1.21 | 64 | 6.25% | $18.91 | 2 | 0 | — |
+| 20 B | $0.14 | 16 | 0.00% | $8.75 | 0 | 0 | — |
+| **Total** | **$21.60** | 2165 | 3.70% | $9.98 | 33 | **0** | — |
+
+Alcance 1791 · frecuencia 1.209 · 44 clics · **6 checkouts iniciados, cero
+compras**.
+
+**Resultado: −$21.60.** Es el peor día desde el 20/10 y el primero en cero
+desde que la campaña dio vuelta.
+
+Gastó $21.60 con el conjunto en $20: Meta puede pasarse hasta 25% en un día
+y compensar en la semana. No es un error de configuración.
+
+### Lo que NO pasó: no es atribución retrasada
+Las tres veces anteriores la venta faltante apareció al día siguiente. Acá ya
+pasó un día entero completo y siguen siendo 0 compras. El 22 fue un día en
+cero de verdad.
+
+### El embudo dice dónde se cayó
+33 LPV y **6 checkouts iniciados** — gente que llegó hasta el botón de pagar
+y no compró. El tráfico llegó y el anuncio hizo su trabajo. Es otra vez la
+fuga del checkout, el 76% de abandono que sigue sin resolverse y que hoy
+costó los $21.60 enteros.
+
+### Desgaste creativo: el video NO se está quemando
+| Señal | 21/10 | 22/10 | Umbral 🟡 |
+|---|---|---|---|
+| Frecuencia | 1.149 | 1.197 | 1.5 |
+| CTR | 3.76% | 3.65% | 2 días < 2.8% |
+| CPM | $8.69 | $9.71 | — |
+| Retención p75/p25 | 40.3% | **36.7%** | 2 días < 32% |
+
+**CPM sube y el CTR aguanta: eso es subasta cara, no creativo quemado.** El
+discriminador del protocolo dice no tocar nada, y no se toca.
+
+La retención quedó en 36.7%, apenas debajo del piso de 37% de la línea de
+base. Ojo: el parcial del 22 marcaba 34.6% y con el día cerrado subió a
+36.7%, así que aquel número era ruido de día incompleto. Un solo día rozando
+el piso no es 🟡. Si el 23 queda otra vez debajo de 37%, ahí sí se arranca el
+video nuevo sin tocar lo que está al aire.
+
+### Presupuesto: BAJA A $20/DÍA
+Criterio vigente: 0 ventas → bajar. Se aplica.
+
+$24 → $20 es −17%, debajo del 25% que resetea el aprendizaje. El conjunto se
+auto-pausó con el cambio, como siempre; reactivado y **verificado por
+lectura: `daily_budget` $20, `effective_status` ACTIVE**.
+
+Es volver al escalón donde la campaña venía corriendo. El salto a $24 se
+decidió el 23 con la evidencia del 21, sin esperar al 22 que ya estaba casi
+cerrado. El 22 contradijo esa evidencia, así que el escalón vuelve atrás.
+Progresión real: $14 → $17 → $20 → $24 (un día) → **$20**.
+
+### Pérdida de octubre
+$46.76 (cierre 21) → **$68.36** al cierre del 22. Pico histórico $86.46.
+
+### Las dos señales de estrategia: ninguna se cumple
+1. **Frecuencia 1.209**, lejísimos de 2.0. La audiencia no está agotada.
+2. **Un día con CPA infinito, no tres.** El umbral es 3 días seguidos arriba
+   de $17 y el 21 cerró en $6.15.
+
+→ Se sigue con Lomito. Los $600 de nov-dic no se tocan. El freno de "3 días
+seguidos en cero" va 1 de 3: si el 23 y el 24 también cierran sin ventas, se
+apaga.
+
+### A y B: el presupuesto más alto no aflojó la exploración
+$1.35 de $21.60 = **6.3%**, prácticamente lo mismo que con $20/día. Meta
+sigue sin explorar aunque haya más plata.
+19 A acumula ~234 impresiones, 20 B ~46. El corte sigue siendo ~500 sin
+venta. 19 A va por la mitad. No se tocan.
+
+### Jueves 23 en curso (parcial, NO es cierre)
+$6.76 · 730 impresiones · CTR 4.52% · 13 LPV · 0 ventas a las 09:41 BA.
