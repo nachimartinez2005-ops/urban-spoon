@@ -27,13 +27,13 @@ tests se comparan sin una variable de más.
 
 | Archivo | Qué es | Estado |
 |---|---|---|
-| `00-LEEME-PRIMERO.pdf` | Bienvenida y qué abrir primero · 2 págs | pendiente |
+| `00-LEEME-PRIMERO.pdf` | Bienvenida y qué abrir primero · 2 págs | **listo** |
 | `01-Reposteria-que-Vende.pdf` | **El curso** · 102 págs, 30 recetas | **listo** |
 | `02-Bono-Calculadora-de-precios.xlsx` | Bono 1 | **listo** |
-| `03-Bono-Sustituciones-y-rescates.pdf` | Bono 2 · 5 págs | pendiente |
-| `04-Bono-Etiquetas-y-empaque.pdf` | Bono 3 · 5 págs | pendiente |
-| `05-Bono-Conservacion-y-traslado.pdf` | Bono 4 · 4 págs | pendiente |
-| `06-Bono-Donde-comprar-mas-barato.pdf` | Bono 5 · 4 págs | pendiente |
+| `03-Bono-Sustituciones-y-rescates.pdf` | Bono 2 · 5 págs | **listo** |
+| `04-Bono-Etiquetas-y-empaque.pdf` | Bono 3 · 5 págs | **listo** |
+| `05-Bono-Conservacion-y-traslado.pdf` | Bono 4 · 3 págs | **listo** |
+| `06-Bono-Donde-comprar-mas-barato.pdf` | Bono 5 · 4 págs | **listo** |
 
 ### Por qué estos cinco
 
@@ -91,20 +91,36 @@ publicaciones del Kit repite "mandá foto y precio a tus veinte contactos".
 
 ## 3 · LA LANDING
 
-Lista el curso + los 5 bonos. El valor de referencia es **la suma de los
-precios tachados**, no un número inventado: si la lista suma $1.084, el
-ancla es $1.084 y el descuento se calcula sobre eso. Los dos números tienen
-que cerrar con la calculadora en la mano.
+`landing-reposteria-que-vende.html`, **lista para pegar**.
+
+El ancla no es inventada: es la suma de los 6 precios tachados.
+
+| Archivo | Precio tachado |
+|---|---|
+| Curso, 102 págs | $499 |
+| Bono 1 · Calculadora | $209 |
+| Bono 2 · Sustituciones y rescates | $149 |
+| Bono 3 · Etiquetas y empaque | $129 |
+| Bono 4 · Conservación y traslado | $99 |
+| Bono 5 · Dónde comprar más barato | $119 |
+| **Suma** | **$1.204** |
+
+$229 sobre $1.204 da **81% de descuento**. Los dos números cierran.
+
+**El link del botón es un placeholder.** Cuando crees la tienda, buscá
+`reposteriaquevende.impultienda.ar/checkout` y reemplazá las 3 veces.
+
+Los 3 upsells **no se nombran** en la landing: van en el order bump del
+checkout y en el mail post-compra.
 
 ---
 
 ## Orden para hacerlo
 
-1. El LEEME del producto principal
-2. Nacho: crear la tienda en Impultienda con el nombre *Repostería que Vende*
-3. Compartir el pixel `1712126017302327` (el mismo de Lomito, Impultienda
+1. Nacho: crear la tienda en Impultienda con el nombre *Repostería que Vende*
+2. Compartir el pixel `1712126017302327` (el mismo de Lomito, Impultienda
    deja usarlo en varias tiendas)
-4. Pegar la landing y subir los archivos
-5. Crear los 3 productos de upsell con su link
-6. **Compra de prueba real de punta a punta**, mirando que la pantalla final
+3. Pegar la landing y subir los archivos
+4. Crear los 3 productos de upsell con su link
+5. **Compra de prueba real de punta a punta**, mirando que la pantalla final
    muestre los 7 archivos
