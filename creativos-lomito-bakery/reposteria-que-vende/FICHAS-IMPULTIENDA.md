@@ -81,6 +81,124 @@ costos, tu zona y tus ventas.
 
 ---
 
+# LOS 6 ÍTEMS DEL PRODUCTO PRINCIPAL
+
+Los bonos **no se venden sueltos**: van incluidos en los $229. El precio de
+cada uno es su **valor de referencia**, el número tachado que se muestra al
+lado para que se vea lo que entra en el paquete.
+
+La suma de los seis es **$1,204**, que es el ancla de la landing. Si cambias
+un solo número de esta lista, hay que recalcular el ancla y el 81%.
+
+| # | Ítem | Valor |
+|---|---|---|
+| 1 | El curso · 102 páginas | $499 |
+| 2 | Bono 1 · Calculadora de precios | $209 |
+| 3 | Bono 2 · Sustituciones y rescates | $149 |
+| 4 | Bono 3 · Etiquetas y empaque | $129 |
+| 5 | Bono 4 · Conservación y traslado | $99 |
+| 6 | Bono 5 · Dónde comprar más barato | $119 |
+| | **Suma** | **$1,204** |
+
+---
+
+## 1 · El curso — valor $499
+
+**Título**
+```
+Curso principal · 30 recetas con su costo, su precio y su margen
+```
+**Descripción**
+```
+102 páginas. Cada receta trae su costo real, su precio de venta sugerido, su
+margen, los pasos, el consejo que evita el error más común de esa receta y
+la tabla de cuánto cobrar según la presentación. Más la fórmula para poner
+precio y de dónde salen tus primeros diez clientes.
+```
+
+---
+
+## 2 · Bono 1 — valor $209
+
+**Título**
+```
+Calculadora de precios en Excel
+```
+**Descripción**
+```
+Las 30 recetas ya cargadas. Escribes lo que te costaron los ingredientes en
+TU súper y te dice al instante a cuánto vender, cuánto te queda y cuánto es
+por porción. Trae una segunda hoja para cotizar un pedido grande, que suma
+tus horas de trabajo y te avisa si ese encargo te está costando dinero.
+```
+
+---
+
+## 3 · Bono 2 — valor $149
+
+**Título**
+```
+Sustituciones y rescates
+```
+**Descripción**
+```
+Qué usar cuando te falta un ingrediente, con 8 cambios seguros y qué cambia
+en el resultado. Y cómo salvar los 8 desastres más comunes: el pastel que se
+bajó, el betún cortado, la gelatina que no cuajó, el chocolate con grumos.
+Más las equivalencias en gramos y los 7 puntos a revisar antes de cada
+tanda.
+```
+
+---
+
+## 4 · Bono 3 — valor $129
+
+**Título**
+```
+Etiquetas y empaque
+```
+**Descripción**
+```
+12 plantillas de etiquetas listas para imprimir y recortar, y qué lleva una
+etiqueta para que sostenga el precio. Más la tabla de qué empaque conviene
+según el producto, cuánto cuesta cada uno y dónde comprarlo por paquete a la
+mitad de lo que sale por pieza.
+```
+
+---
+
+## 5 · Bono 4 — valor $99
+
+**Título**
+```
+Conservación y traslado
+```
+**Descripción**
+```
+Cuánto aguanta cada postre afuera, en refrigerador y congelado, en una tabla
+de una sola página. Para que nunca prometas más días de los que el postre
+dura. Y cómo llevarlo para que llegue entero: dónde va en el coche, qué caja
+y los 4 errores que arruinan un pedido en el camino.
+```
+
+---
+
+## 6 · Bono 5 — valor $119
+
+**Título**
+```
+Dónde comprar más barato
+```
+**Descripción**
+```
+Súper contra central de abastos, insumo por insumo, con cuánto ahorras en
+cada uno. Qué conviene comprar en grande y qué solo semanal, porque si se
+vence el ahorro se vuelve pérdida. Y la lista exacta para arrancar con $500,
+que alcanza para tres tandas completas.
+```
+
+---
+
 # 2 · UPSELL — Pastelería de Fiesta · $119 MXN
 
 **Título**
