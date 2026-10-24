@@ -8,8 +8,9 @@ Lanzada el 2026-10-23 a las 18:00 BA. **Está corriendo.**
 |---|---|
 | Campaña · `Test ABO \| Repostería que Vende \| MX 23/10` | `52535600821126` |
 | Conjunto · `CJ1 \| R1 negacion recetario \| MX 25+` | `52535600841126` |
-| Anuncio · `R1 \| negacion recetario` | `52535601279726` |
-| Creative | `1078939301803745` |
+| Anuncio · `R1 v2 \| negacion recetario \| con IG` | `52535619088726` |
+| ~~Anuncio v1, pausado~~ | ~~`52535601279726`~~ |
+| Creative | `29471724449079022` |
 | Video | `1932490898160979` |
 | Portada | hash `d6986f1ef70fce9de993fbaab9699506` |
 
@@ -25,12 +26,22 @@ Lanzada el 2026-10-23 a las 18:00 BA. **Está corriendo.**
 | Ubicaciones | Advantage+ (automáticas) |
 | Destino | `https://reposteriaquevende.impultienda.ar` |
 | CTA | COMPRAR |
-| Página | **Dulce comienzo**, no Lomito Bakery |
+| Página de Facebook | **Dulce comienzo** |
+| Instagram | **@reposteriarentablemx** (`17841425937424204`) |
 
-### Por qué la página Dulce comienzo
-Si el anuncio de repostería humana sale firmado por "Lomito Bakery", quien lo
-ve asocia el producto con pastelería para perros. Dos negocios distintos
-necesitan dos identidades distintas.
+### Las identidades: resuelta la de Instagram, pendiente la de Facebook
+
+La v1 del anuncio salió sin cuenta de Instagram vinculada, así que en
+Instagram se mostraba con la identidad de la página de Facebook. Se rehizo
+el 23/10 a las 21:00 con **@reposteriarentablemx** vinculada. La v1 quedó
+pausada con $1.91 gastados y 162 impresiones, que es despreciable.
+
+**Queda pendiente la página de Facebook.** Sigue siendo *Dulce comienzo*,
+que es del negocio anterior de sueño infantil y tiene contenido de bebés. En
+Instagram ya no importa, pero quien vea el anuncio en Facebook y entre al
+perfil se encuentra con eso. El nombre "Repostería que Vende" no estaba
+disponible para una página nueva; el de Instagram quedó como Repostería
+Rentable MX.
 
 ### Por qué ABO y no CBO
 Para que el cierre diario siga funcionando igual que con Lomito: el
