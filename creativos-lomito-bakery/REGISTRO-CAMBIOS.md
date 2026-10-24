@@ -1363,3 +1363,44 @@ venta. 19 A va por la mitad. No se tocan.
 
 ### Jueves 23 en curso (parcial, NO es cierre)
 $6.76 · 730 impresiones · CTR 4.52% · 13 LPV · 0 ventas a las 09:41 BA.
+
+---
+
+## 2026-10-23 — Cierre del día (API Meta, consultado 24/10)
+
+Datos traídos de la API de Meta Ads el 24/10, rango 23/10 → 23/10.
+
+**Las dos ofertas cerraron en cero ventas.**
+
+| | Lomito Bakery | Repostería que Vende |
+|---|---|---|
+| Gasto | $17.46 | $7.66 |
+| Impresiones | 2.097 | 452 |
+| Vistas de landing | 33 | 5 |
+| Checkouts iniciados | 5 | 0 |
+| **Compras** | **0** | **0** |
+
+Pérdida del día: **−$25.12**.
+
+**Lomito: segundo día seguido en cero.** 22/10 fue −$21.60, 23/10 −$17.46.
+Dos días, ~$39 gastados, 11 checkouts iniciados, 0 compras. El tráfico
+llega y la gente llega al botón de pagar: no es la pauta.
+
+Acumulado de octubre en Lomito (API, 01/10 → 23/10): $327.48 gastado,
+17 compras, 124 checkouts iniciados, 566 vistas de landing.
+- **86% de abandono en el checkout acumulado** (124 → 17). Peor que el 76%
+  que figuraba en el diagnóstico viejo.
+- Ingreso bruto estimado: 17 × $12.90 = $219.30. *Estimación mía*: no tengo
+  confirmada la retención real de Impultienda ni los bumps vendidos.
+- Pérdida acumulada estimada ≈ **$112** (venía de ≈$72 al 20/10).
+
+**Repostería que Vende:** $9.75 gastados en total (v1 $2.09 + v2 $7.66),
+452 impresiones, 5 vistas de landing, 0 checkouts. Muestra demasiado chica
+para juzgar: la regla del repo es dejar correr 3-4 días o ~$10 por creativo,
+y recién está en el día 1 completo. No se toca.
+
+**Recomendación (no ejecutada, esperando a Nacho):** pausar Lomito hasta
+arreglar el checkout. Seguir pagando $17/día de tráfico hacia un checkout
+que convierte 14% de los que ya apretaron pagar es tirar plata en una fuga
+conocida. El activo no está muerto — el anuncio 15 B sigue trayendo gente —
+pero el cuello está después del clic, y ningún creativo nuevo lo arregla.
