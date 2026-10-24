@@ -1,9 +1,13 @@
 # Mail post-compra con upsell · Lomito Bakery
 
 Se dispara automáticamente después de cada compra, desde Impultienda.
-Reemplaza al upsell post-compra que **no se muestra** en el checkout: ese
-canal vendió 0 de 6. El mail, en cambio, llega al instante y a bandeja
-principal (verificado el 12/10 con una compra de prueba).
+Convive con el upsell del checkout. **Corrección del 24/10:** el dato viejo
+("el upsell del checkout no se muestra, vendió 0 de 6") quedó obsoleto. En la
+compra de prueba del 24/10 los upsells **sí aparecieron**, y en el panel de
+Impultienda hay órdenes con upsell cobrado (MXN 294.40 y MXN 360.15 sobre una
+base de MXN 229). El ticket promedio real es $14.05 contra $12.42 de base.
+El mail sigue valiendo igual: llega al instante y a bandeja principal
+(verificado el 12/10 y de nuevo el 24/10 con compras de prueba).
 
 ## Criterio
 

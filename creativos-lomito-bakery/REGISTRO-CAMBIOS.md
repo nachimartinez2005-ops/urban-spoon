@@ -1530,3 +1530,15 @@ No es un creativo nuevo: el 15 B no se degradó en ninguna métrica (frecuencia
 $14.05 a $16, el break-even de CPA sube a $15.68 y el $16.13 actual queda
 prácticamente empatado — sin tocar un peso de pauta ni un solo anuncio.
 Los upsells ya existen y ya convierten; el trabajo es que los vea más gente.
+
+### Entrega verificada punta a punta (24/10)
+
+La compra de prueba llegó completa: mail recibido y todos los archivos
+descargados rápido. El circuito entero queda verificado hoy — landing →
+checkout → pago → upsells → mail → descarga. Nada que tocar ahí.
+
+**Corrección a `MAIL-POST-COMPRA.md`:** decía que el upsell del checkout "no
+se muestra" y que vendió 0 de 6. Es falso a esta fecha: en la prueba del 24/10
+los upsells aparecieron, y el panel muestra órdenes con upsell cobrado
+(MXN 294.40 y MXN 360.15 sobre base MXN 229). Por eso el ticket promedio es
+$14.05 y no $12.42.
