@@ -1433,3 +1433,51 @@ Riesgo nuevo que trae OXXO: se paga con voucher en el local, horas o días
 después. Esas órdenes pueden quedar pendientes y no contarse como compra hasta
 que se paguen. Pendiente de Nacho: mirar en Impultienda si hay órdenes
 pendientes/impagas del 22 y 23/10.
+
+### Análisis: qué cambió entre "vendía" y "no vende" (API, anuncio 15 B, 14→23/10)
+
+Nacho marcó el punto correcto: estos números del embudo eran los mismos
+cuando vendía, así que la medición no es lo que cambió. Se trajo el día a día
+del mismo anuncio para buscar qué se movió.
+
+| Día | Gasto | Impr. | Frec. | CPM | CTR | LPV | Checkouts | **Ventas** |
+|---|---|---|---|---|---|---|---|---|
+| 16 | $3.30 | 337 | 1.13 | $9.79 | 2.97% | 3 | 0 | 1 |
+| 17 | $12.31 | 824 | 1.19 | $14.94 | 5.34% | 29 | 6 | 0 |
+| 18 | $19.22 | 1.715 | 1.19 | $11.21 | 3.97% | 30 | 4 | 1 |
+| 19 | $14.50 | 1.759 | 1.19 | $8.24 | 3.24% | 30 | 4 | 2 |
+| 20 | $16.04 | 1.873 | 1.18 | $8.56 | 3.63% | 25 | 1 | 1 |
+| 21 | $17.42 | 2.023 | 1.14 | $8.61 | 3.76% | 39 | 8 | **3** |
+| 22 | $20.41 | 2.086 | 1.20 | $9.78 | 3.64% | 31 | 5 | **0** |
+| 23 | $16.10 | 1.956 | 1.18 | $8.23 | 3.63% | 29 | 4 | **0** |
+
+**No se degradó nada arriba del pago.**
+- Frecuencia planchada en 1.14–1.20 → **no hay fatiga de creativo.** La
+  hipótesis de fatiga del 22/10 queda descartada.
+- CPM **mejoró**: de $14.94 el 17 a $8.23 el 23.
+- CTR estable 3.6–3.8%. LPV estable 29–31/día. Checkouts estables 4–5/día.
+
+Lo único que se cayó son las ventas, y de golpe: el 21 hubo 3 ventas con 39
+LPV, y el 22 y 23 hubo 0 con 60 LPV entre los dos.
+
+Tasa histórica del tramo 14→23: 221 LPV → 10 ventas = **4,5%**. Con 60 LPV se
+esperaban ~2,7 ventas. Probabilidad de cerrar en cero por azar ≈ **6%**
+(1 en 16). Bajo, pero no imposible: sigue sin ser prueba, es sospecha fuerte.
+
+**Hipótesis principal: OXXO.** Es lo único que cambió en la ventana, y encaja
+exacto con el patrón. OXXO se paga con voucher en el local, horas o días
+después. Si los compradores ahora eligen OXXO, la orden queda **pendiente** y
+el pixel no dispara `Purchase` hasta que se paga. Tráfico igual, checkouts
+igual, ventas reportadas en cero — justo lo que muestra la tabla.
+
+Hipótesis secundaria: la pasarela está rechazando tarjetas. Se ve en el mismo
+lugar.
+
+**Verificación pendiente (solo Nacho puede):** abrir el listado de órdenes de
+Impultienda del 21, 22 y 23 y mirar cuántas hay **pendientes, impagas o
+fallidas**. Si hay órdenes pendientes de OXXO, no se perdió la venta: está en
+camino, y el problema es de medición y de plazo, no de oferta.
+
+**No se toca nada hasta tener eso.** Apagar un anuncio que no se degradó en
+ninguna métrica, por un dato que puede ser una orden pendiente, sería
+exactamente el error de octubre.
