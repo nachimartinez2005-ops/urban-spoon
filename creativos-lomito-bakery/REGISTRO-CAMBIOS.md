@@ -1542,3 +1542,46 @@ se muestra" y que vendió 0 de 6. Es falso a esta fecha: en la prueba del 24/10
 los upsells aparecieron, y el panel muestra órdenes con upsell cobrado
 (MXN 294.40 y MXN 360.15 sobre base MXN 229). Por eso el ticket promedio es
 $14.05 y no $12.42.
+
+---
+
+## 2026-10-24 09:41 BA — Chequeo de la mañana
+
+El cierre del 23/10 ya se entregó anoche (más arriba). Esto es el estado al
+arrancar el 24.
+
+**Parcial del 24/10 a las 09:41 BA (API):**
+
+| | Gasto | Impr. | Frec. | CTR | CPM | LPV | Ventas |
+|---|---|---|---|---|---|---|---|
+| Lomito · 15 B | $3.17 | 343 | 1.17 | 4.08% | $9.24 | 7 | 0 |
+| Repostería · R1 v2 | $4.45 | 324 | 1.18 | 1.85% | $13.73 | 4 | 0 |
+
+- **R1 v2 salió de revisión y está entregando.** Era el pendiente del
+  lanzamiento: queda verificado.
+- Ambos conjuntos ACTIVOS a $20/día (leído de la API, no asumido).
+- Lomito sigue sin señales de desgaste: frecuencia 1.17, CPM $9.24, CTR 4.08%
+  (el mejor de la semana).
+- Repostería lleva **$12.04 acumulados** del test de $100 (v1 $2.09 + v2 $5.50
+  del 23 + $4.45 de hoy). Lejos del corte. Su CTR de hoy (1.85%) es bajo contra
+  el 3.08% de ayer, pero con 324 impresiones no se juzga.
+- La compra de prueba de Nacho no aparece en Meta (no vino de un clic del
+  anuncio), así que no ensucia la atribución — solo el conteo de la tienda.
+
+**No se tocó nada.** No corresponde: ninguna métrica se movió y las decisiones
+van por bloques de 3-4 días.
+
+### Se reescribió el prompt del cierre diario automático
+
+El prompt guardado arrastraba datos muertos que ya habían hecho tomar dos
+decisiones equivocadas. Se corrigió:
+- Ticket $14.05 y break-even $13.77 (reemplazan a $16.65 / $12.20 / $16.94).
+- Se sacó el "freno de los 3 días" como apagado automático. Ahora dice que a
+  1,3 ventas/día un cero tiene 27% de probabilidad y dos seguidos 7,4%, que no
+  se baja ni se apaga por 1-2 días en cero, y que si aparecen 3 se reporta a
+  Nacho con el CPA del bloque en vez de apagar por reflejo.
+- Se cargó lo verificado el 24: OXXO habilitado, upsell del checkout cobrando,
+  circuito completo probado con compra real, y la duda sobre qué mide
+  `InitiateCheckout`.
+- Se agregó que Google Flow no tiene API ni conector, para no volver a
+  investigarlo.
