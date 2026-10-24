@@ -1404,3 +1404,32 @@ arreglar el checkout. Seguir pagando $17/día de tráfico hacia un checkout
 que convierte 14% de los que ya apretaron pagar es tirar plata en una fuga
 conocida. El activo no está muerto — el anuncio 15 B sigue trayendo gente —
 pero el cuello está después del clic, y ningún creativo nuevo lo arregla.
+
+### Corrección del mismo día — OXXO sí está disponible
+
+Nacho entró al checkout haciéndose pasar por comprador mexicano y **OXXO
+aparece como medio de pago**. Lo habilitaron hace poco. El diagnóstico viejo
+("OXXO no disponible, solo tarjeta", y "OXXO explica una parte del abandono")
+queda sin efecto. Corregido en `CLAUDE.md`.
+
+Esto baja la recomendación de pausar Lomito, que se apoyaba en parte en eso.
+Dos cosas más que la bajan:
+
+1. **No sabemos qué mide "checkout iniciado".** Nuestra landing solo dispara
+   `PageView`; el `InitiateCheckout` lo tira Impultienda y lo más probable es
+   que salte al cargar la página de pago, no al apretar pagar. Si es así,
+   124 → 17 es un 14% de página-de-pago a compra, no un 86% de abandono en el
+   botón. **Sin verificar, el número no decide nada.** No se pudo verificar
+   desde acá: el container no llega al dominio de la tienda.
+2. **Dos días en cero no prueban que esté roto.** 11 checkouts al 14% histórico
+   daban ~1,5 ventas esperadas; la probabilidad de cerrar en cero por mala
+   suerte es ≈19%. La regla 4 del repo (no dar vuelta un plan por el dato de un
+   día) aplica igual acá.
+
+**Decisión: Lomito NO se pausa.** Se deja correr hasta un cierre limpio de
+3-4 días (hasta el 25/10 inclusive) y ahí se decide con el cierre completo.
+
+Riesgo nuevo que trae OXXO: se paga con voucher en el local, horas o días
+después. Esas órdenes pueden quedar pendientes y no contarse como compra hasta
+que se paguen. Pendiente de Nacho: mirar en Impultienda si hay órdenes
+pendientes/impagas del 22 y 23/10.

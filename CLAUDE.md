@@ -49,7 +49,9 @@ cuando era "$250 de pérdida", y eso inventó una urgencia que no existía.
 - Cuenta Meta: `1560224662043860` (Ebooks Argentina). La cuenta ARS
   `238377004117040` es otro negocio de 2020, gasto 0: **excluida siempre**.
 - Campaña: `Test ABO | Pastelería Canina | MX 10/10` (`52532697130726`).
-- Tienda: Impultienda. Pasarela Impul Pay. **OXXO no disponible, solo tarjeta.**
+- Tienda: Impultienda. Pasarela Impul Pay. **OXXO SÍ está disponible** (lo
+  agregaron hace poco; Nacho lo verificó el 24/10 entrando al checkout como
+  comprador mexicano). El dato viejo "solo tarjeta" quedó obsoleto.
 
 **El cierre de 4 días (16-19/10) dio positivo: +$7.03.** Primera vez en toda la
 campaña. Pérdida acumulada de octubre: ≈ $72.12 (venía de $86.46).
@@ -67,8 +69,15 @@ resetea el aprendizaje).
 ### La fuga más grande (sin resolver)
 **76% de abandono en el checkout** — 17 checkouts iniciados → 4 compras, con la
 gente ya en el botón de pagar. El CTR es bueno y el tráfico llega: el problema
-no está en la pauta. OXXO explica una parte. Esto vale más que cualquier
-creativo nuevo.
+no está en la pauta. **Ya no se explica con OXXO**: OXXO está habilitado.
+
+Antes de volver a llamar a esto "fuga", hay que verificar qué mide el evento:
+nuestra landing solo dispara `PageView`, así que `InitiateCheckout` lo tira
+Impultienda, y lo más probable es que salte **al cargar la página de pago**,
+no al apretar pagar. Si es así, "124 checkouts → 17 ventas" es en realidad
+"124 llegaron a la página de pago → 17 compraron" = 14%, que para tráfico
+frío de Meta a $12.90 es flojo pero no una catástrofe. **Sin verificar esto,
+el número no se usa para decidir.**
 
 ### Otros pendientes
 - `CJ7 | V1 Problema – copy ingreso extra | MX`: ACTIVO con $8/día, gastó $0.
