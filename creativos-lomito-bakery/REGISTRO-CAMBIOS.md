@@ -1481,3 +1481,52 @@ camino, y el problema es de medición y de plazo, no de oferta.
 **No se toca nada hasta tener eso.** Apagar un anuncio que no se degradó en
 ninguna métrica, por un dato que puede ser una orden pendiente, sería
 exactamente el error de octubre.
+
+### Resolución: no hay nada roto. El problema es que el negocio es chico para leerlo por día.
+
+**Compra de prueba real (Nacho, 24/10):** entró desde la landing, apretó
+"quiero empezar", llegó al checkout en menos de 1 segundo, pagó rápido y le
+ofreció los upsells. **Todo el circuito funciona.** Se cierran las dos
+hipótesis abiertas: no es el checkout, no es la pasarela, no es OXXO.
+*(Esa orden es de prueba: hay que descontarla de los totales de la tienda.)*
+
+**Captura del panel de Impultienda (24/10):** 19 ventas, US$266.87 facturado,
+1 solo voucher OXXO pendiente (del 21/10, US$12.42). Última venta aprobada:
+21/10 21:48. El 22 y 23 no se creó ninguna orden, ni fallida ni pendiente.
+
+**Ventas por día de la campaña (API, 10→23/10):**
+
+| 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2 | 2 | 1 | 1 | 3 | **0** | 1 | **0** | 1 | 2 | 1 | 3 | **0** | **0** |
+
+Ya hubo días en cero antes: el 15 y el 17, y nadie se alarmó porque al día
+siguiente hubo ventas. Promedio ≈1,3 ventas/día. Con Poisson a λ=1,3, la
+probabilidad de que un día cualquiera cierre en cero es **27%**, y dos
+seguidos **7,4%** — pasa una vez cada dos semanas. **El 22 y 23 están dentro
+de lo normal.** No hay nada que arreglar.
+
+**La lección, que es la regla 4 del repo con números:** a 1-3 ventas por día
+un día no dice nada. Los cierres se leen en bloques de 4 días. Mirar el día
+suelto sólo genera pánico y decisiones malas — pasó con España, casi pasa de
+nuevo acá, y lo frenó Nacho, no yo.
+
+### Números corregidos (reemplazan a los de arriba en esta misma fecha)
+
+- **Ticket promedio real: $14.05**, no $12.90. Hay upsells convirtiendo
+  (se ven órdenes de MXN 294.40 y MXN 360.15 en el panel).
+- **Break-even de CPA: $13.77** (ticket $14.05 menos 2% de comisión), no $12.20.
+- **Pérdida de octubre: ≈ $61** ($327.48 de Meta contra $266.87 facturado),
+  no los ≈$112 que estimé con $12.90 planos. Contra los $300/mes de tolerancia,
+  hay aire de sobra.
+- **CPA de los últimos 10 días (14→23/10): $16.13** ($177.42 / 11 ventas).
+  Contra el break-even de $13.77, se pierden ≈$2,40 por venta. Cerca, pero
+  todavía del lado malo.
+
+### Lo que mueve la aguja ahora
+
+No es un creativo nuevo: el 15 B no se degradó en ninguna métrica (frecuencia
+1.18, CPM bajando, CTR estable). **Es subir el ticket promedio.** Si pasa de
+$14.05 a $16, el break-even de CPA sube a $15.68 y el $16.13 actual queda
+prácticamente empatado — sin tocar un peso de pauta ni un solo anuncio.
+Los upsells ya existen y ya convierten; el trabajo es que los vea más gente.
